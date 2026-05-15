@@ -1,7 +1,5 @@
 import 'dart:io';
 
-import 'package:flutter/foundation.dart';
-
 class ExtractedBoxicon {
   final String name;
   final String code;
@@ -95,6 +93,7 @@ String _generateDartFile(
 ) {
   final buffer = StringBuffer();
   buffer.writeln('// ignore_for_file: constant_identifier_names\n');
+  buffer.writeln("//GENERATED FILE: Please DO NOT EDIT\n");
   buffer.writeln("import 'package:flutter/widgets.dart';\n");
   buffer.writeln('class Boxicons {');
   buffer.writeln('  Boxicons._();\n');
@@ -140,5 +139,5 @@ void generateDataFile(
 
   buffer.writeln('];');
   File('example/lib/boxicons_data.dart').writeAsStringSync(buffer.toString());
-  debugPrint('Generated boxicons_data.dart');
+  print('Generated boxicons_data.dart');
 }

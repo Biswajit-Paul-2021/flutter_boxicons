@@ -1,5 +1,7 @@
 // ignore_for_file: constant_identifier_names
 
+//GENERATED FILE: Please DO NOT EDIT
+
 import 'package:flutter/widgets.dart';
 
 class Boxicons {
