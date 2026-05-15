@@ -9,7 +9,9 @@
 In the `dependencies:` section of your `pubspec.yaml`, add the following line:
 
 ```yaml
-flutter_boxicons: <latest_version>
+flutter_boxicons:
+  git: https://github.com/Biswajit-Paul-2021/flutter_boxicons.git
+  ref: master
 ```
 
 ## Usage
