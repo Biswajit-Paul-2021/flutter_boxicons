@@ -2,3301 +2,4076 @@
 
 import 'package:flutter/widgets.dart';
 
-/// Example to use:
-/// ```dart
-/// import 'package:flutter/material.dart';
-/// import 'package:flutter_boxicons/flutter_boxicons.dart';
-///
-/// class MyApp extends StatelessWidget {
-///   @override
-///   Widget build(BuildContext context) {
-///     return IconButton(
-///       // Use Boxicons class
-///       icon: Icon(Boxicons.bx_message),
-///       onPressed: () {
-///         print('Congratulations');
-///       }
-///     );
-///   }
-/// }
-/// ```
-///
-/// See also:
-/// * [Boxicons]
-/// * [https://boxicons.com/](https://boxicons.com/)
 class Boxicons {
   Boxicons._();
 
-  static const _fontFam = 'Boxicons';
-  static const _fontPackage = 'flutter_boxicons';
-  
-    static const IconData bxs_add_to_queue =
-      IconData(0xec99, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_adjust =
-      IconData(0xec9a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_adjust_alt =
-      IconData(0xec9b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_alarm =
-      IconData(0xec9c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_alarm_add =
-      IconData(0xec9d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_alarm_exclamation =
-      IconData(0xec9e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_alarm_off =
-      IconData(0xec9f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_alarm_snooze =
-      IconData(0xeca0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_album =
-      IconData(0xeca1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_ambulance =
-      IconData(0xeca2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_analyse =
-      IconData(0xeca3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_angry =
-      IconData(0xeca4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_arch =
-      IconData(0xeca5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_archive =
-      IconData(0xeca6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_archive_in =
-      IconData(0xeca7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_archive_out =
-      IconData(0xeca8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_area =
-      IconData(0xeca9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_arrow_from_bottom =
-      IconData(0xecaa, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_arrow_from_left =
-      IconData(0xecab, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_arrow_from_right =
-      IconData(0xecac, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_arrow_from_top =
-      IconData(0xecad, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_arrow_to_bottom =
-      IconData(0xecae, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_arrow_to_left =
-      IconData(0xecaf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_arrow_to_right =
-      IconData(0xecb0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_arrow_to_top =
-      IconData(0xecb1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_award =
-      IconData(0xecb2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_baby_carriage =
-      IconData(0xecb3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_backpack =
-      IconData(0xecb4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_badge =
-      IconData(0xecb5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_badge_check =
-      IconData(0xecb6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_badge_dollar =
-      IconData(0xecb7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_baguette =
-      IconData(0xef1b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_ball =
-      IconData(0xecb8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_balloon =
-      IconData(0xeb60, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_band_aid =
-      IconData(0xecb9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bank =
-      IconData(0xecba, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bar_chart_alt_2 =
-      IconData(0xecbb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bar_chart_square =
-      IconData(0xecbc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_barcode =
-      IconData(0xecbd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_baseball =
-      IconData(0xecbe, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_basket =
-      IconData(0xecbf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_basketball =
-      IconData(0xecc0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bath =
-      IconData(0xecc1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_battery =
-      IconData(0xecc2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_battery_charging =
-      IconData(0xecc3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_battery_full =
-      IconData(0xecc4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_battery_low =
-      IconData(0xecc5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bed =
-      IconData(0xecc6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_been_here =
-      IconData(0xecc7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_beer =
-      IconData(0xecc8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bell =
-      IconData(0xecc9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bell_minus =
-      IconData(0xecca, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bell_off =
-      IconData(0xeccb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bell_plus =
-      IconData(0xeccc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bell_ring =
-      IconData(0xeccd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bible =
-      IconData(0xecce, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_binoculars =
-      IconData(0xeccf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_blanket =
-      IconData(0xecd0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bolt =
-      IconData(0xecd1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bolt_circle =
-      IconData(0xecd2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bomb =
-      IconData(0xecd3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bone =
-      IconData(0xecd4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bong =
-      IconData(0xecd5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_book =
-      IconData(0xecd6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_book_add =
-      IconData(0xecd7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_book_alt =
-      IconData(0xecd8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_book_bookmark =
-      IconData(0xecd9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_book_content =
-      IconData(0xecda, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_book_heart =
-      IconData(0xecdb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_book_open =
-      IconData(0xece5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_book_reader =
-      IconData(0xece6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bookmark =
-      IconData(0xecdc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bookmark_alt =
-      IconData(0xecdd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bookmark_alt_minus =
-      IconData(0xecde, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bookmark_alt_plus =
-      IconData(0xecdf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bookmark_heart =
-      IconData(0xece0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bookmark_minus =
-      IconData(0xece1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bookmark_plus =
-      IconData(0xece2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bookmark_star =
-      IconData(0xece4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bookmarks =
-      IconData(0xece3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bot =
-      IconData(0xece7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bowl_hot =
-      IconData(0xef1c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bowl_rice =
-      IconData(0xef1d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bowling_ball =
-      IconData(0xece8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_box =
-      IconData(0xece9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_brain =
-      IconData(0xecea, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_briefcase =
-      IconData(0xeceb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_briefcase_alt =
-      IconData(0xecec, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_briefcase_alt_2 =
-      IconData(0xeced, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_brightness =
-      IconData(0xecee, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_brightness_half =
-      IconData(0xecef, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_brush =
-      IconData(0xecf0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_brush_alt =
-      IconData(0xecf1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bug =
-      IconData(0xecf2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bug_alt =
-      IconData(0xecf3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_building =
-      IconData(0xecf4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_building_house =
-      IconData(0xecf5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_buildings =
-      IconData(0xecf6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bulb =
-      IconData(0xecf7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bullseye =
-      IconData(0xecf8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_buoy =
-      IconData(0xecf9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bus =
-      IconData(0xecfa, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_bus_school =
-      IconData(0xecfc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_business =
-      IconData(0xecfb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cabinet =
-      IconData(0xecfd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cable_car =
-      IconData(0xef1e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cake =
-      IconData(0xecfe, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_calculator =
-      IconData(0xecff, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_calendar =
-      IconData(0xed00, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_calendar_alt =
-      IconData(0xed01, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_calendar_check =
-      IconData(0xed02, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_calendar_edit =
-      IconData(0xed03, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_calendar_event =
-      IconData(0xed04, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_calendar_exclamation =
-      IconData(0xed05, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_calendar_heart =
-      IconData(0xed06, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_calendar_minus =
-      IconData(0xed07, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_calendar_plus =
-      IconData(0xed08, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_calendar_star =
-      IconData(0xed09, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_calendar_week =
-      IconData(0xed0a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_calendar_x =
-      IconData(0xed0b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_camera =
-      IconData(0xed0c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_camera_home =
-      IconData(0xed0d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_camera_movie =
-      IconData(0xed0e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_camera_off =
-      IconData(0xed0f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_camera_plus =
-      IconData(0xed10, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_capsule =
-      IconData(0xed11, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_captions =
-      IconData(0xed12, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_car =
-      IconData(0xed13, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_car_battery =
-      IconData(0xed14, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_car_crash =
-      IconData(0xed15, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_car_garage =
-      IconData(0xed1f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_car_mechanic =
-      IconData(0xed20, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_car_wash =
-      IconData(0xed26, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_card =
-      IconData(0xed16, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_caret_down_circle =
-      IconData(0xed17, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_caret_down_square =
-      IconData(0xed18, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_caret_left_circle =
-      IconData(0xed19, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_caret_left_square =
-      IconData(0xed1a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_caret_right_circle =
-      IconData(0xed1b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_caret_right_square =
-      IconData(0xed1c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_caret_up_circle =
-      IconData(0xed1d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_caret_up_square =
-      IconData(0xed1e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_carousel =
-      IconData(0xed21, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cart =
-      IconData(0xed22, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cart_add =
-      IconData(0xed23, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cart_alt =
-      IconData(0xed24, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cart_download =
-      IconData(0xed25, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_castle =
-      IconData(0xeb79, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cat =
-      IconData(0xec95, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_category =
-      IconData(0xed27, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_category_alt =
-      IconData(0xed28, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cctv =
-      IconData(0xed29, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_certification =
-      IconData(0xed2a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chalkboard =
-      IconData(0xed2b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chart =
-      IconData(0xed2c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chat =
-      IconData(0xed2d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_check_circle =
-      IconData(0xed31, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_check_shield =
-      IconData(0xed32, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_check_square =
-      IconData(0xed33, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_checkbox =
-      IconData(0xed2e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_checkbox_checked =
-      IconData(0xed2f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_checkbox_minus =
-      IconData(0xed30, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cheese =
-      IconData(0xef2c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chess =
-      IconData(0xed34, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chevron_down =
-      IconData(0xed35, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chevron_down_circle =
-      IconData(0xed36, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chevron_down_square =
-      IconData(0xed37, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chevron_left =
-      IconData(0xed38, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chevron_left_circle =
-      IconData(0xed39, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chevron_left_square =
-      IconData(0xed3a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chevron_right =
-      IconData(0xed3b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chevron_right_circle =
-      IconData(0xed3c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chevron_right_square =
-      IconData(0xed3d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chevron_up =
-      IconData(0xed42, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chevron_up_circle =
-      IconData(0xed43, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chevron_up_square =
-      IconData(0xed44, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chevrons_down =
-      IconData(0xed3e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chevrons_left =
-      IconData(0xed3f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chevrons_right =
-      IconData(0xed40, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chevrons_up =
-      IconData(0xed41, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_chip =
-      IconData(0xed45, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_church =
-      IconData(0xed46, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_circle =
-      IconData(0xed47, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_circle_half =
-      IconData(0xef1f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_circle_quarter =
-      IconData(0xef20, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_circle_three_quarter =
-      IconData(0xef21, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_city =
-      IconData(0xed48, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_clinic =
-      IconData(0xed49, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cloud =
-      IconData(0xed4a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cloud_download =
-      IconData(0xed4b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cloud_lightning =
-      IconData(0xed4c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cloud_rain =
-      IconData(0xed4d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cloud_upload =
-      IconData(0xed4e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_coffee =
-      IconData(0xed4f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_coffee_alt =
-      IconData(0xed50, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_coffee_bean =
-      IconData(0xeb92, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_coffee_togo =
-      IconData(0xed51, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cog =
-      IconData(0xed52, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_coin =
-      IconData(0xed53, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_coin_stack =
-      IconData(0xed54, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_collection =
-      IconData(0xed55, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_color =
-      IconData(0xef39, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_color_fill =
-      IconData(0xed56, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_comment =
-      IconData(0xed57, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_comment_add =
-      IconData(0xed58, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_comment_check =
-      IconData(0xed59, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_comment_detail =
-      IconData(0xed5a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_comment_dots =
-      IconData(0xed5b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_comment_edit =
-      IconData(0xed5c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_comment_error =
-      IconData(0xed5d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_comment_minus =
-      IconData(0xed5e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_comment_x =
-      IconData(0xed5f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_compass =
-      IconData(0xed60, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_component =
-      IconData(0xed61, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_confused =
-      IconData(0xed62, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_contact =
-      IconData(0xed63, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_conversation =
-      IconData(0xed64, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cookie =
-      IconData(0xed65, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cool =
-      IconData(0xed66, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_copy =
-      IconData(0xed67, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_copy_alt =
-      IconData(0xed68, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_copyright =
-      IconData(0xed69, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_coupon =
-      IconData(0xed6a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_credit_card =
-      IconData(0xed6b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_credit_card_alt =
-      IconData(0xed6c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_credit_card_front =
-      IconData(0xed6d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cricket_ball =
-      IconData(0xef22, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_crop =
-      IconData(0xed6e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_crown =
-      IconData(0xed6f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cube =
-      IconData(0xed70, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cube_alt =
-      IconData(0xed71, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cuboid =
-      IconData(0xed72, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_customize =
-      IconData(0xed73, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_cylinder =
-      IconData(0xed74, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dashboard =
-      IconData(0xed75, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_data =
-      IconData(0xed76, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_detail =
-      IconData(0xed77, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_devices =
-      IconData(0xed78, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_diamond =
-      IconData(0xed79, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dice_1 =
-      IconData(0xed7a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dice_2 =
-      IconData(0xed7b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dice_3 =
-      IconData(0xed7c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dice_4 =
-      IconData(0xed7d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dice_5 =
-      IconData(0xed7e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dice_6 =
-      IconData(0xed7f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_direction_left =
-      IconData(0xed80, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_direction_right =
-      IconData(0xed81, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_directions =
-      IconData(0xed82, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_disc =
-      IconData(0xed83, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_discount =
-      IconData(0xed84, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dish =
-      IconData(0xed85, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dislike =
-      IconData(0xed86, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dizzy =
-      IconData(0xed87, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dock_bottom =
-      IconData(0xed88, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dock_left =
-      IconData(0xed89, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dock_right =
-      IconData(0xed8a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dock_top =
-      IconData(0xed8b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dog =
-      IconData(0xec96, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dollar_circle =
-      IconData(0xed8c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_donate_blood =
-      IconData(0xed8d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_donate_heart =
-      IconData(0xed8e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_door_open =
-      IconData(0xed8f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_doughnut_chart =
-      IconData(0xed90, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_down_arrow =
-      IconData(0xed91, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_down_arrow_alt =
-      IconData(0xed92, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_down_arrow_circle =
-      IconData(0xed93, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_down_arrow_square =
-      IconData(0xed94, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_download =
-      IconData(0xed95, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_downvote =
-      IconData(0xed96, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_drink =
-      IconData(0xed97, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_droplet =
-      IconData(0xec94, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_droplet_half =
-      IconData(0xed98, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_dryer =
-      IconData(0xed99, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_duplicate =
-      IconData(0xed9a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_edit =
-      IconData(0xed9b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_edit_alt =
-      IconData(0xed9c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_edit_location =
-      IconData(0xed9d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_eject =
-      IconData(0xed9e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_envelope =
-      IconData(0xed9f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_envelope_open =
-      IconData(0xeda0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_eraser =
-      IconData(0xeda1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_error =
-      IconData(0xeda2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_error_alt =
-      IconData(0xeda3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_error_circle =
-      IconData(0xeda4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_ev_station =
-      IconData(0xeda5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_exit =
-      IconData(0xeda6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_extension =
-      IconData(0xeda7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_eyedropper =
-      IconData(0xeda8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_face =
-      IconData(0xeda9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_face_mask =
-      IconData(0xedaa, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_factory =
-      IconData(0xedab, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_fast_forward_circle =
-      IconData(0xedac, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file =
-      IconData(0xedad, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_archive =
-      IconData(0xedae, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_blank =
-      IconData(0xedaf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_css =
-      IconData(0xedb0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_doc =
-      IconData(0xedb1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_export =
-      IconData(0xedb2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_find =
-      IconData(0xedb3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_gif =
-      IconData(0xedb4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_html =
-      IconData(0xedb5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_image =
-      IconData(0xedb6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_import =
-      IconData(0xedb7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_jpg =
-      IconData(0xedb8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_js =
-      IconData(0xedb9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_json =
-      IconData(0xedba, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_md =
-      IconData(0xedbb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_pdf =
-      IconData(0xedbc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_plus =
-      IconData(0xedbd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_png =
-      IconData(0xedbe, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_file_txt =
-      IconData(0xedbf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_film =
-      IconData(0xedc0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_filter_alt =
-      IconData(0xedc1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_first_aid =
-      IconData(0xedc2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_flag =
-      IconData(0xedc3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_flag_alt =
-      IconData(0xedc4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_flag_checkered =
-      IconData(0xedc5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_flame =
-      IconData(0xedc6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_flask =
-      IconData(0xedc7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_florist =
-      IconData(0xedc8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_folder =
-      IconData(0xedc9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_folder_minus =
-      IconData(0xedca, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_folder_open =
-      IconData(0xedcb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_folder_plus =
-      IconData(0xedcc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_food_menu =
-      IconData(0xedcd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_fridge =
-      IconData(0xedce, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_game =
-      IconData(0xedcf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_gas_pump =
-      IconData(0xedd0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_ghost =
-      IconData(0xedd1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_gift =
-      IconData(0xedd2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_graduation =
-      IconData(0xedd3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_grid =
-      IconData(0xedd4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_grid_alt =
-      IconData(0xedd5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_group =
-      IconData(0xedd6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_guitar_amp =
-      IconData(0xedd7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_hand =
-      IconData(0xedd8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_hand_down =
-      IconData(0xedd9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_hand_left =
-      IconData(0xedda, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_hand_right =
-      IconData(0xeddb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_hand_up =
-      IconData(0xeddc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_happy =
-      IconData(0xeddd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_happy_alt =
-      IconData(0xedde, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_happy_beaming =
-      IconData(0xeddf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_happy_heart_eyes =
-      IconData(0xede0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_hard_hat =
-      IconData(0xef2a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_hdd =
-      IconData(0xede1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_heart =
-      IconData(0xede2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_heart_circle =
-      IconData(0xede3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_heart_square =
-      IconData(0xede4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_help_circle =
-      IconData(0xede5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_hide =
-      IconData(0xede6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_home =
-      IconData(0xede7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_home_alt_2 =
-      IconData(0xef2b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_home_circle =
-      IconData(0xede8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_home_heart =
-      IconData(0xede9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_home_smile =
-      IconData(0xedea, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_hot =
-      IconData(0xec93, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_hotel =
-      IconData(0xedeb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_hourglass =
-      IconData(0xedec, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_hourglass_bottom =
-      IconData(0xeded, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_hourglass_top =
-      IconData(0xedee, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_id_card =
-      IconData(0xedef, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_image =
-      IconData(0xedf0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_image_add =
-      IconData(0xedf1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_image_alt =
-      IconData(0xedf2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_inbox =
-      IconData(0xedf3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_info_circle =
-      IconData(0xedf4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_info_square =
-      IconData(0xedf5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_injection =
-      IconData(0xec97, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_institution =
-      IconData(0xedf6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_invader =
-      IconData(0xef23, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_joystick =
-      IconData(0xedf7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_joystick_alt =
-      IconData(0xedf8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_joystick_button =
-      IconData(0xedf9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_key =
-      IconData(0xedfa, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_keyboard =
-      IconData(0xedfb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_label =
-      IconData(0xedfc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_landmark =
-      IconData(0xedfd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_landscape =
-      IconData(0xedfe, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_laugh =
-      IconData(0xedff, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_layer =
-      IconData(0xee00, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_layer_minus =
-      IconData(0xee01, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_layer_plus =
-      IconData(0xee02, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_layout =
-      IconData(0xee03, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_leaf =
-      IconData(0xec98, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_left_arrow =
-      IconData(0xee04, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_left_arrow_alt =
-      IconData(0xee05, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_left_arrow_circle =
-      IconData(0xee06, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_left_arrow_square =
-      IconData(0xee07, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_left_down_arrow_circle =
-      IconData(0xee08, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_left_top_arrow_circle =
-      IconData(0xee09, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_lemon =
-      IconData(0xef29, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_like =
-      IconData(0xee0a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_location_plus =
-      IconData(0xee0b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_lock =
-      IconData(0xee0c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_lock_alt =
-      IconData(0xee0d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_lock_open =
-      IconData(0xee0e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_lock_open_alt =
-      IconData(0xee0f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_log_in =
-      IconData(0xee10, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_log_in_circle =
-      IconData(0xee11, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_log_out =
-      IconData(0xee12, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_log_out_circle =
-      IconData(0xee13, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_low_vision =
-      IconData(0xee14, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_magic_wand =
-      IconData(0xee15, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_magnet =
-      IconData(0xee16, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_map =
-      IconData(0xee17, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_map_alt =
-      IconData(0xee18, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_map_pin =
-      IconData(0xee19, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_mask =
-      IconData(0xee1a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_medal =
-      IconData(0xee1b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_megaphone =
-      IconData(0xee1c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_meh =
-      IconData(0xee1d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_meh_alt =
-      IconData(0xee1e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_meh_blank =
-      IconData(0xee1f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_memory_card =
-      IconData(0xee20, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message =
-      IconData(0xee21, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_add =
-      IconData(0xee22, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_alt =
-      IconData(0xee23, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_alt_add =
-      IconData(0xee24, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_alt_check =
-      IconData(0xee25, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_alt_detail =
-      IconData(0xee26, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_alt_dots =
-      IconData(0xee27, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_alt_edit =
-      IconData(0xee28, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_alt_error =
-      IconData(0xee29, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_alt_minus =
-      IconData(0xee2a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_alt_x =
-      IconData(0xee2b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_check =
-      IconData(0xee2c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_detail =
-      IconData(0xee2d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_dots =
-      IconData(0xee2e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_edit =
-      IconData(0xee2f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_error =
-      IconData(0xee30, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_minus =
-      IconData(0xee31, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_rounded =
-      IconData(0xee32, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_rounded_add =
-      IconData(0xee33, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_rounded_check =
-      IconData(0xee34, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_rounded_detail =
-      IconData(0xee35, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_rounded_dots =
-      IconData(0xee36, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_rounded_edit =
-      IconData(0xee37, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_rounded_error =
-      IconData(0xee38, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_rounded_minus =
-      IconData(0xee39, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_rounded_x =
-      IconData(0xee3a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_square =
-      IconData(0xee3b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_square_add =
-      IconData(0xee3c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_square_check =
-      IconData(0xee3d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_square_detail =
-      IconData(0xee3e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_square_dots =
-      IconData(0xee3f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_square_edit =
-      IconData(0xee40, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_square_error =
-      IconData(0xee41, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_square_minus =
-      IconData(0xee42, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_square_x =
-      IconData(0xee43, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_message_x =
-      IconData(0xee44, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_meteor =
-      IconData(0xee45, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_microchip =
-      IconData(0xee46, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_microphone =
-      IconData(0xee47, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_microphone_alt =
-      IconData(0xee48, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_microphone_off =
-      IconData(0xee49, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_minus_circle =
-      IconData(0xee4a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_minus_square =
-      IconData(0xee4b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_mobile =
-      IconData(0xee4c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_mobile_vibration =
-      IconData(0xee4d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_moon =
-      IconData(0xee4e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_mouse =
-      IconData(0xee4f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_mouse_alt =
-      IconData(0xee50, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_movie =
-      IconData(0xee51, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_movie_play =
-      IconData(0xee52, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_music =
-      IconData(0xee53, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_navigation =
-      IconData(0xee54, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_network_chart =
-      IconData(0xee55, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_news =
-      IconData(0xee56, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_no_entry =
-      IconData(0xee57, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_note =
-      IconData(0xee58, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_notepad =
-      IconData(0xee59, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_notification =
-      IconData(0xee5a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_notification_off =
-      IconData(0xee5b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_objects_horizontal_center =
-      IconData(0xebab, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_objects_horizontal_left =
-      IconData(0xebc4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_objects_horizontal_right =
-      IconData(0xebdd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_objects_vertical_bottom =
-      IconData(0xebf6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_objects_vertical_center =
-      IconData(0xef40, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_objects_vertical_top =
-      IconData(0xef41, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_offer =
-      IconData(0xee5c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_package =
-      IconData(0xee5d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_paint =
-      IconData(0xee5e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_paint_roll =
-      IconData(0xee5f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_palette =
-      IconData(0xee60, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_paper_plane =
-      IconData(0xee61, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_parking =
-      IconData(0xee62, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_party =
-      IconData(0xec92, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_paste =
-      IconData(0xee63, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_pear =
-      IconData(0xef42, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_pen =
-      IconData(0xee64, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_pencil =
-      IconData(0xee65, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_phone =
-      IconData(0xee66, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_phone_call =
-      IconData(0xee67, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_phone_incoming =
-      IconData(0xee68, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_phone_off =
-      IconData(0xee69, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_phone_outgoing =
-      IconData(0xee6a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_photo_album =
-      IconData(0xee6b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_piano =
-      IconData(0xee6c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_pie_chart =
-      IconData(0xee6d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_pie_chart_alt =
-      IconData(0xee6e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_pie_chart_alt_2 =
-      IconData(0xee6f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_pin =
-      IconData(0xee70, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_pizza =
-      IconData(0xee71, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_plane =
-      IconData(0xee72, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_plane_alt =
-      IconData(0xee73, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_plane_land =
-      IconData(0xee74, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_plane_take_off =
-      IconData(0xee76, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_planet =
-      IconData(0xee75, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_playlist =
-      IconData(0xee77, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_plug =
-      IconData(0xee78, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_plus_circle =
-      IconData(0xee79, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_plus_square =
-      IconData(0xee7a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_pointer =
-      IconData(0xee7b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_polygon =
-      IconData(0xee7c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_popsicle =
-      IconData(0xef25, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_printer =
-      IconData(0xee7d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_purchase_tag =
-      IconData(0xee7e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_purchase_tag_alt =
-      IconData(0xee7f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_pyramid =
-      IconData(0xee80, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_quote_alt_left =
-      IconData(0xee81, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_quote_alt_right =
-      IconData(0xee82, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_quote_left =
-      IconData(0xee83, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_quote_right =
-      IconData(0xee84, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_quote_single_left =
-      IconData(0xee85, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_quote_single_right =
-      IconData(0xee86, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_radiation =
-      IconData(0xee87, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_radio =
-      IconData(0xee88, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_receipt =
-      IconData(0xee89, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_rectangle =
-      IconData(0xee8a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_registered =
-      IconData(0xee8b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_rename =
-      IconData(0xee8c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_report =
-      IconData(0xee8d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_rewind_circle =
-      IconData(0xee8e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_right_arrow =
-      IconData(0xee8f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_right_arrow_alt =
-      IconData(0xee90, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_right_arrow_circle =
-      IconData(0xee91, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_right_arrow_square =
-      IconData(0xee92, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_right_down_arrow_circle =
-      IconData(0xee93, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_right_top_arrow_circle =
-      IconData(0xee94, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_rocket =
-      IconData(0xee95, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_ruler =
-      IconData(0xee96, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_sad =
-      IconData(0xee97, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_save =
-      IconData(0xee98, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_school =
-      IconData(0xee99, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_search =
-      IconData(0xee9a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_search_alt_2 =
-      IconData(0xee9b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_select_multiple =
-      IconData(0xee9c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_send =
-      IconData(0xee9d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_server =
-      IconData(0xee9e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_shapes =
-      IconData(0xee9f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_share =
-      IconData(0xeea0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_share_alt =
-      IconData(0xeea1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_shield =
-      IconData(0xeea2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_shield_alt_2 =
-      IconData(0xeea3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_shield_minus =
-      IconData(0xef43, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_shield_plus =
-      IconData(0xef44, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_shield_x =
-      IconData(0xeea4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_ship =
-      IconData(0xeea5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_shocked =
-      IconData(0xeea6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_shopping_bag =
-      IconData(0xeea7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_shopping_bag_alt =
-      IconData(0xeea8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_shopping_bags =
-      IconData(0xeea9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_show =
-      IconData(0xeeaa, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_shower =
-      IconData(0xef45, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_skip_next_circle =
-      IconData(0xeeab, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_skip_previous_circle =
-      IconData(0xeeac, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_skull =
-      IconData(0xeead, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_sleepy =
-      IconData(0xeeae, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_slideshow =
-      IconData(0xeeaf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_smile =
-      IconData(0xeeb0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_sort_alt =
-      IconData(0xeeb1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_spa =
-      IconData(0xeeb2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_speaker =
-      IconData(0xeeb3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_spray_can =
-      IconData(0xeeb4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_spreadsheet =
-      IconData(0xeeb5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_square =
-      IconData(0xeeb6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_square_rounded =
-      IconData(0xeeb7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_star =
-      IconData(0xeeb8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_star_half =
-      IconData(0xeeb9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_sticker =
-      IconData(0xeeba, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_stopwatch =
-      IconData(0xeebb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_store =
-      IconData(0xeebc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_store_alt =
-      IconData(0xeebd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_sun =
-      IconData(0xeebe, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_sushi =
-      IconData(0xef46, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_t_shirt =
-      IconData(0xeed9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_tachometer =
-      IconData(0xeebf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_tag =
-      IconData(0xeec0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_tag_alt =
-      IconData(0xeec1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_tag_x =
-      IconData(0xeec2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_taxi =
-      IconData(0xeec3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_tennis_ball =
-      IconData(0xeec4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_terminal =
-      IconData(0xeec5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_thermometer =
-      IconData(0xeec6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_time =
-      IconData(0xeec7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_time_five =
-      IconData(0xeec8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_timer =
-      IconData(0xeec9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_tired =
-      IconData(0xeeca, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_to_top =
-      IconData(0xeecf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_toggle_left =
-      IconData(0xeecb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_toggle_right =
-      IconData(0xeecc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_tone =
-      IconData(0xeecd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_torch =
-      IconData(0xeece, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_traffic =
-      IconData(0xeed0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_traffic_barrier =
-      IconData(0xeed1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_traffic_cone =
-      IconData(0xeed2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_train =
-      IconData(0xeed3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_trash =
-      IconData(0xeed4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_trash_alt =
-      IconData(0xeed5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_tree =
-      IconData(0xeed6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_tree_alt =
-      IconData(0xef26, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_trophy =
-      IconData(0xeed7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_truck =
-      IconData(0xeed8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_tv =
-      IconData(0xeeda, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_universal_access =
-      IconData(0xef47, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_up_arrow =
-      IconData(0xeedb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_up_arrow_alt =
-      IconData(0xeedc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_up_arrow_circle =
-      IconData(0xeedd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_up_arrow_square =
-      IconData(0xeede, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_upside_down =
-      IconData(0xeedf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_upvote =
-      IconData(0xeee0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_user =
-      IconData(0xeee1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_user_account =
-      IconData(0xeee2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_user_badge =
-      IconData(0xeee3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_user_check =
-      IconData(0xeee4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_user_circle =
-      IconData(0xeee5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_user_detail =
-      IconData(0xeee6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_user_minus =
-      IconData(0xeee7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_user_pin =
-      IconData(0xeee8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_user_plus =
-      IconData(0xeee9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_user_rectangle =
-      IconData(0xeeea, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_user_voice =
-      IconData(0xeeeb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_user_x =
-      IconData(0xeeec, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_vector =
-      IconData(0xeeed, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_vial =
-      IconData(0xeeee, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_video =
-      IconData(0xeeef, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_video_off =
-      IconData(0xeef0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_video_plus =
-      IconData(0xeef1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_video_recording =
-      IconData(0xeef2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_videos =
-      IconData(0xeef3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_virus =
-      IconData(0xeef4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_virus_block =
-      IconData(0xeef5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_volume =
-      IconData(0xeef6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_volume_full =
-      IconData(0xeef7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_volume_low =
-      IconData(0xeef8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_volume_mute =
-      IconData(0xeef9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_wallet =
-      IconData(0xeefa, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_wallet_alt =
-      IconData(0xeefb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_washer =
-      IconData(0xeefc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_watch =
-      IconData(0xeefd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_watch_alt =
-      IconData(0xeefe, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_webcam =
-      IconData(0xeeff, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_widget =
-      IconData(0xef00, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_window_alt =
-      IconData(0xef01, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_wine =
-      IconData(0xef02, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_wink_smile =
-      IconData(0xef03, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_wink_tongue =
-      IconData(0xef04, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_wrench =
-      IconData(0xef05, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_x_circle =
-      IconData(0xef06, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_x_square =
-      IconData(0xef07, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_yin_yang =
-      IconData(0xef08, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_zap =
-      IconData(0xef09, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_zoom_in =
-      IconData(0xef0a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxs_zoom_out =
-      IconData(0xef0b, fontFamily: _fontFam, fontPackage: _fontPackage);
-    static const IconData bx_abacus =
-      IconData(0xe99d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_accessibility =
-      IconData(0xe99e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_add_to_queue =
-      IconData(0xe99f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_adjust =
-      IconData(0xe9a0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_alarm =
-      IconData(0xe9a1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_alarm_add =
-      IconData(0xe9a2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_alarm_exclamation =
-      IconData(0xe9a3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_alarm_off =
-      IconData(0xe9a4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_alarm_snooze =
-      IconData(0xe9a5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_album =
-      IconData(0xe9a6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_align_justify =
-      IconData(0xe9a7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_align_left =
-      IconData(0xe9a8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_align_middle =
-      IconData(0xe9a9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_align_right =
-      IconData(0xe9aa, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_analyse =
-      IconData(0xe9ab, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_anchor =
-      IconData(0xe9ac, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_angry =
-      IconData(0xe9ad, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_aperture =
-      IconData(0xe9ae, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_arch =
-      IconData(0xe9af, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_archive =
-      IconData(0xe9b0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_archive_in =
-      IconData(0xe9b1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_archive_out =
-      IconData(0xe9b2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_area =
-      IconData(0xe9b3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_arrow_back =
-      IconData(0xe9b4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_arrow_from_bottom =
-      IconData(0xe9b5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_arrow_from_left =
-      IconData(0xe9b6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_arrow_from_right =
-      IconData(0xe9b7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_arrow_from_top =
-      IconData(0xe9b8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_arrow_to_bottom =
-      IconData(0xe9b9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_arrow_to_left =
-      IconData(0xe9ba, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_arrow_to_right =
-      IconData(0xe9bb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_arrow_to_top =
-      IconData(0xe9bc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_at =
-      IconData(0xe9bd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_atom =
-      IconData(0xe9be, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_award =
-      IconData(0xe9bf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_badge =
-      IconData(0xe9c0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_badge_check =
-      IconData(0xe9c1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_baguette =
-      IconData(0xef0d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_ball =
-      IconData(0xe9c2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_band_aid =
-      IconData(0xe9c3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bar_chart =
-      IconData(0xe9c4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bar_chart_alt =
-      IconData(0xe9c5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bar_chart_alt_2 =
-      IconData(0xe9c6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bar_chart_square =
-      IconData(0xe9c7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_barcode =
-      IconData(0xe9c8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_barcode_reader =
-      IconData(0xe9c9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_baseball =
-      IconData(0xe9ca, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_basket =
-      IconData(0xe9cb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_basketball =
-      IconData(0xe9cc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bath =
-      IconData(0xe9cd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_battery =
-      IconData(0xe9ce, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bed =
-      IconData(0xe9cf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_been_here =
-      IconData(0xe9d0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_beer =
-      IconData(0xe9d1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bell =
-      IconData(0xe9d2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bell_minus =
-      IconData(0xe9d3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bell_off =
-      IconData(0xe9d4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bell_plus =
-      IconData(0xe9d5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bible =
-      IconData(0xe9d6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bitcoin =
-      IconData(0xe9d7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_blanket =
-      IconData(0xe9d8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_block =
-      IconData(0xe9d9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bluetooth =
-      IconData(0xe9da, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_body =
-      IconData(0xe9db, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bold =
-      IconData(0xe9dc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bolt_circle =
-      IconData(0xe9dd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bomb =
-      IconData(0xe9de, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bone =
-      IconData(0xe9df, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bong =
-      IconData(0xe9e0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_book =
-      IconData(0xe9e1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_book_add =
-      IconData(0xe9e2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_book_alt =
-      IconData(0xe9e3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_book_bookmark =
-      IconData(0xe9e4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_book_content =
-      IconData(0xe9e5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_book_heart =
-      IconData(0xe9e6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_book_open =
-      IconData(0xe9ef, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_book_reader =
-      IconData(0xe9f0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bookmark =
-      IconData(0xe9e7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bookmark_alt =
-      IconData(0xe9e8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bookmark_alt_minus =
-      IconData(0xe9e9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bookmark_alt_plus =
-      IconData(0xe9ea, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bookmark_heart =
-      IconData(0xe9eb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bookmark_minus =
-      IconData(0xe9ec, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bookmark_plus =
-      IconData(0xe9ed, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bookmarks =
-      IconData(0xe9ee, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_border_all =
-      IconData(0xe9f1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_border_bottom =
-      IconData(0xe9f2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_border_inner =
-      IconData(0xe9f3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_border_left =
-      IconData(0xe9f4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_border_none =
-      IconData(0xe9f5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_border_outer =
-      IconData(0xe9f6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_border_radius =
-      IconData(0xe9f7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_border_right =
-      IconData(0xe9f8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_border_top =
-      IconData(0xe9f9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bot =
-      IconData(0xe9fa, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bowl_hot =
-      IconData(0xef0e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bowl_rice =
-      IconData(0xef0f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bowling_ball =
-      IconData(0xe9fb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_box =
-      IconData(0xe9fc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bracket =
-      IconData(0xe9fd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_braille =
-      IconData(0xe9fe, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_brain =
-      IconData(0xe9ff, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_briefcase =
-      IconData(0xea00, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_briefcase_alt =
-      IconData(0xea01, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_briefcase_alt_2 =
-      IconData(0xea02, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_brightness =
-      IconData(0xea03, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_brightness_half =
-      IconData(0xea04, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_broadcast =
-      IconData(0xea05, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_brush =
-      IconData(0xea06, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_brush_alt =
-      IconData(0xea07, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bug =
-      IconData(0xea08, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bug_alt =
-      IconData(0xea09, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_building =
-      IconData(0xea0a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_building_house =
-      IconData(0xea0b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_buildings =
-      IconData(0xea0c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bulb =
-      IconData(0xea0d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bullseye =
-      IconData(0xea0e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_buoy =
-      IconData(0xea0f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bus =
-      IconData(0xea10, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_bus_school =
-      IconData(0xea11, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cabinet =
-      IconData(0xea12, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cable_car =
-      IconData(0xef10, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cake =
-      IconData(0xea13, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_calculator =
-      IconData(0xea14, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_calendar =
-      IconData(0xea15, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_calendar_alt =
-      IconData(0xea16, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_calendar_check =
-      IconData(0xea17, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_calendar_edit =
-      IconData(0xea18, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_calendar_event =
-      IconData(0xea19, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_calendar_exclamation =
-      IconData(0xea1a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_calendar_heart =
-      IconData(0xea1b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_calendar_minus =
-      IconData(0xea1c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_calendar_plus =
-      IconData(0xea1d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_calendar_star =
-      IconData(0xea1e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_calendar_week =
-      IconData(0xea1f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_calendar_x =
-      IconData(0xea20, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_camera =
-      IconData(0xea21, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_camera_home =
-      IconData(0xea22, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_camera_movie =
-      IconData(0xea23, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_camera_off =
-      IconData(0xea24, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_candles =
-      IconData(0xef11, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_capsule =
-      IconData(0xea25, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_captions =
-      IconData(0xea26, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_car =
-      IconData(0xea27, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_card =
-      IconData(0xea28, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_caret_down =
-      IconData(0xea29, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_caret_down_circle =
-      IconData(0xea2a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_caret_down_square =
-      IconData(0xea2b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_caret_left =
-      IconData(0xea2c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_caret_left_circle =
-      IconData(0xea2d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_caret_left_square =
-      IconData(0xea2e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_caret_right =
-      IconData(0xea2f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_caret_right_circle =
-      IconData(0xea30, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_caret_right_square =
-      IconData(0xea31, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_caret_up =
-      IconData(0xea32, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_caret_up_circle =
-      IconData(0xea33, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_caret_up_square =
-      IconData(0xea34, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_carousel =
-      IconData(0xea35, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cart =
-      IconData(0xea36, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cart_add =
-      IconData(0xef30, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cart_alt =
-      IconData(0xea37, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cart_download =
-      IconData(0xef31, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cast =
-      IconData(0xea38, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_category =
-      IconData(0xea39, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_category_alt =
-      IconData(0xea3a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cctv =
-      IconData(0xea3b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_certification =
-      IconData(0xea3c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chair =
-      IconData(0xea3d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chalkboard =
-      IconData(0xea3e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chart =
-      IconData(0xea3f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chat =
-      IconData(0xea40, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_check =
-      IconData(0xea41, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_check_circle =
-      IconData(0xea46, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_check_double =
-      IconData(0xea47, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_check_shield =
-      IconData(0xea48, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_check_square =
-      IconData(0xea49, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_checkbox =
-      IconData(0xea42, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_checkbox_checked =
-      IconData(0xea43, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_checkbox_minus =
-      IconData(0xea44, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_checkbox_square =
-      IconData(0xea45, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cheese =
-      IconData(0xef2f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chevron_down =
-      IconData(0xea4a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chevron_down_circle =
-      IconData(0xea4b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chevron_down_square =
-      IconData(0xea4c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chevron_left =
-      IconData(0xea4d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chevron_left_circle =
-      IconData(0xea4e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chevron_left_square =
-      IconData(0xea4f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chevron_right =
-      IconData(0xea50, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chevron_right_circle =
-      IconData(0xea51, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chevron_right_square =
-      IconData(0xea52, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chevron_up =
-      IconData(0xea57, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chevron_up_circle =
-      IconData(0xea58, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chevron_up_square =
-      IconData(0xea59, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chevrons_down =
-      IconData(0xea53, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chevrons_left =
-      IconData(0xea54, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chevrons_right =
-      IconData(0xea55, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chevrons_up =
-      IconData(0xea56, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_child =
-      IconData(0xef48, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_chip =
-      IconData(0xea5a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_church =
-      IconData(0xea5b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_circle =
-      IconData(0xea5c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_circle_half =
-      IconData(0xef12, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_circle_quarter =
-      IconData(0xef13, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_circle_three_quarter =
-      IconData(0xef14, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_clinic =
-      IconData(0xea5d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_clipboard =
-      IconData(0xea5e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_closet =
-      IconData(0xea5f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cloud =
-      IconData(0xea60, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cloud_download =
-      IconData(0xea61, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cloud_drizzle =
-      IconData(0xea62, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cloud_light_rain =
-      IconData(0xea64, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cloud_lightning =
-      IconData(0xea63, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cloud_rain =
-      IconData(0xea65, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cloud_snow =
-      IconData(0xea66, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cloud_upload =
-      IconData(0xea67, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_code =
-      IconData(0xea68, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_code_alt =
-      IconData(0xea69, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_code_block =
-      IconData(0xea6a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_code_curly =
-      IconData(0xea6b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_coffee =
-      IconData(0xea6c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_coffee_togo =
-      IconData(0xea6d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cog =
-      IconData(0xea6e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_coin =
-      IconData(0xea6f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_coin_stack =
-      IconData(0xea70, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_collapse =
-      IconData(0xea71, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_collapse_alt =
-      IconData(0xe994, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_collapse_horizontal =
-      IconData(0xe995, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_collapse_vertical =
-      IconData(0xe996, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_collection =
-      IconData(0xea72, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_color =
-      IconData(0xef3c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_color_fill =
-      IconData(0xea73, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_columns =
-      IconData(0xea74, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_command =
-      IconData(0xea75, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_comment =
-      IconData(0xea76, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_comment_add =
-      IconData(0xea77, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_comment_check =
-      IconData(0xea78, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_comment_detail =
-      IconData(0xea79, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_comment_dots =
-      IconData(0xea7a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_comment_edit =
-      IconData(0xea7b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_comment_error =
-      IconData(0xea7c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_comment_minus =
-      IconData(0xea7d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_comment_x =
-      IconData(0xea7e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_compass =
-      IconData(0xea7f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_confused =
-      IconData(0xea80, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_conversation =
-      IconData(0xea81, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cookie =
-      IconData(0xea82, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cool =
-      IconData(0xea83, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_copy =
-      IconData(0xea84, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_copy_alt =
-      IconData(0xea85, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_copyright =
-      IconData(0xea86, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_credit_card =
-      IconData(0xea87, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_credit_card_alt =
-      IconData(0xea88, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_credit_card_front =
-      IconData(0xea89, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cricket_ball =
-      IconData(0xef0c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_crop =
-      IconData(0xea8a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cross =
-      IconData(0xef15, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_crosshair =
-      IconData(0xea8b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_crown =
-      IconData(0xea8c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cube =
-      IconData(0xea8d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cube_alt =
-      IconData(0xea8e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cuboid =
-      IconData(0xea8f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_current_location =
-      IconData(0xea90, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_customize =
-      IconData(0xea91, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cut =
-      IconData(0xea92, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cycling =
-      IconData(0xea93, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_cylinder =
-      IconData(0xea94, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_data =
-      IconData(0xea95, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_desktop =
-      IconData(0xea96, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_detail =
-      IconData(0xea97, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_devices =
-      IconData(0xea98, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dialpad =
-      IconData(0xea99, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dialpad_alt =
-      IconData(0xea9a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_diamond =
-      IconData(0xea9b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dice_1 =
-      IconData(0xea9c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dice_2 =
-      IconData(0xea9d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dice_3 =
-      IconData(0xea9e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dice_4 =
-      IconData(0xea9f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dice_5 =
-      IconData(0xeaa0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dice_6 =
-      IconData(0xeaa1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_directions =
-      IconData(0xeaa2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_disc =
-      IconData(0xeaa3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dish =
-      IconData(0xeaa4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dislike =
-      IconData(0xeaa5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dizzy =
-      IconData(0xeaa6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dna =
-      IconData(0xeaa7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dock_bottom =
-      IconData(0xeaa8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dock_left =
-      IconData(0xeaa9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dock_right =
-      IconData(0xeaaa, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dock_top =
-      IconData(0xeaab, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dollar =
-      IconData(0xeaac, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dollar_circle =
-      IconData(0xeaad, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_donate_blood =
-      IconData(0xeaae, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_donate_heart =
-      IconData(0xeaaf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_door_open =
-      IconData(0xeab0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dots_horizontal =
-      IconData(0xeab1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dots_horizontal_rounded =
-      IconData(0xeab2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dots_vertical =
-      IconData(0xeab3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dots_vertical_rounded =
-      IconData(0xeab4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_doughnut_chart =
-      IconData(0xeab5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_down_arrow =
-      IconData(0xeab6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_down_arrow_alt =
-      IconData(0xeab7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_down_arrow_circle =
-      IconData(0xeab8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_download =
-      IconData(0xeab9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_downvote =
-      IconData(0xeaba, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_drink =
-      IconData(0xeabb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_droplet =
-      IconData(0xeabc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_dumbbell =
-      IconData(0xeabd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_duplicate =
-      IconData(0xeabe, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_edit =
-      IconData(0xeabf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_edit_alt =
-      IconData(0xeac0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_envelope =
-      IconData(0xeac1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_envelope_open =
-      IconData(0xeac2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_equalizer =
-      IconData(0xeac3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_eraser =
-      IconData(0xeac4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_error =
-      IconData(0xeac5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_error_alt =
-      IconData(0xeac6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_error_circle =
-      IconData(0xeac7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_euro =
-      IconData(0xeac8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_exclude =
-      IconData(0xeac9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_exit =
-      IconData(0xeaca, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_exit_fullscreen =
-      IconData(0xeacb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_expand =
-      IconData(0xeacc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_expand_alt =
-      IconData(0xeacd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_expand_horizontal =
-      IconData(0xe997, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_expand_vertical =
-      IconData(0xe998, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_export =
-      IconData(0xeace, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_extension =
-      IconData(0xeacf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_face =
-      IconData(0xead0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_fast_forward =
-      IconData(0xead1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_fast_forward_circle =
-      IconData(0xead2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_female =
-      IconData(0xead3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_female_sign =
-      IconData(0xead4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_file =
-      IconData(0xead5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_file_blank =
-      IconData(0xead6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_file_find =
-      IconData(0xead7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_film =
-      IconData(0xead8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_filter =
-      IconData(0xead9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_filter_alt =
-      IconData(0xeada, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_fingerprint =
-      IconData(0xeadb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_first_aid =
-      IconData(0xeadc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_first_page =
-      IconData(0xeadd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_flag =
-      IconData(0xeade, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_folder =
-      IconData(0xeadf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_folder_minus =
-      IconData(0xeae0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_folder_open =
-      IconData(0xeae1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_folder_plus =
-      IconData(0xeae2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_font =
-      IconData(0xeae3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_font_color =
-      IconData(0xeae4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_font_family =
-      IconData(0xeae5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_font_size =
-      IconData(0xeae6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_food_menu =
-      IconData(0xeae7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_food_tag =
-      IconData(0xeae8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_football =
-      IconData(0xeae9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_fork =
-      IconData(0xef16, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_fridge =
-      IconData(0xeaea, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_fullscreen =
-      IconData(0xeaeb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_game =
-      IconData(0xeaec, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_gas_pump =
-      IconData(0xeaed, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_ghost =
-      IconData(0xeaee, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_gift =
-      IconData(0xeaef, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_git_branch =
-      IconData(0xeaf0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_git_commit =
-      IconData(0xeaf1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_git_compare =
-      IconData(0xeaf2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_git_merge =
-      IconData(0xeaf3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_git_pull_request =
-      IconData(0xeaf4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_git_repo_forked =
-      IconData(0xeaf5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_glasses =
-      IconData(0xeaf6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_glasses_alt =
-      IconData(0xeaf7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_globe =
-      IconData(0xeaf8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_globe_alt =
-      IconData(0xeaf9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_grid =
-      IconData(0xeafa, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_grid_alt =
-      IconData(0xeafb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_grid_horizontal =
-      IconData(0xeafc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_grid_small =
-      IconData(0xeafd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_grid_vertical =
-      IconData(0xeafe, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_group =
-      IconData(0xeaff, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_handicap =
-      IconData(0xeb00, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_happy =
-      IconData(0xeb01, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_happy_alt =
-      IconData(0xeb02, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_happy_beaming =
-      IconData(0xeb03, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_happy_heart_eyes =
-      IconData(0xeb04, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_hard_hat =
-      IconData(0xef2e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_hash =
-      IconData(0xeb05, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_hdd =
-      IconData(0xeb06, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_heading =
-      IconData(0xeb07, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_headphone =
-      IconData(0xeb08, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_health =
-      IconData(0xeb09, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_heart =
-      IconData(0xeb0a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_heart_circle =
-      IconData(0xeb0b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_heart_square =
-      IconData(0xeb0c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_help_circle =
-      IconData(0xeb0d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_hide =
-      IconData(0xeb0e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_highlight =
-      IconData(0xeb0f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_history =
-      IconData(0xeb10, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_hive =
-      IconData(0xeb11, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_home =
-      IconData(0xeb12, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_home_alt =
-      IconData(0xeb13, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_home_alt_2 =
-      IconData(0xef2d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_home_circle =
-      IconData(0xeb14, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_home_heart =
-      IconData(0xeb15, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_home_smile =
-      IconData(0xeb16, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_horizontal_center =
-      IconData(0xeb17, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_horizontal_left =
-      IconData(0xef49, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_horizontal_right =
-      IconData(0xef4a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_hotel =
-      IconData(0xeb18, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_hourglass =
-      IconData(0xeb19, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_id_card =
-      IconData(0xeb1a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_image =
-      IconData(0xeb1b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_image_add =
-      IconData(0xeb1c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_image_alt =
-      IconData(0xeb1d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_images =
-      IconData(0xeb1e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_import =
-      IconData(0xeb1f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_infinite =
-      IconData(0xeb20, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_info_circle =
-      IconData(0xeb21, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_info_square =
-      IconData(0xeb22, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_injection =
-      IconData(0xe999, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_intersect =
-      IconData(0xeb23, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_italic =
-      IconData(0xeb24, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_joystick =
-      IconData(0xeb25, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_joystick_alt =
-      IconData(0xeb26, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_joystick_button =
-      IconData(0xeb27, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_key =
-      IconData(0xeb28, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_knife =
-      IconData(0xef17, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_label =
-      IconData(0xeb29, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_landscape =
-      IconData(0xeb2a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_laptop =
-      IconData(0xeb2b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_last_page =
-      IconData(0xeb2c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_laugh =
-      IconData(0xeb2d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_layer =
-      IconData(0xeb2e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_layer_minus =
-      IconData(0xeb2f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_layer_plus =
-      IconData(0xeb30, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_layout =
-      IconData(0xeb31, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_leaf =
-      IconData(0xe99a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_left_arrow =
-      IconData(0xeb32, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_left_arrow_alt =
-      IconData(0xeb33, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_left_arrow_circle =
-      IconData(0xeb34, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_left_down_arrow_circle =
-      IconData(0xeb35, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_left_indent =
-      IconData(0xeb36, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_left_top_arrow_circle =
-      IconData(0xeb37, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_lemon =
-      IconData(0xef28, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_library =
-      IconData(0xeb38, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_like =
-      IconData(0xeb39, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_line_chart =
-      IconData(0xeb3a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_line_chart_down =
-      IconData(0xeb3b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_link =
-      IconData(0xeb3c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_link_alt =
-      IconData(0xeb3d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_link_external =
-      IconData(0xeb3e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_lira =
-      IconData(0xeb3f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_list_check =
-      IconData(0xeb40, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_list_minus =
-      IconData(0xeb41, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_list_ol =
-      IconData(0xeb42, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_list_plus =
-      IconData(0xeb43, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_list_ul =
-      IconData(0xeb44, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_loader =
-      IconData(0xeb45, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_loader_alt =
-      IconData(0xeb46, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_loader_circle =
-      IconData(0xeb47, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_location_plus =
-      IconData(0xeb48, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_lock =
-      IconData(0xeb49, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_lock_alt =
-      IconData(0xeb4a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_lock_open =
-      IconData(0xeb4b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_lock_open_alt =
-      IconData(0xeb4c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_log_in =
-      IconData(0xeb4d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_log_in_circle =
-      IconData(0xeb4e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_log_out =
-      IconData(0xeb4f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_log_out_circle =
-      IconData(0xeb50, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_low_vision =
-      IconData(0xeb51, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_magnet =
-      IconData(0xeb52, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_mail_send =
-      IconData(0xeb53, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_male =
-      IconData(0xeb54, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_male_female =
-      IconData(0xef24, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_male_sign =
-      IconData(0xeb55, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_map =
-      IconData(0xeb56, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_map_alt =
-      IconData(0xeb57, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_map_pin =
-      IconData(0xeb58, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_mask =
-      IconData(0xeb59, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_math =
-      IconData(0xe99b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_medal =
-      IconData(0xeb5a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_meh =
-      IconData(0xeb5b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_meh_alt =
-      IconData(0xeb5c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_meh_blank =
-      IconData(0xeb5d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_memory_card =
-      IconData(0xeb5e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_menu =
-      IconData(0xeb5f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_menu_alt_left =
-      IconData(0xef5b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_menu_alt_right =
-      IconData(0xeb61, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_merge =
-      IconData(0xeb62, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message =
-      IconData(0xeb63, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_add =
-      IconData(0xeb64, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_alt =
-      IconData(0xeb65, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_alt_add =
-      IconData(0xeb66, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_alt_check =
-      IconData(0xeb67, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_alt_detail =
-      IconData(0xeb68, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_alt_dots =
-      IconData(0xeb69, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_alt_edit =
-      IconData(0xeb6a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_alt_error =
-      IconData(0xeb6b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_alt_minus =
-      IconData(0xeb6c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_alt_x =
-      IconData(0xeb6d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_check =
-      IconData(0xeb6e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_detail =
-      IconData(0xeb6f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_dots =
-      IconData(0xeb70, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_edit =
-      IconData(0xeb71, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_error =
-      IconData(0xeb72, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_minus =
-      IconData(0xeb73, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_rounded =
-      IconData(0xeb74, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_rounded_add =
-      IconData(0xeb75, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_rounded_check =
-      IconData(0xeb76, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_rounded_detail =
-      IconData(0xeb77, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_rounded_dots =
-      IconData(0xeb78, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_rounded_edit =
-      IconData(0xef5c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_rounded_error =
-      IconData(0xeb7a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_rounded_minus =
-      IconData(0xeb7b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_rounded_x =
-      IconData(0xeb7c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_square =
-      IconData(0xeb7d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_square_add =
-      IconData(0xeb7e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_square_check =
-      IconData(0xeb7f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_square_detail =
-      IconData(0xeb80, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_square_dots =
-      IconData(0xeb81, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_square_edit =
-      IconData(0xeb82, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_square_error =
-      IconData(0xeb83, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_square_minus =
-      IconData(0xeb84, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_square_x =
-      IconData(0xeb85, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_message_x =
-      IconData(0xeb86, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_meteor =
-      IconData(0xeb87, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_microchip =
-      IconData(0xeb88, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_microphone =
-      IconData(0xeb89, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_microphone_off =
-      IconData(0xeb8a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_minus =
-      IconData(0xeb8b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_minus_back =
-      IconData(0xeb8c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_minus_circle =
-      IconData(0xeb8d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_minus_front =
-      IconData(0xeb8e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_mobile =
-      IconData(0xeb8f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_mobile_alt =
-      IconData(0xeb90, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_mobile_landscape =
-      IconData(0xeb91, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_mobile_vibration =
-      IconData(0xef5d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_money =
-      IconData(0xeb93, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_money_withdraw =
-      IconData(0xef18, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_moon =
-      IconData(0xeb94, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_mouse =
-      IconData(0xeb95, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_mouse_alt =
-      IconData(0xeb96, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_move =
-      IconData(0xeb97, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_move_horizontal =
-      IconData(0xeb98, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_move_vertical =
-      IconData(0xeb99, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_movie =
-      IconData(0xeb9a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_movie_play =
-      IconData(0xeb9b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_music =
-      IconData(0xeb9c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_navigation =
-      IconData(0xeb9d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_network_chart =
-      IconData(0xeb9e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_news =
-      IconData(0xeb9f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_no_entry =
-      IconData(0xeba0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_no_signal =
-      IconData(0xef32, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_note =
-      IconData(0xeba1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_notepad =
-      IconData(0xeba2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_notification =
-      IconData(0xeba3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_notification_off =
-      IconData(0xeba4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_objects_horizontal_center =
-      IconData(0xef4b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_objects_horizontal_left =
-      IconData(0xef4c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_objects_horizontal_right =
-      IconData(0xef4d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_objects_vertical_bottom =
-      IconData(0xef4e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_objects_vertical_center =
-      IconData(0xef4f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_objects_vertical_top =
-      IconData(0xef50, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_outline =
-      IconData(0xeba5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_package =
-      IconData(0xeba6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_paint =
-      IconData(0xeba7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_paint_roll =
-      IconData(0xeba8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_palette =
-      IconData(0xeba9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_paper_plane =
-      IconData(0xef61, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_paperclip =
-      IconData(0xebaa, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_paragraph =
-      IconData(0xebac, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_party =
-      IconData(0xe99c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_paste =
-      IconData(0xebad, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_pause =
-      IconData(0xebae, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_pause_circle =
-      IconData(0xebaf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_pen =
-      IconData(0xebb0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_pencil =
-      IconData(0xebb1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_phone =
-      IconData(0xebb2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_phone_call =
-      IconData(0xebb3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_phone_incoming =
-      IconData(0xebb4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_phone_off =
-      IconData(0xebb5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_phone_outgoing =
-      IconData(0xebb6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_photo_album =
-      IconData(0xebb7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_pie_chart =
-      IconData(0xebb8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_pie_chart_alt =
-      IconData(0xebb9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_pie_chart_alt_2 =
-      IconData(0xebba, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_pin =
-      IconData(0xebbb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_planet =
-      IconData(0xebbc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_play =
-      IconData(0xebbd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_play_circle =
-      IconData(0xebbe, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_plug =
-      IconData(0xebbf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_plus =
-      IconData(0xebc0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_plus_circle =
-      IconData(0xebc1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_plus_medical =
-      IconData(0xebc2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_podcast =
-      IconData(0xebc3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_pointer =
-      IconData(0xef5e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_poll =
-      IconData(0xebc5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_polygon =
-      IconData(0xebc6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_popsicle =
-      IconData(0xef19, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_pound =
-      IconData(0xebc7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_power_off =
-      IconData(0xebc8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_printer =
-      IconData(0xebc9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_pulse =
-      IconData(0xebca, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_purchase_tag =
-      IconData(0xebcb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_purchase_tag_alt =
-      IconData(0xebcc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_pyramid =
-      IconData(0xebcd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_qr =
-      IconData(0xebce, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_qr_scan =
-      IconData(0xebcf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_question_mark =
-      IconData(0xebd0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_radar =
-      IconData(0xebd1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_radio =
-      IconData(0xebd2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_radio_circle =
-      IconData(0xebd3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_radio_circle_marked =
-      IconData(0xebd4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_receipt =
-      IconData(0xebd5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_rectangle =
-      IconData(0xebd6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_recycle =
-      IconData(0xebd7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_redo =
-      IconData(0xebd8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_reflect_horizontal =
-      IconData(0xef3a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_reflect_vertical =
-      IconData(0xef3b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_refresh =
-      IconData(0xebd9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_registered =
-      IconData(0xebda, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_rename =
-      IconData(0xebdb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_repeat =
-      IconData(0xebdc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_reply =
-      IconData(0xef5f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_reply_all =
-      IconData(0xebde, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_repost =
-      IconData(0xebdf, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_reset =
-      IconData(0xebe0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_restaurant =
-      IconData(0xebe1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_revision =
-      IconData(0xebe2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_rewind =
-      IconData(0xebe3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_rewind_circle =
-      IconData(0xebe4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_rfid =
-      IconData(0xef51, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_right_arrow =
-      IconData(0xebe5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_right_arrow_alt =
-      IconData(0xebe6, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_right_arrow_circle =
-      IconData(0xebe7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_right_down_arrow_circle =
-      IconData(0xebe8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_right_indent =
-      IconData(0xebe9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_right_top_arrow_circle =
-      IconData(0xebea, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_rocket =
-      IconData(0xebeb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_rotate_left =
-      IconData(0xebec, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_rotate_right =
-      IconData(0xebed, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_rss =
-      IconData(0xebee, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_ruble =
-      IconData(0xebef, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_ruler =
-      IconData(0xebf0, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_run =
-      IconData(0xebf1, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_rupee =
-      IconData(0xebf2, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_sad =
-      IconData(0xebf3, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_save =
-      IconData(0xebf4, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_scan =
-      IconData(0xebf5, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_scatter_chart =
-      IconData(0xef1a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_screenshot =
-      IconData(0xef60, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_search =
-      IconData(0xebf7, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_search_alt =
-      IconData(0xebf8, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_search_alt_2 =
-      IconData(0xebf9, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_select_multiple =
-      IconData(0xebfb, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_selection =
-      IconData(0xebfa, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_send =
-      IconData(0xebfc, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_server =
-      IconData(0xebfd, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_shape_circle =
-      IconData(0xebfe, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_shape_polygon =
-      IconData(0xebff, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_shape_square =
-      IconData(0xec00, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_shape_triangle =
-      IconData(0xec01, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_share =
-      IconData(0xec02, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_share_alt =
-      IconData(0xec03, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_shekel =
-      IconData(0xec04, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_shield =
-      IconData(0xec05, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_shield_alt =
-      IconData(0xec06, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_shield_alt_2 =
-      IconData(0xec07, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_shield_minus =
-      IconData(0xef52, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_shield_plus =
-      IconData(0xef53, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_shield_quarter =
-      IconData(0xec08, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_shield_x =
-      IconData(0xec09, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_shocked =
-      IconData(0xec0a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_shopping_bag =
-      IconData(0xec0b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_show =
-      IconData(0xec0c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_show_alt =
-      IconData(0xec0d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_shower =
-      IconData(0xef54, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_shuffle =
-      IconData(0xec0e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_sidebar =
-      IconData(0xec0f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_signal_1 =
-      IconData(0xef33, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_signal_2 =
-      IconData(0xef34, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_signal_3 =
-      IconData(0xef35, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_signal_4 =
-      IconData(0xef36, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_signal_5 =
-      IconData(0xef37, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_sitemap =
-      IconData(0xec10, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_skip_next =
-      IconData(0xec11, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_skip_next_circle =
-      IconData(0xec12, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_skip_previous =
-      IconData(0xec13, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_skip_previous_circle =
-      IconData(0xec14, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_sleepy =
-      IconData(0xec15, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_slider =
-      IconData(0xec16, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_slider_alt =
-      IconData(0xec17, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_slideshow =
-      IconData(0xec18, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_smile =
-      IconData(0xec19, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_sort =
-      IconData(0xec1a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_sort_a_z =
-      IconData(0xec1c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_sort_alt_2 =
-      IconData(0xec1b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_sort_down =
-      IconData(0xec1d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_sort_up =
-      IconData(0xec1e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_sort_z_a =
-      IconData(0xec1f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_spa =
-      IconData(0xec20, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_space_bar =
-      IconData(0xec21, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_speaker =
-      IconData(0xec22, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_spray_can =
-      IconData(0xec23, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_spreadsheet =
-      IconData(0xec24, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_square =
-      IconData(0xec25, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_square_rounded =
-      IconData(0xec26, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_star =
-      IconData(0xec27, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_station =
-      IconData(0xec28, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_stats =
-      IconData(0xec29, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_sticker =
-      IconData(0xec2a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_stop =
-      IconData(0xec2b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_stop_circle =
-      IconData(0xec2c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_stopwatch =
-      IconData(0xec2d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_store =
-      IconData(0xec2e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_store_alt =
-      IconData(0xec2f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_street_view =
-      IconData(0xec30, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_strikethrough =
-      IconData(0xec31, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_subdirectory_left =
-      IconData(0xec32, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_subdirectory_right =
-      IconData(0xec33, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_sun =
-      IconData(0xec34, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_support =
-      IconData(0xec35, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_sushi =
-      IconData(0xef55, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_swim =
-      IconData(0xec36, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_sync =
-      IconData(0xec37, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_tab =
-      IconData(0xec38, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_table =
-      IconData(0xec39, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_tachometer =
-      IconData(0xec3a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_tag =
-      IconData(0xec3b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_tag_alt =
-      IconData(0xec3c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_target_lock =
-      IconData(0xec3d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_task =
-      IconData(0xec3e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_task_x =
-      IconData(0xec3f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_taxi =
-      IconData(0xec40, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_tennis_ball =
-      IconData(0xec41, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_terminal =
-      IconData(0xec42, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_test_tube =
-      IconData(0xec43, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_text =
-      IconData(0xec44, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_time =
-      IconData(0xec45, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_time_five =
-      IconData(0xec46, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_timer =
-      IconData(0xec47, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_tired =
-      IconData(0xec48, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_toggle_left =
-      IconData(0xec49, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_toggle_right =
-      IconData(0xec4a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_tone =
-      IconData(0xec4b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_traffic_cone =
-      IconData(0xec4c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_train =
-      IconData(0xec4d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_transfer =
-      IconData(0xec4e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_transfer_alt =
-      IconData(0xec4f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_trash =
-      IconData(0xec50, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_trash_alt =
-      IconData(0xec51, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_trending_down =
-      IconData(0xec52, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_trending_up =
-      IconData(0xec53, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_trim =
-      IconData(0xec54, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_trip =
-      IconData(0xec55, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_trophy =
-      IconData(0xec56, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_tv =
-      IconData(0xec57, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_underline =
-      IconData(0xec58, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_undo =
-      IconData(0xec59, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_unite =
-      IconData(0xec5a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_universal_access =
-      IconData(0xef56, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_unlink =
-      IconData(0xec5b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_up_arrow =
-      IconData(0xec5c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_up_arrow_alt =
-      IconData(0xec5d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_up_arrow_circle =
-      IconData(0xec5e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_upload =
-      IconData(0xec5f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_upside_down =
-      IconData(0xec60, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_upvote =
-      IconData(0xec61, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_usb =
-      IconData(0xec62, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_user =
-      IconData(0xec63, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_user_check =
-      IconData(0xec64, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_user_circle =
-      IconData(0xec65, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_user_minus =
-      IconData(0xec66, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_user_pin =
-      IconData(0xec67, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_user_plus =
-      IconData(0xec68, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_user_voice =
-      IconData(0xec69, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_user_x =
-      IconData(0xec6a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_vector =
-      IconData(0xec6b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_vertical_bottom =
-      IconData(0xef57, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_vertical_center =
-      IconData(0xec6c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_vertical_top =
-      IconData(0xef58, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_vial =
-      IconData(0xec6d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_video =
-      IconData(0xec6e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_video_off =
-      IconData(0xec6f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_video_plus =
-      IconData(0xec70, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_video_recording =
-      IconData(0xec71, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_voicemail =
-      IconData(0xec72, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_volume =
-      IconData(0xec73, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_volume_full =
-      IconData(0xec74, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_volume_low =
-      IconData(0xec75, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_volume_mute =
-      IconData(0xec76, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_walk =
-      IconData(0xec77, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_wallet =
-      IconData(0xec78, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_wallet_alt =
-      IconData(0xec79, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_water =
-      IconData(0xec7a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_webcam =
-      IconData(0xec7b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_wifi =
-      IconData(0xec7c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_wifi_0 =
-      IconData(0xec7d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_wifi_1 =
-      IconData(0xec7e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_wifi_2 =
-      IconData(0xec7f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_wifi_off =
-      IconData(0xec80, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_wind =
-      IconData(0xec81, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_window =
-      IconData(0xec82, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_window_alt =
-      IconData(0xec83, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_window_close =
-      IconData(0xec84, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_window_open =
-      IconData(0xec85, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_windows =
-      IconData(0xec86, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_wine =
-      IconData(0xec87, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_wink_smile =
-      IconData(0xec88, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_wink_tongue =
-      IconData(0xec89, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_won =
-      IconData(0xec8a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_world =
-      IconData(0xec8b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_wrench =
-      IconData(0xec8c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_x =
-      IconData(0xec8d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_x_circle =
-      IconData(0xec8e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_yen =
-      IconData(0xec8f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_zoom_in =
-      IconData(0xec90, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bx_zoom_out =
-      IconData(0xec91, fontFamily: _fontFam, fontPackage: _fontPackage);
-    static const IconData bxl_500px =
-      IconData(0xe909, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_99designs =
-      IconData(0xe908, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_adobe =
-      IconData(0xe90a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_airbnb =
-      IconData(0xe90b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_algolia =
-      IconData(0xe90c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_amazon =
-      IconData(0xe90d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_android =
-      IconData(0xe90e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_angular =
-      IconData(0xe90f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_apple =
-      IconData(0xe910, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_audible =
-      IconData(0xe911, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_aws =
-      IconData(0xe912, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_baidu =
-      IconData(0xe913, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_behance =
-      IconData(0xe914, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_bing =
-      IconData(0xe915, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_bitcoin =
-      IconData(0xe916, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_blender =
-      IconData(0xe917, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_blogger =
-      IconData(0xe918, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_bootstrap =
-      IconData(0xe919, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_c_plus_plus =
-      IconData(0xe91c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_chrome =
-      IconData(0xe91a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_codepen =
-      IconData(0xe91b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_creative_commons =
-      IconData(0xe91d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_css3 =
-      IconData(0xe91e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_dailymotion =
-      IconData(0xe91f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_deezer =
-      IconData(0xef3f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_dev_to =
-      IconData(0xe921, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_deviantart =
-      IconData(0xe920, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_digg =
-      IconData(0xe922, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_digitalocean =
-      IconData(0xe923, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_discord =
-      IconData(0xe924, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_discord_alt =
-      IconData(0xe925, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_discourse =
-      IconData(0xe926, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_django =
-      IconData(0xe927, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_docker =
-      IconData(0xe928, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_dribbble =
-      IconData(0xe929, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_dropbox =
-      IconData(0xe92a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_drupal =
-      IconData(0xe92b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_ebay =
-      IconData(0xe92c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_edge =
-      IconData(0xe92d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_etsy =
-      IconData(0xe92e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_facebook =
-      IconData(0xe92f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_facebook_circle =
-      IconData(0xe930, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_facebook_square =
-      IconData(0xe931, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_figma =
-      IconData(0xe932, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_firebase =
-      IconData(0xe933, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_firefox =
-      IconData(0xe934, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_flask =
-      IconData(0xe907, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_flickr =
-      IconData(0xe935, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_flickr_square =
-      IconData(0xe936, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_flutter =
-      IconData(0xe937, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_foursquare =
-      IconData(0xe938, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_git =
-      IconData(0xe939, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_github =
-      IconData(0xe93a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_gitlab =
-      IconData(0xe93b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_gmail =
-      IconData(0xe906, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_go_lang =
-      IconData(0xe905, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_google =
-      IconData(0xe93c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_google_cloud =
-      IconData(0xe93d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_google_plus =
-      IconData(0xe93e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_google_plus_circle =
-      IconData(0xe93f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_graphql =
-      IconData(0xef59, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_heroku =
-      IconData(0xe904, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_html5 =
-      IconData(0xe940, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_imdb =
-      IconData(0xe941, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_instagram =
-      IconData(0xe942, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_instagram_alt =
-      IconData(0xe943, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_internet_explorer =
-      IconData(0xe944, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_invision =
-      IconData(0xe945, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_java =
-      IconData(0xe903, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_javascript =
-      IconData(0xe946, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_joomla =
-      IconData(0xe947, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_jquery =
-      IconData(0xe948, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_jsfiddle =
-      IconData(0xe949, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_kickstarter =
-      IconData(0xe94a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_kubernetes =
-      IconData(0xe94b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_less =
-      IconData(0xe94c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_linkedin =
-      IconData(0xe94d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_linkedin_square =
-      IconData(0xe94e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_magento =
-      IconData(0xe94f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_mailchimp =
-      IconData(0xe950, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_markdown =
-      IconData(0xe951, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_mastercard =
-      IconData(0xe952, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_mastodon =
-      IconData(0xe953, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_medium =
-      IconData(0xe954, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_medium_old =
-      IconData(0xe955, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_medium_square =
-      IconData(0xe956, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_messenger =
-      IconData(0xe957, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_meta =
-      IconData(0xef27, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_microsoft =
-      IconData(0xe958, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_microsoft_teams =
-      IconData(0xe959, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_mongodb =
-      IconData(0xef3d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_netlify =
-      IconData(0xe902, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_nodejs =
-      IconData(0xe95a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_ok_ru =
-      IconData(0xe95b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_opera =
-      IconData(0xe95c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_patreon =
-      IconData(0xe95d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_paypal =
-      IconData(0xe95e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_periscope =
-      IconData(0xe95f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_php =
-      IconData(0xe960, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_pinterest =
-      IconData(0xe961, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_pinterest_alt =
-      IconData(0xe962, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_play_store =
-      IconData(0xe963, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_pocket =
-      IconData(0xe964, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_postgresql =
-      IconData(0xef3e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_product_hunt =
-      IconData(0xe965, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_python =
-      IconData(0xe966, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_quora =
-      IconData(0xe967, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_react =
-      IconData(0xe968, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_redbubble =
-      IconData(0xe969, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_reddit =
-      IconData(0xe96a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_redux =
-      IconData(0xe96b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_sass =
-      IconData(0xe96c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_shopify =
-      IconData(0xe96d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_sketch =
-      IconData(0xe96e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_skype =
-      IconData(0xe96f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_slack =
-      IconData(0xe970, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_slack_old =
-      IconData(0xe971, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_snapchat =
-      IconData(0xe972, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_soundcloud =
-      IconData(0xe973, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_spotify =
-      IconData(0xe974, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_spring_boot =
-      IconData(0xe975, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_squarespace =
-      IconData(0xe976, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_stack_overflow =
-      IconData(0xe977, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_steam =
-      IconData(0xe978, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_stripe =
-      IconData(0xe979, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_tailwind_css =
-      IconData(0xe97a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_telegram =
-      IconData(0xe97b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_tiktok =
-      IconData(0xe97c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_trello =
-      IconData(0xe97d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_trip_advisor =
-      IconData(0xe97e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_tumblr =
-      IconData(0xe97f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_tux =
-      IconData(0xe980, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_twitch =
-      IconData(0xe981, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_twitter =
-      IconData(0xe982, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_typescript =
-      IconData(0xef5a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_unity =
-      IconData(0xe983, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_unsplash =
-      IconData(0xe984, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_upwork =
-      IconData(0xe901, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_venmo =
-      IconData(0xe900, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_vimeo =
-      IconData(0xe985, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_visa =
-      IconData(0xe986, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_visual_studio =
-      IconData(0xe987, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_vk =
-      IconData(0xe988, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_vuejs =
-      IconData(0xe989, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_whatsapp =
-      IconData(0xe98a, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_whatsapp_square =
-      IconData(0xe98b, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_wikipedia =
-      IconData(0xe98c, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_windows =
-      IconData(0xe98d, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_wix =
-      IconData(0xe98e, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_wordpress =
-      IconData(0xe98f, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_xing =
-      IconData(0xef38, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_yahoo =
-      IconData(0xe990, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_yelp =
-      IconData(0xe991, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_youtube =
-      IconData(0xe992, fontFamily: _fontFam, fontPackage: _fontPackage);
-  static const IconData bxl_zoom =
-      IconData(0xe993, fontFamily: _fontFam, fontPackage: _fontPackage);
-  }
-  
+  // Regular icons
+  static const IconData bx_8_ball = IconData(0xf101, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_a_arrow_down = IconData(0xf102, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_a_arrow_up = IconData(0xf103, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_accessibility = IconData(0xf104, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_acorn = IconData(0xf105, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_address_book = IconData(0xf106, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_air = IconData(0xf108, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_air_conditioner = IconData(0xf107, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_airplay = IconData(0xf109, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_alarm = IconData(0xf111, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_alarm_alt = IconData(0xf10a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_alarm_check = IconData(0xf10b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_alarm_exclamation = IconData(0xf10c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_alarm_minus = IconData(0xf10d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_alarm_plus = IconData(0xf10e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_alarm_slash = IconData(0xf10f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_alarm_z = IconData(0xf110, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_album_covers = IconData(0xf112, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_alert_circle = IconData(0xf113, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_alert_octagon = IconData(0xf114, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_alert_shield = IconData(0xf115, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_alert_square = IconData(0xf116, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_alert_triangle = IconData(0xf117, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_alien = IconData(0xf118, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_align_center = IconData(0xf119, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_align_horizontal_justify_center = IconData(0xf11a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_align_horizontal_justify_end = IconData(0xf11b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_align_horizontal_justify_start = IconData(0xf11c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_align_horizontal_space_between = IconData(0xf11d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_align_justify = IconData(0xf11e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_align_left = IconData(0xf11f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_align_right = IconData(0xf120, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_align_vertical_justify_center = IconData(0xf121, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_align_vertical_justify_end = IconData(0xf122, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_align_vertical_justify_start = IconData(0xf123, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_align_vertical_space_between = IconData(0xf124, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ambulance = IconData(0xf125, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ampersand = IconData(0xf126, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_analyze = IconData(0xf127, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_anchor = IconData(0xf128, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_angle = IconData(0xf129, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_angry = IconData(0xf12a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_animation_bounce = IconData(0xf12b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_announcement = IconData(0xf12c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_apartment = IconData(0xf12d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_apple_full = IconData(0xf12e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_approximate = IconData(0xf12f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_apps = IconData(0xf131, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_apps_alt = IconData(0xf130, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arch = IconData(0xf132, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_archive = IconData(0xf136, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_archive_alt = IconData(0xf133, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_archive_arrow_down = IconData(0xf134, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_archive_arrow_up = IconData(0xf135, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_area = IconData(0xf137, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_big_down = IconData(0xf139, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_big_down_line = IconData(0xf138, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_big_left = IconData(0xf13b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_big_left_line = IconData(0xf13a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_big_right = IconData(0xf13d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_big_right_line = IconData(0xf13c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_big_up = IconData(0xf13f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_big_up_line = IconData(0xf13e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_cross = IconData(0xf140, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down = IconData(0xf156, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_a_z = IconData(0xf141, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_circle = IconData(0xf142, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_left = IconData(0xf148, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_left_circle = IconData(0xf143, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_left_square = IconData(0xf144, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_left_stroke = IconData(0xf147, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_left_stroke_circle = IconData(0xf145, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_left_stroke_square = IconData(0xf146, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_narrow_wide = IconData(0xf149, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_right = IconData(0xf14f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_right_circle = IconData(0xf14a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_right_square = IconData(0xf14b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_right_stroke = IconData(0xf14e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_right_stroke_circle = IconData(0xf14c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_right_stroke_square = IconData(0xf14d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_square = IconData(0xf150, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_stroke = IconData(0xf153, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_stroke_circle = IconData(0xf151, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_stroke_square = IconData(0xf152, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_up = IconData(0xf154, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_down_wide_narrow = IconData(0xf155, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_from_bottom = IconData(0xf158, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_from_bottom_stroke = IconData(0xf157, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_from_left = IconData(0xf15a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_from_left_stroke = IconData(0xf159, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_from_right = IconData(0xf15c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_from_right_stroke = IconData(0xf15b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_from_top = IconData(0xf15e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_from_top_stroke = IconData(0xf15d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_down_circle_half = IconData(0xf15f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_down_left_circle = IconData(0xf160, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_down_left_square = IconData(0xf161, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_down_left_stroke_circle = IconData(0xf162, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_down_left_stroke_square = IconData(0xf163, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_down_right_circle = IconData(0xf164, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_down_right_square = IconData(0xf165, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_down_right_stroke_circle = IconData(0xf166, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_down_right_stroke_square = IconData(0xf167, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_down_square_half = IconData(0xf168, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_down_stroke_circle_half = IconData(0xf169, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_left_circle_half = IconData(0xf16a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_left_square_half = IconData(0xf16b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_left_stroke_circle_half = IconData(0xf16c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_right_circle_half = IconData(0xf16d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_right_square_half = IconData(0xf16e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_right_stroke_circle_half = IconData(0xf16f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_up_circle_half = IconData(0xf170, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_up_left_circle = IconData(0xf171, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_up_left_square = IconData(0xf172, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_up_left_stroke_circle = IconData(0xf173, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_up_left_stroke_square = IconData(0xf174, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_up_right_circle = IconData(0xf175, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_up_right_square = IconData(0xf176, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_up_right_stroke_circle = IconData(0xf177, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_up_right_stroke_square = IconData(0xf178, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_up_square_half = IconData(0xf179, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_in_up_stroke_circle_half = IconData(0xf17a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_left = IconData(0xf181, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_left_circle = IconData(0xf17b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_left_right = IconData(0xf17c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_left_square = IconData(0xf17d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_left_stroke = IconData(0xf180, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_left_stroke_circle = IconData(0xf17e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_left_stroke_square = IconData(0xf17f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_down_circle_half = IconData(0xf182, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_down_left_circle = IconData(0xf183, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_down_left_square = IconData(0xf184, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_down_left_stroke_circle = IconData(0xf185, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_down_left_stroke_square = IconData(0xf186, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_down_right_circle = IconData(0xf187, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_down_right_square = IconData(0xf188, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_down_right_stroke_circle = IconData(0xf189, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_down_right_stroke_square = IconData(0xf18a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_down_square_half = IconData(0xf18b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_down_stroke_circle_half = IconData(0xf18c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_left_circle_half = IconData(0xf18d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_left_square_half = IconData(0xf18e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_left_stroke_circle_half = IconData(0xf18f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_right_circle_half = IconData(0xf190, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_right_square_half = IconData(0xf191, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_right_stroke_circle_half = IconData(0xf192, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_up_circle_half = IconData(0xf193, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_up_left_circle = IconData(0xf194, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_up_left_square = IconData(0xf195, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_up_left_stroke_circle = IconData(0xf196, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_up_left_stroke_square = IconData(0xf197, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_up_right_circle = IconData(0xf198, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_up_right_square = IconData(0xf199, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_up_right_stroke_circle = IconData(0xf19a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_up_right_stroke_square = IconData(0xf19b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_up_square_half = IconData(0xf19c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_out_up_stroke_circle_half = IconData(0xf19d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_right = IconData(0xf1a4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_right_circle = IconData(0xf19e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_right_left = IconData(0xf19f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_right_square = IconData(0xf1a0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_right_stroke = IconData(0xf1a3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_right_stroke_circle = IconData(0xf1a1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_right_stroke_square = IconData(0xf1a2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_s_down = IconData(0xf1a5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_s_left = IconData(0xf1a6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_s_right = IconData(0xf1a7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_s_up = IconData(0xf1a8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_to_bottom = IconData(0xf1aa, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_to_bottom_stroke = IconData(0xf1a9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_to_left = IconData(0xf1ac, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_to_left_stroke = IconData(0xf1ab, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_to_right = IconData(0xf1ae, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_to_right_stroke = IconData(0xf1ad, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_to_top = IconData(0xf1b0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_to_top_stroke = IconData(0xf1af, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up = IconData(0xf1c6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_a_z = IconData(0xf1b1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_circle = IconData(0xf1b2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_down = IconData(0xf1b3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_left = IconData(0xf1b9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_left_circle = IconData(0xf1b4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_left_square = IconData(0xf1b5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_left_stroke = IconData(0xf1b8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_left_stroke_circle = IconData(0xf1b6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_left_stroke_square = IconData(0xf1b7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_narrow_wide = IconData(0xf1ba, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_right = IconData(0xf1c0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_right_circle = IconData(0xf1bb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_right_square = IconData(0xf1bc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_right_stroke = IconData(0xf1bf, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_right_stroke_circle = IconData(0xf1bd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_right_stroke_square = IconData(0xf1be, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_square = IconData(0xf1c1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_stroke = IconData(0xf1c4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_stroke_circle = IconData(0xf1c2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_stroke_square = IconData(0xf1c3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_arrow_up_wide_narrow = IconData(0xf1c5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_article = IconData(0xf1c7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_asterisk = IconData(0xf1c8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_at = IconData(0xf1c9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_atom = IconData(0xf1ca, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_avocado = IconData(0xf1cb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_axe = IconData(0xf1cc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_background = IconData(0xf1ce, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_background_color_fill = IconData(0xf1cd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_backpack = IconData(0xf1d0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_backpack_star = IconData(0xf1cf, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_backspace = IconData(0xf1d1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_backward_slash = IconData(0xf1d2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bacon = IconData(0xf1d3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bacteria = IconData(0xf1d4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_badge = IconData(0xf1d8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_badge_check = IconData(0xf1d5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_badge_exclamation = IconData(0xf1d6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_badge_info = IconData(0xf1d7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_baguette = IconData(0xf1d9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bahai = IconData(0xf1da, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_balcony = IconData(0xf1db, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ball_throw = IconData(0xf1dc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_balloon = IconData(0xf1dd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_band_aid = IconData(0xf1de, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bank = IconData(0xf1df, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bar_chart = IconData(0xf1e2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bar_chart_big = IconData(0xf1e0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bar_chart_square = IconData(0xf1e1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_barcode = IconData(0xf1e4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_barcode_square = IconData(0xf1e3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_barn = IconData(0xf1e5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_baseball = IconData(0xf1e6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_basket = IconData(0xf1e7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_basketball = IconData(0xf1e8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bath = IconData(0xf1e9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_battery = IconData(0xf1ef, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_battery_1 = IconData(0xf1ea, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_battery_2 = IconData(0xf1eb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_battery_3 = IconData(0xf1ec, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_battery_full = IconData(0xf1ed, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_battery_low = IconData(0xf1ee, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_beach = IconData(0xf1f1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_beach_ball = IconData(0xf1f0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_beaker = IconData(0xf1f2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_beanie = IconData(0xf1f3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bear = IconData(0xf1f4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bed = IconData(0xf1f6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bed_alt = IconData(0xf1f5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_beer = IconData(0xf1f7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bell = IconData(0xf1fd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bell_check = IconData(0xf1f8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bell_minus = IconData(0xf1f9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bell_plus = IconData(0xf1fa, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bell_ring = IconData(0xf1fb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bell_slash = IconData(0xf1fc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bench = IconData(0xf1fe, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_between_horizontal_end = IconData(0xf1ff, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_between_horizontal_start = IconData(0xf200, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_between_vertical_end = IconData(0xf201, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_between_vertical_start = IconData(0xf202, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bible = IconData(0xf203, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_biceps = IconData(0xf204, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_binocular = IconData(0xf205, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bird = IconData(0xf207, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bird_alt = IconData(0xf206, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_birthday_cake = IconData(0xf208, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bitcoin = IconData(0xf209, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_blanket = IconData(0xf20a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_blob = IconData(0xf20b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_block = IconData(0xf20c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_blockquote = IconData(0xf20d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_blocks = IconData(0xf20e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bluetooth = IconData(0xf20f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_blur = IconData(0xf211, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_blur_alt = IconData(0xf210, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_body = IconData(0xf212, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bold = IconData(0xf213, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bolt = IconData(0xf217, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bolt_alt = IconData(0xf214, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bolt_circle = IconData(0xf215, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bolt_square = IconData(0xf216, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bomb = IconData(0xf218, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bone = IconData(0xf219, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bong = IconData(0xf21a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_book = IconData(0xf222, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_book_add = IconData(0xf21b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_book_alt = IconData(0xf21c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_book_bookmark = IconData(0xf21d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_book_content = IconData(0xf21e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_book_heart = IconData(0xf21f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_book_library = IconData(0xf220, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_book_open = IconData(0xf221, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bookmark = IconData(0xf22b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bookmark_alt = IconData(0xf223, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bookmark_heart = IconData(0xf224, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bookmark_minus = IconData(0xf226, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bookmark_minus_alt = IconData(0xf225, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bookmark_plus = IconData(0xf228, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bookmark_plus_alt = IconData(0xf227, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bookmark_star = IconData(0xf229, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bookmark_x = IconData(0xf22a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bookmarks = IconData(0xf22c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_boombox = IconData(0xf22d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_boot = IconData(0xf22e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_border_all = IconData(0xf22f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_border_bottom = IconData(0xf230, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_border_inner = IconData(0xf231, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_border_left = IconData(0xf232, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_border_none = IconData(0xf233, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_border_outer = IconData(0xf234, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_border_radius = IconData(0xf235, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_border_right = IconData(0xf236, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_border_top = IconData(0xf237, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bow = IconData(0xf238, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bowl_balls = IconData(0xf239, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bowl_bubbles = IconData(0xf23a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bowl_hot = IconData(0xf23b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bowl_noodles = IconData(0xf23d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bowl_noodles_alt = IconData(0xf23c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bowl_rice = IconData(0xf23e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bowling_ball = IconData(0xf23f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_box = IconData(0xf241, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_box_alt = IconData(0xf240, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bracket = IconData(0xf244, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bracket_curly = IconData(0xf242, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bracket_round = IconData(0xf243, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_braille = IconData(0xf245, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_brain = IconData(0xf247, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_brain_circuit = IconData(0xf246, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bread = IconData(0xf248, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_brick = IconData(0xf249, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bridge = IconData(0xf24a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_briefcase = IconData(0xf24d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_briefcase_alt = IconData(0xf24c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_briefcase_alt_2 = IconData(0xf24b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_brightness = IconData(0xf24f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_brightness_half = IconData(0xf24e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_broadcast = IconData(0xf250, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_broccoli = IconData(0xf251, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_broom = IconData(0xf252, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_browser_activity = IconData(0xf253, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_brush = IconData(0xf255, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_brush_sparkles = IconData(0xf254, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bucket = IconData(0xf256, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_buddhism = IconData(0xf257, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bug = IconData(0xf259, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bug_alt = IconData(0xf258, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_building = IconData(0xf25d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_building_hospital = IconData(0xf25a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_building_house = IconData(0xf25b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_building_small = IconData(0xf25c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_buildings = IconData(0xf25e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bullseye = IconData(0xf25f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_buoy = IconData(0xf260, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_burger = IconData(0xf262, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_burger_alt = IconData(0xf261, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_bus = IconData(0xf263, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_business = IconData(0xf264, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_butterfly = IconData(0xf265, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_button = IconData(0xf267, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_button_rounded = IconData(0xf266, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cabinet = IconData(0xf268, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cable_car = IconData(0xf269, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cake_slice = IconData(0xf26a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calculator = IconData(0xf26b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calendar = IconData(0xf27b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calendar_alt = IconData(0xf26d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calendar_alt_2 = IconData(0xf26c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calendar_check = IconData(0xf26e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calendar_cog = IconData(0xf26f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calendar_detail = IconData(0xf270, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calendar_down_arrow = IconData(0xf271, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calendar_event = IconData(0xf272, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calendar_heart = IconData(0xf273, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calendar_minus = IconData(0xf274, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calendar_plus = IconData(0xf275, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calendar_search = IconData(0xf276, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calendar_star = IconData(0xf277, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calendar_up_arrow = IconData(0xf278, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calendar_week = IconData(0xf279, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_calendar_x = IconData(0xf27a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_camcoder = IconData(0xf27c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_camera = IconData(0xf285, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_camera_alt = IconData(0xf27d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_camera_flip = IconData(0xf27e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_camera_home = IconData(0xf27f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_camera_monochrome = IconData(0xf280, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_camera_plus = IconData(0xf281, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_camera_portrait = IconData(0xf282, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_camera_slash = IconData(0xf283, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_camera_switch = IconData(0xf284, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_campfire = IconData(0xf286, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_camping = IconData(0xf287, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_candlestick = IconData(0xf288, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cannabis = IconData(0xf289, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cap = IconData(0xf28a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_capitalize = IconData(0xf28b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_capsule = IconData(0xf28c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_captions = IconData(0xf28e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_captions_cc = IconData(0xf28d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_capture = IconData(0xf28f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_car = IconData(0xf294, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_car_battery = IconData(0xf290, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_car_bolt = IconData(0xf291, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_car_key = IconData(0xf292, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_car_sparkles = IconData(0xf293, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_card_view = IconData(0xf299, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_card_view_large = IconData(0xf295, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_card_view_no_title = IconData(0xf296, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_card_view_small = IconData(0xf297, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_card_view_tiles = IconData(0xf298, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_caret_big_down = IconData(0xf29a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_caret_big_left = IconData(0xf29b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_caret_big_right = IconData(0xf29c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_caret_big_up = IconData(0xf29d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_caret_down = IconData(0xf2a0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_caret_down_circle = IconData(0xf29e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_caret_down_square = IconData(0xf29f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_caret_left = IconData(0xf2a3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_caret_left_circle = IconData(0xf2a1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_caret_left_square = IconData(0xf2a2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_caret_right = IconData(0xf2a6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_caret_right_circle = IconData(0xf2a4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_caret_right_square = IconData(0xf2a5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_caret_up = IconData(0xf2a9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_caret_up_circle = IconData(0xf2a7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_caret_up_square = IconData(0xf2a8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_carets_down_up = IconData(0xf2aa, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_carets_left_right = IconData(0xf2ab, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_carets_right_left = IconData(0xf2ac, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_carets_up_down = IconData(0xf2ad, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_carrot = IconData(0xf2ae, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cart = IconData(0xf2b5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cart_alt = IconData(0xf2b0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cart_alt_2 = IconData(0xf2af, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cart_check = IconData(0xf2b1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cart_minus = IconData(0xf2b2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cart_plus = IconData(0xf2b3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cart_x = IconData(0xf2b4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cast = IconData(0xf2b6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_castle = IconData(0xf2b7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cat = IconData(0xf2b9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cat_body = IconData(0xf2b8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_categories = IconData(0xf2ba, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cctv = IconData(0xf2bb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_certification = IconData(0xf2bc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chair = IconData(0xf2bd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_champagne = IconData(0xf2be, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chart_area = IconData(0xf2bf, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chart_bar_big_columns = IconData(0xf2c0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chart_bar_big_rows = IconData(0xf2c1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chart_bar_columns = IconData(0xf2c2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chart_bar_rows = IconData(0xf2c3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chart_bubble = IconData(0xf2c4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chart_gantt = IconData(0xf2c5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chart_line = IconData(0xf2c6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chart_network = IconData(0xf2c7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chart_scatter = IconData(0xf2c8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chart_sine = IconData(0xf2c9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chart_spline = IconData(0xf2ca, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chart_stacked_columns = IconData(0xf2cb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chart_stacked_rows = IconData(0xf2cc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chart_trend = IconData(0xf2cd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chart_waterfall = IconData(0xf2ce, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_check = IconData(0xf2d2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_check_circle = IconData(0xf2cf, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_check_shield = IconData(0xf2d0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_check_square = IconData(0xf2d1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_checkbox = IconData(0xf2d5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_checkbox_checked = IconData(0xf2d3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_checkbox_square = IconData(0xf2d4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_checklist = IconData(0xf2d6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_checks = IconData(0xf2d7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cheese = IconData(0xf2d8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chef_hat = IconData(0xf2d9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cherry = IconData(0xf2da, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chess = IconData(0xf2e1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chess_bishop = IconData(0xf2db, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chess_king = IconData(0xf2dc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chess_knight = IconData(0xf2dd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chess_pawn = IconData(0xf2de, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chess_queen = IconData(0xf2df, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chess_rook = IconData(0xf2e0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevron_down = IconData(0xf2e4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevron_down_circle = IconData(0xf2e2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevron_down_square = IconData(0xf2e3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevron_left = IconData(0xf2e7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevron_left_circle = IconData(0xf2e5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevron_left_square = IconData(0xf2e6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevron_right = IconData(0xf2ea, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevron_right_circle = IconData(0xf2e8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevron_right_square = IconData(0xf2e9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevron_up = IconData(0xf2ed, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevron_up_circle = IconData(0xf2eb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevron_up_square = IconData(0xf2ec, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevrons_down = IconData(0xf2ef, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevrons_down_up = IconData(0xf2ee, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevrons_left = IconData(0xf2f1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevrons_left_right = IconData(0xf2f0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevrons_right = IconData(0xf2f3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevrons_right_left = IconData(0xf2f2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevrons_up = IconData(0xf2f5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chevrons_up_down = IconData(0xf2f4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_child = IconData(0xf2f6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_chip = IconData(0xf2f7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_christianity = IconData(0xf2f8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_church = IconData(0xf2f9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cigarette = IconData(0xf2fa, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_circle = IconData(0xf305, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_circle_dashed = IconData(0xf2fc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_circle_dashed_half = IconData(0xf2fb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_circle_half = IconData(0xf2fe, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_circle_half_alt = IconData(0xf2fd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_circle_hexagon = IconData(0xf2ff, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_circle_outer_dashed_circle = IconData(0xf300, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_circle_quarter = IconData(0xf302, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_circle_quarter_alt = IconData(0xf301, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_circle_three_quarter = IconData(0xf304, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_circle_three_quarter_alt = IconData(0xf303, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_circles = IconData(0xf308, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_circles_9 = IconData(0xf306, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_circles_alt = IconData(0xf307, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_circuit_board = IconData(0xf309, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_city = IconData(0xf30a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clipboard = IconData(0xf311, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clipboard_check = IconData(0xf30b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clipboard_code = IconData(0xf30c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clipboard_detail = IconData(0xf30d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clipboard_minus = IconData(0xf30e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clipboard_plus = IconData(0xf30f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clipboard_x = IconData(0xf310, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clock = IconData(0xf31f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clock_1 = IconData(0xf312, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clock_10 = IconData(0xf313, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clock_11 = IconData(0xf314, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clock_12 = IconData(0xf315, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clock_2 = IconData(0xf316, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clock_3 = IconData(0xf317, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clock_4 = IconData(0xf318, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clock_5 = IconData(0xf319, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clock_6 = IconData(0xf31a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clock_7 = IconData(0xf31b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clock_8 = IconData(0xf31c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clock_9 = IconData(0xf31d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clock_dashed_half = IconData(0xf31e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cloud = IconData(0xf32b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cloud_alt = IconData(0xf321, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cloud_alt_2 = IconData(0xf320, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cloud_drizzle = IconData(0xf322, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cloud_fog = IconData(0xf323, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cloud_lightning = IconData(0xf324, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cloud_moon = IconData(0xf325, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cloud_rain = IconData(0xf328, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cloud_rain_wind = IconData(0xf327, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cloud_rain_wind_alt = IconData(0xf326, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cloud_snow = IconData(0xf329, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cloud_sun = IconData(0xf32a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_clover = IconData(0xf32c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_club = IconData(0xf32d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cocktail = IconData(0xf32e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_code = IconData(0xf330, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_code_alt = IconData(0xf32f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_coffee = IconData(0xf333, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_coffee_beans = IconData(0xf331, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_coffee_cup = IconData(0xf332, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cog = IconData(0xf334, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cognition = IconData(0xf335, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_coin = IconData(0xf336, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_coins = IconData(0xf337, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_col_resize = IconData(0xf338, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_color_fill = IconData(0xf339, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_color_wheel = IconData(0xf33a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_columns = IconData(0xf33d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_columns_3 = IconData(0xf33b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_columns_4 = IconData(0xf33c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_comic_bubble = IconData(0xf33e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_command = IconData(0xf33f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_community = IconData(0xf340, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_compare = IconData(0xf342, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_compare_alt = IconData(0xf341, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_compass = IconData(0xf344, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_compass_tool = IconData(0xf343, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_component = IconData(0xf345, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_computer = IconData(0xf347, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_computer_retro = IconData(0xf346, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_confused = IconData(0xf348, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_connector = IconData(0xf349, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_contact_book = IconData(0xf34a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_container = IconData(0xf34b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_contrast = IconData(0xf34c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cookie = IconData(0xf34d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cool = IconData(0xf34e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_copy = IconData(0xf354, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_copy_check = IconData(0xf34f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_copy_list = IconData(0xf350, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_copy_minus = IconData(0xf351, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_copy_plus = IconData(0xf352, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_copy_x = IconData(0xf353, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_copyright = IconData(0xf355, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_core = IconData(0xf356, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_couch = IconData(0xf357, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_credit_card = IconData(0xf35b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_credit_card_alt = IconData(0xf358, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_credit_card_front = IconData(0xf359, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_credit_card_insert = IconData(0xf35a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cricket_ball = IconData(0xf35c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_crop = IconData(0xf35d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cross_circle = IconData(0xf35e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_crosshair = IconData(0xf35f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_crown = IconData(0xf360, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_crypto = IconData(0xf362, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_crypto_coin = IconData(0xf361, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cube = IconData(0xf365, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cube_alt = IconData(0xf363, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cube_inside = IconData(0xf364, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cuboid = IconData(0xf366, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cup = IconData(0xf36a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cup_hot = IconData(0xf367, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cup_saucer = IconData(0xf368, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cup_tea = IconData(0xf369, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cupboard = IconData(0xf36c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cupboard_alt = IconData(0xf36b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cupcake = IconData(0xf36d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_currency_note = IconData(0xf36e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_currency_notes = IconData(0xf36f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cursor = IconData(0xf377, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cursor_add = IconData(0xf370, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cursor_cell = IconData(0xf371, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cursor_click = IconData(0xf372, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cursor_crosshair = IconData(0xf374, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cursor_crosshair_dot = IconData(0xf373, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cursor_pen = IconData(0xf375, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cursor_pointer = IconData(0xf376, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cut = IconData(0xf378, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cycling = IconData(0xf379, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_cylinder = IconData(0xf37a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dashboard = IconData(0xf37c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dashboard_alt = IconData(0xf37b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_database = IconData(0xf37e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_database_alt = IconData(0xf37d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_decrease_indent = IconData(0xf37f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_delta = IconData(0xf380, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_department_store = IconData(0xf381, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_desert = IconData(0xf382, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_desk = IconData(0xf383, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_desktop = IconData(0xf385, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_desktop_alt = IconData(0xf384, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_devices = IconData(0xf386, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dialpad = IconData(0xf387, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_diameter = IconData(0xf388, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_diamond = IconData(0xf38a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_diamond_alt = IconData(0xf389, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_diamonds = IconData(0xf38b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dice_1 = IconData(0xf38c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dice_2 = IconData(0xf38d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dice_3 = IconData(0xf38e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dice_4 = IconData(0xf38f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dice_5 = IconData(0xf390, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dice_6 = IconData(0xf391, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dice_roll = IconData(0xf392, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dino = IconData(0xf393, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_directions = IconData(0xf394, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_disc = IconData(0xf395, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_discount = IconData(0xf396, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_discussion = IconData(0xf397, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dish = IconData(0xf398, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dishwasher = IconData(0xf399, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dislike = IconData(0xf39a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_division = IconData(0xf39b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dizzy = IconData(0xf39c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dna = IconData(0xf39d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_bottom = IconData(0xf3a4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_bottom_alt = IconData(0xf39e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_bottom_arrow = IconData(0xf39f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_bottom_left = IconData(0xf3a1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_bottom_left_alt = IconData(0xf3a0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_bottom_right = IconData(0xf3a3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_bottom_right_alt = IconData(0xf3a2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_left = IconData(0xf3a7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_left_alt = IconData(0xf3a5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_left_arrow = IconData(0xf3a6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_right = IconData(0xf3aa, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_right_alt = IconData(0xf3a8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_right_arrow = IconData(0xf3a9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_top = IconData(0xf3b1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_top_alt = IconData(0xf3ab, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_top_arrow = IconData(0xf3ac, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_top_left = IconData(0xf3ae, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_top_left_alt = IconData(0xf3ad, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_top_right = IconData(0xf3b0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dock_top_right_alt = IconData(0xf3af, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dog = IconData(0xf3b4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dog_alt = IconData(0xf3b2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dog_body = IconData(0xf3b3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dollar = IconData(0xf3b7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dollar_circle = IconData(0xf3b6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dollar_circle_stars = IconData(0xf3b5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_donate_blood = IconData(0xf3b8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_donate_heart = IconData(0xf3b9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_donut = IconData(0xf3ba, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_door = IconData(0xf3bd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_door_open = IconData(0xf3bc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_door_open_alt = IconData(0xf3bb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dots_horizontal = IconData(0xf3c0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dots_horizontal_rounded = IconData(0xf3bf, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dots_horizontal_rounded_circle = IconData(0xf3be, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dots_vertical = IconData(0xf3c3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dots_vertical_rounded = IconData(0xf3c2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dots_vertical_rounded_circle = IconData(0xf3c1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_doughnut_chart = IconData(0xf3c4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_draw_ahead = IconData(0xf3c5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_draw_behind = IconData(0xf3c6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_draw_inside = IconData(0xf3c7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dress = IconData(0xf3c8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dribbling = IconData(0xf3c9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dropdown = IconData(0xf3ca, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dryer = IconData(0xf3cb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_duck = IconData(0xf3cc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dumbbell = IconData(0xf3ce, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_dumbbell_alt = IconData(0xf3cd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ear = IconData(0xf3d1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ear_alt = IconData(0xf3cf, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ear_slash = IconData(0xf3d0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_earbuds = IconData(0xf3d2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_earth = IconData(0xf3d3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ease_in = IconData(0xf3d5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ease_in_out = IconData(0xf3d4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ease_out = IconData(0xf3d6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_edit = IconData(0xf3d8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_edit_alt = IconData(0xf3d7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_education = IconData(0xf3d9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_egg = IconData(0xf3dc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_egg_fried = IconData(0xf3da, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_egg_yolk = IconData(0xf3db, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_eject = IconData(0xf3dd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_element_of = IconData(0xf3de, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_empty_set = IconData(0xf3df, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_enter = IconData(0xf3e0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_enterprise = IconData(0xf3e1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_envelope = IconData(0xf3e4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_envelope_alt = IconData(0xf3e2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_envelope_open = IconData(0xf3e3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_equal = IconData(0xf3e7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_equal_circle = IconData(0xf3e5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_equal_square = IconData(0xf3e6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_equalizer = IconData(0xf3e8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_eraser = IconData(0xf3e9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ethernet = IconData(0xf3ea, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_euro = IconData(0xf3eb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ev_station = IconData(0xf3ec, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_expand_left = IconData(0xf3ed, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_expand_right = IconData(0xf3ee, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_explosion = IconData(0xf3ef, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_exposure = IconData(0xf3f0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_extension = IconData(0xf3f1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_eye = IconData(0xf3f6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_eye_alt = IconData(0xf3f2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_eye_big = IconData(0xf3f3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_eye_closed = IconData(0xf3f4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_eye_slash = IconData(0xf3f5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_eyedropper = IconData(0xf3f7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_face = IconData(0xf3fe, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_face_alt = IconData(0xf3fb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_face_alt_2 = IconData(0xf3f8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_face_alt_3 = IconData(0xf3f9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_face_alt_4 = IconData(0xf3fa, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_face_child = IconData(0xf3fc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_face_mask = IconData(0xf3fd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_factory = IconData(0xf3ff, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_fan = IconData(0xf400, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_fast_forward = IconData(0xf402, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_fast_forward_circle = IconData(0xf401, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_feather = IconData(0xf406, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_feather_alt = IconData(0xf403, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_feather_minus = IconData(0xf404, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_feather_plus = IconData(0xf405, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_female = IconData(0xf407, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_file = IconData(0xf413, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_file_code = IconData(0xf408, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_file_cog = IconData(0xf409, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_file_detail = IconData(0xf40a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_file_heart = IconData(0xf40b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_file_minus = IconData(0xf40c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_file_plus = IconData(0xf40d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_file_report = IconData(0xf40e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_file_search = IconData(0xf40f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_file_star = IconData(0xf410, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_file_x = IconData(0xf411, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_file_zip = IconData(0xf412, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_film = IconData(0xf416, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_film_roll = IconData(0xf415, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_film_roll_alt = IconData(0xf414, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_filter = IconData(0xf417, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_finger_down = IconData(0xf418, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_finger_left = IconData(0xf419, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_finger_right = IconData(0xf41a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_finger_swipe_down = IconData(0xf41b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_finger_swipe_left = IconData(0xf41c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_finger_swipe_right = IconData(0xf41d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_finger_swipe_up = IconData(0xf41e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_finger_touch = IconData(0xf41f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_finger_up = IconData(0xf420, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_fingerprint = IconData(0xf421, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_fire = IconData(0xf424, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_fire_alt = IconData(0xf422, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_fire_extinguisher = IconData(0xf423, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_first = IconData(0xf425, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_fish = IconData(0xf427, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_fish_alt = IconData(0xf426, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_flag = IconData(0xf42c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_flag_alt = IconData(0xf42a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_flag_alt_2 = IconData(0xf428, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_flag_alt_3 = IconData(0xf429, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_flag_chequered = IconData(0xf42b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_flame = IconData(0xf42d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_flask_round = IconData(0xf42e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_florist = IconData(0xf42f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_flower = IconData(0xf432, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_flower_alt = IconData(0xf431, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_flower_alt_2 = IconData(0xf430, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_folder = IconData(0xf440, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_folder_check = IconData(0xf433, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_folder_code = IconData(0xf434, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_folder_cog = IconData(0xf435, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_folder_down_arrow = IconData(0xf436, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_folder_heart = IconData(0xf437, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_folder_minus = IconData(0xf438, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_folder_open = IconData(0xf439, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_folder_plus = IconData(0xf43a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_folder_search = IconData(0xf43b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_folder_star = IconData(0xf43c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_folder_up_arrow = IconData(0xf43d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_folder_x = IconData(0xf43e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_folder_zip = IconData(0xf43f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_font_color = IconData(0xf441, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_font_family = IconData(0xf442, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_food_menu = IconData(0xf443, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_food_tag = IconData(0xf444, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_football = IconData(0xf447, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_football_kick = IconData(0xf445, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_football_pitch = IconData(0xf446, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_footsteps = IconData(0xf448, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_foreground = IconData(0xf449, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_fork = IconData(0xf44c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_fork_knife = IconData(0xf44a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_fork_spoon = IconData(0xf44b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_form = IconData(0xf44d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_forward = IconData(0xf453, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_forward_big = IconData(0xf44e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_forward_slash = IconData(0xf451, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_forward_slash_circle = IconData(0xf44f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_forward_slash_square = IconData(0xf450, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_forward_stroke = IconData(0xf452, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_frame = IconData(0xf454, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_fridge = IconData(0xf455, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_fullscreen = IconData(0xf457, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_fullscreen_exit = IconData(0xf456, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_function = IconData(0xf458, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_functions = IconData(0xf459, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_future = IconData(0xf45a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_gallery_horizontal = IconData(0xf45c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_gallery_horizontal_end = IconData(0xf45b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_gallery_thumbnails = IconData(0xf45d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_gallery_vertical = IconData(0xf45f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_gallery_vertical_end = IconData(0xf45e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_gaming = IconData(0xf460, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_garage = IconData(0xf461, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_gavel = IconData(0xf462, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_gear = IconData(0xf463, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_gem = IconData(0xf465, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_gem_alt = IconData(0xf464, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_gestures = IconData(0xf466, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ghost = IconData(0xf467, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_gift = IconData(0xf468, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_git_branch = IconData(0xf469, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_git_commit = IconData(0xf46a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_git_compare = IconData(0xf46b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_git_merge = IconData(0xf46d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_git_merge_queue = IconData(0xf46c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_git_pull_request = IconData(0xf470, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_git_pull_request_closed = IconData(0xf46e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_git_pull_request_draft = IconData(0xf46f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_git_repo_forked = IconData(0xf471, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_glasses = IconData(0xf473, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_glasses_alt = IconData(0xf472, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_globe = IconData(0xf47e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_globe_africa = IconData(0xf474, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_globe_alt = IconData(0xf477, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_globe_alt_2 = IconData(0xf475, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_globe_alt_3 = IconData(0xf476, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_globe_americas = IconData(0xf478, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_globe_antartica = IconData(0xf479, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_globe_asia = IconData(0xf47a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_globe_europe = IconData(0xf47b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_globe_oceania = IconData(0xf47c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_globe_stand = IconData(0xf47d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_golf_ball = IconData(0xf47f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_gradient = IconData(0xf480, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_greater_than = IconData(0xf482, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_greater_than_equal = IconData(0xf481, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_grid = IconData(0xf490, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_grid_9 = IconData(0xf483, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_grid_circle = IconData(0xf487, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_grid_circle_diagonal_left = IconData(0xf484, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_grid_circle_diagonal_right = IconData(0xf485, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_grid_circle_plus = IconData(0xf486, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_grid_column_left = IconData(0xf488, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_grid_column_right = IconData(0xf489, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_grid_lines = IconData(0xf48b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_grid_lines_3 = IconData(0xf48a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_grid_plus = IconData(0xf48c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_grid_row_bottom = IconData(0xf48d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_grid_row_top = IconData(0xf48e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_grid_search = IconData(0xf48f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_groceries = IconData(0xf491, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_group = IconData(0xf493, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_group_alt = IconData(0xf492, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_guitar_amp = IconData(0xf494, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_hail = IconData(0xf495, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_hand = IconData(0xf497, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_hand_rock = IconData(0xf496, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_handheld = IconData(0xf49a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_handheld_alt = IconData(0xf499, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_handheld_alt_2 = IconData(0xf498, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_handshake = IconData(0xf49b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_hanger = IconData(0xf49c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_happy = IconData(0xf4a0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_happy_alt = IconData(0xf49d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_happy_beaming = IconData(0xf49e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_happy_heart_eyes = IconData(0xf49f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_hard_drive = IconData(0xf4a1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_hard_hat = IconData(0xf4a2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_hashtag = IconData(0xf4a3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_hdmi = IconData(0xf4a4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_head = IconData(0xf4a5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_heading = IconData(0xf4a9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_heading_1 = IconData(0xf4a6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_heading_2 = IconData(0xf4a7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_heading_3 = IconData(0xf4a8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_headphone = IconData(0xf4ad, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_headphone_alt = IconData(0xf4ab, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_headphone_alt_2 = IconData(0xf4aa, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_headphone_mic = IconData(0xf4ac, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_heart = IconData(0xf4b3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_heart_break = IconData(0xf4ae, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_heart_circle = IconData(0xf4af, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_heart_half = IconData(0xf4b0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_heart_plus = IconData(0xf4b1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_heart_square = IconData(0xf4b2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_heat_wave = IconData(0xf4b4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_helmet = IconData(0xf4b5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_help_circle = IconData(0xf4b6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_help_octagon = IconData(0xf4b7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_hexagon = IconData(0xf4b8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_high_speed_train = IconData(0xf4b9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_highlight = IconData(0xf4ba, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_highlights = IconData(0xf4bb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_hinduism = IconData(0xf4bc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_history = IconData(0xf4bd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_home = IconData(0xf4c4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_home_add = IconData(0xf4be, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_home_alt = IconData(0xf4c1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_home_alt_2 = IconData(0xf4bf, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_home_alt_3 = IconData(0xf4c0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_home_circle = IconData(0xf4c2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_home_heart = IconData(0xf4c3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_honey = IconData(0xf4c5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_horizon_sea = IconData(0xf4c6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_horizontal_align_center = IconData(0xf4c7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_horizontal_align_left = IconData(0xf4c8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_horizontal_align_right = IconData(0xf4c9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_horizontal_center = IconData(0xf4ca, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_horizontal_distribute_center = IconData(0xf4cb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_horizontal_distribute_left = IconData(0xf4cc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_horizontal_distribute_right = IconData(0xf4cd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_horizontal_left = IconData(0xf4ce, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_horizontal_right = IconData(0xf4cf, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_horizontal_spacing = IconData(0xf4d0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_hospital = IconData(0xf4d1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_hot = IconData(0xf4d4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_hot_tub = IconData(0xf4d3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_hot_tub_water = IconData(0xf4d2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_hourglass = IconData(0xf4d5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_hurricane = IconData(0xf4d6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_icecream = IconData(0xf4d7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_iframe = IconData(0xf4d8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_image = IconData(0xf4e0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_image_alt = IconData(0xf4d9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_image_circle = IconData(0xf4da, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_image_landscape = IconData(0xf4db, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_image_no_background = IconData(0xf4dc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_image_plus = IconData(0xf4dd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_image_portrait = IconData(0xf4de, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_image_sparkle = IconData(0xf4df, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_images = IconData(0xf4e1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_inbox = IconData(0xf4e2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_incognito = IconData(0xf4e3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_infinite = IconData(0xf4e4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_info_circle = IconData(0xf4e5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_info_octagon = IconData(0xf4e6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_info_shield = IconData(0xf4e7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_info_square = IconData(0xf4e8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_inner_shadow = IconData(0xf4e9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_institution = IconData(0xf4ea, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_integral = IconData(0xf4eb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_intellect = IconData(0xf4ec, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_invert = IconData(0xf4ee, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_invert_adjust = IconData(0xf4ed, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_islam = IconData(0xf4ef, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_island = IconData(0xf4f0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_italic = IconData(0xf4f1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_joystick = IconData(0xf4f6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_joystick_alt = IconData(0xf4f3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_joystick_alt_2 = IconData(0xf4f2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_joystick_button = IconData(0xf4f5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_joystick_button_alt = IconData(0xf4f4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_judaism = IconData(0xf4f7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_key = IconData(0xf4f9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_key_alt = IconData(0xf4f8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_keyboard = IconData(0xf4fa, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_keyframe = IconData(0xf502, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_keyframe_ease_in = IconData(0xf4fb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_keyframe_ease_out = IconData(0xf4fc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_keyframe_easy_ease = IconData(0xf4fd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_keyframe_hold_ease_in = IconData(0xf4fe, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_keyframe_hold_ease_out = IconData(0xf4ff, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_keyframe_hold_linear_in = IconData(0xf500, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_keyframe_hold_linear_out = IconData(0xf501, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_knife = IconData(0xf503, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_lambda = IconData(0xf504, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_landmark = IconData(0xf505, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_laptop = IconData(0xf507, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_laptop_alt = IconData(0xf506, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_lasso = IconData(0xf508, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_last = IconData(0xf509, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_laugh = IconData(0xf50a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_laurel_wreath = IconData(0xf50d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_laurel_wreath_left = IconData(0xf50b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_laurel_wreath_right = IconData(0xf50c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_law = IconData(0xf50e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_layers = IconData(0xf514, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_layers_alt = IconData(0xf50f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_layers_down_left = IconData(0xf510, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_layers_down_right = IconData(0xf511, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_layers_minus_alt = IconData(0xf512, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_layers_plus_alt = IconData(0xf513, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_layout = IconData(0xf519, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_layout_check = IconData(0xf515, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_layout_minus = IconData(0xf516, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_layout_plus = IconData(0xf517, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_layout_search = IconData(0xf518, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_leaf = IconData(0xf51b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_leaf_alt = IconData(0xf51a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_left_indent = IconData(0xf51c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_lemon = IconData(0xf51d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_less_than = IconData(0xf51f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_less_than_equal = IconData(0xf51e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_letter_spacing = IconData(0xf521, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_letter_spacing_alt = IconData(0xf520, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_light_bulb = IconData(0xf525, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_light_bulb_alt = IconData(0xf523, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_light_bulb_alt_2 = IconData(0xf522, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_light_bulb_on = IconData(0xf524, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_like = IconData(0xf526, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_line_chart_square = IconData(0xf527, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_line_spacing = IconData(0xf529, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_line_spacing_alt = IconData(0xf528, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_link = IconData(0xf52c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_link_alt = IconData(0xf52a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_link_break = IconData(0xf52b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_lira = IconData(0xf52d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_list = IconData(0xf537, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_list_minus = IconData(0xf52e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_list_music = IconData(0xf52f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_list_ol = IconData(0xf530, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_list_play = IconData(0xf531, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_list_plus = IconData(0xf532, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_list_square = IconData(0xf533, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_list_ul = IconData(0xf535, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_list_ul_square = IconData(0xf534, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_list_x = IconData(0xf536, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_loader_dots = IconData(0xf538, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_loader_lines = IconData(0xf53a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_loader_lines_alt = IconData(0xf539, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_location = IconData(0xf542, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_location_alt = IconData(0xf53c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_location_alt_2 = IconData(0xf53b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_location_blank = IconData(0xf53d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_location_check = IconData(0xf53e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_location_pin = IconData(0xf53f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_location_plus = IconData(0xf540, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_location_x = IconData(0xf541, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_lock = IconData(0xf548, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_lock_keyhole = IconData(0xf545, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_lock_keyhole_open = IconData(0xf544, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_lock_keyhole_open_alt = IconData(0xf543, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_lock_open = IconData(0xf547, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_lock_open_alt = IconData(0xf546, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_lotion = IconData(0xf549, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_low_vision = IconData(0xf54a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_lowercase = IconData(0xf54b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_luggage = IconData(0xf54c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_lungs = IconData(0xf54d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_magic_wand = IconData(0xf54e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_magnet = IconData(0xf54f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_mail_open = IconData(0xf550, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_male = IconData(0xf551, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_man = IconData(0xf553, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_man_woman = IconData(0xf552, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_map = IconData(0xf554, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_margin_bottom = IconData(0xf555, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_margin_left = IconData(0xf556, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_margin_right = IconData(0xf557, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_margin_top = IconData(0xf558, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_martini = IconData(0xf559, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_mask = IconData(0xf55a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_math = IconData(0xf55c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_math_alt = IconData(0xf55b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_maximize = IconData(0xf55d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_meat = IconData(0xf55e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_medal = IconData(0xf564, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_medal_alt = IconData(0xf560, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_medal_alt_2 = IconData(0xf55f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_medal_star = IconData(0xf563, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_medal_star_alt = IconData(0xf562, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_medal_star_alt_2 = IconData(0xf561, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_medical_flask = IconData(0xf565, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_medical_kit = IconData(0xf566, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_megaphone = IconData(0xf568, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_megaphone_alt = IconData(0xf567, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_meh = IconData(0xf56b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_meh_alt = IconData(0xf569, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_meh_blank = IconData(0xf56a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_menorah = IconData(0xf56c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_menu = IconData(0xf577, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_menu_close = IconData(0xf56d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_menu_closer = IconData(0xf56e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_menu_filter = IconData(0xf56f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_menu_left = IconData(0xf570, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_menu_notification = IconData(0xf571, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_menu_right = IconData(0xf572, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_menu_search = IconData(0xf573, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_menu_select = IconData(0xf574, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_menu_wide = IconData(0xf575, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_menu_wider = IconData(0xf576, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_merge = IconData(0xf578, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_mesh = IconData(0xf579, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message = IconData(0xf5af, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble = IconData(0xf58b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_captions = IconData(0xf57a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_check = IconData(0xf57b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_code = IconData(0xf57c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_detail = IconData(0xf57d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_dots = IconData(0xf57f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_dots_2 = IconData(0xf57e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_edit = IconData(0xf580, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_exclamation = IconData(0xf581, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_heart = IconData(0xf582, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_image = IconData(0xf583, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_minus = IconData(0xf584, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_notification = IconData(0xf585, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_plus = IconData(0xf586, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_question_mark = IconData(0xf587, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_reply = IconData(0xf588, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_star = IconData(0xf589, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_bubble_x = IconData(0xf58a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_captions = IconData(0xf58c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_check = IconData(0xf58d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle = IconData(0xf59f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_captions = IconData(0xf58e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_check = IconData(0xf58f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_code = IconData(0xf590, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_detail = IconData(0xf591, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_dots = IconData(0xf593, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_dots_2 = IconData(0xf592, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_edit = IconData(0xf594, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_exclamation = IconData(0xf595, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_heart = IconData(0xf596, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_image = IconData(0xf597, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_minus = IconData(0xf598, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_notification = IconData(0xf599, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_plus = IconData(0xf59a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_question_mark = IconData(0xf59b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_reply = IconData(0xf59c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_star = IconData(0xf59d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_circle_x = IconData(0xf59e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_code = IconData(0xf5a0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_detail = IconData(0xf5a1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_dots = IconData(0xf5a3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_dots_2 = IconData(0xf5a2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_edit = IconData(0xf5a4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_exclamation = IconData(0xf5a5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_heart = IconData(0xf5a6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_image = IconData(0xf5a7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_minus = IconData(0xf5a8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_notification = IconData(0xf5a9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_plus = IconData(0xf5aa, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_question_mark = IconData(0xf5ab, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_reply = IconData(0xf5ac, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_star = IconData(0xf5ad, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_message_x = IconData(0xf5ae, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_meteor = IconData(0xf5b0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_microchip = IconData(0xf5b1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_microphone = IconData(0xf5b7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_microphone_alt = IconData(0xf5b3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_microphone_alt_2 = IconData(0xf5b2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_microphone_big = IconData(0xf5b5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_microphone_big_alt = IconData(0xf5b4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_microphone_slash = IconData(0xf5b6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_microscope = IconData(0xf5b8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_microwave_oven = IconData(0xf5b9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_milk_bottle = IconData(0xf5ba, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_minimize = IconData(0xf5bb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_minus = IconData(0xf5c0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_minus_circle = IconData(0xf5bc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_minus_plus = IconData(0xf5bd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_minus_shield = IconData(0xf5be, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_minus_square = IconData(0xf5bf, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_mobile = IconData(0xf5c7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_mobile_alt = IconData(0xf5c2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_mobile_alt_2 = IconData(0xf5c1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_mobile_back = IconData(0xf5c5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_mobile_back_alt = IconData(0xf5c4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_mobile_back_alt_2 = IconData(0xf5c3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_mobile_ring = IconData(0xf5c6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_monitor = IconData(0xf5ca, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_monitor_wallpaper = IconData(0xf5c8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_monitor_wide = IconData(0xf5c9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_moon = IconData(0xf5d5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_moon_crater = IconData(0xf5cb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_moon_phase_0 = IconData(0xf5cc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_moon_phase_1 = IconData(0xf5cd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_moon_phase_2 = IconData(0xf5ce, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_moon_phase_3 = IconData(0xf5cf, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_moon_phase_4 = IconData(0xf5d0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_moon_phase_5 = IconData(0xf5d1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_moon_phase_6 = IconData(0xf5d2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_moon_star = IconData(0xf5d3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_moon_stars = IconData(0xf5d4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_mosque = IconData(0xf5d6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_motion = IconData(0xf5d8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_motion_alt = IconData(0xf5d7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_motorcycle = IconData(0xf5d9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_mountain = IconData(0xf5dc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_mountain_peak = IconData(0xf5da, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_mountain_view = IconData(0xf5db, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_mouse = IconData(0xf5de, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_mouse_alt = IconData(0xf5dd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_moustache = IconData(0xf5df, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_move = IconData(0xf5e4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_move_diagonal_left = IconData(0xf5e0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_move_diagonal_right = IconData(0xf5e1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_move_horizontal = IconData(0xf5e2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_move_vertical = IconData(0xf5e3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_movie = IconData(0xf5e6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_movie_play = IconData(0xf5e5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_music = IconData(0xf5ea, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_music_alt = IconData(0xf5e8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_music_alt_2 = IconData(0xf5e7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_music_library = IconData(0xf5e9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_navigation_north = IconData(0xf5eb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_network_chart = IconData(0xf5ec, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_network_device = IconData(0xf5ed, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_news = IconData(0xf5ee, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_newspaper = IconData(0xf5ef, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_night_light = IconData(0xf5f0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_no_entry = IconData(0xf5f1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_noise = IconData(0xf5f2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_not_element_of = IconData(0xf5f3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_not_equal = IconData(0xf5f4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_not_subset = IconData(0xf5f5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_not_superset = IconData(0xf5f6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_note = IconData(0xf5f8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_note_book = IconData(0xf5f7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_notification = IconData(0xf5fa, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_notification_slash = IconData(0xf5f9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_nut = IconData(0xf5fb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_octopus = IconData(0xf5fc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_omega = IconData(0xf5fd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_option = IconData(0xf5fe, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_outdoor_dining = IconData(0xf5ff, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_outer_shadow = IconData(0xf600, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_oval = IconData(0xf602, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_oval_vertical = IconData(0xf601, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_oven = IconData(0xf603, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_owl = IconData(0xf604, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pacifism = IconData(0xf605, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_package = IconData(0xf606, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pacman = IconData(0xf607, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_paint = IconData(0xf60a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_paint_alt = IconData(0xf608, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_paint_roll = IconData(0xf609, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_palette = IconData(0xf60b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pant = IconData(0xf60c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_paper_plane = IconData(0xf60d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_paperclip = IconData(0xf60e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_paragraph = IconData(0xf610, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_paragraph_spacing = IconData(0xf60f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_parallel = IconData(0xf611, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_parent_child = IconData(0xf612, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_party = IconData(0xf613, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_paste = IconData(0xf614, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_path = IconData(0xf615, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pause = IconData(0xf617, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pause_circle = IconData(0xf616, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_paw_print = IconData(0xf618, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pear = IconData(0xf619, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pen = IconData(0xf620, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pen_alt = IconData(0xf61a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pen_draw = IconData(0xf61b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pen_edit_circle = IconData(0xf61d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pen_edit_circle_alt = IconData(0xf61c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pen_minus = IconData(0xf61e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pen_plus = IconData(0xf61f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pencil = IconData(0xf626, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pencil_circle = IconData(0xf621, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pencil_draw = IconData(0xf622, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pencil_edit_circle = IconData(0xf623, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pencil_sparkles = IconData(0xf624, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pencil_square = IconData(0xf625, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pentagon = IconData(0xf627, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_people_diversity = IconData(0xf628, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_people_handshake = IconData(0xf629, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_people_heart = IconData(0xf62a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_percentage = IconData(0xf62b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_perpendicular = IconData(0xf62c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_perspective = IconData(0xf62d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_petrol_pump = IconData(0xf62e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pharmacy = IconData(0xf62f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_phone = IconData(0xf637, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_phone_book = IconData(0xf630, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_phone_forwarding = IconData(0xf631, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_phone_incoming = IconData(0xf632, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_phone_outgoing = IconData(0xf633, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_phone_plus = IconData(0xf634, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_phone_ring = IconData(0xf635, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_phone_x = IconData(0xf636, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_photo_album = IconData(0xf638, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pi = IconData(0xf639, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_piano = IconData(0xf63c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_piano_alt = IconData(0xf63a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_piano_grand = IconData(0xf63b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pickup_truck = IconData(0xf63d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_picture_in_picture = IconData(0xf63f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_picture_in_picture_close = IconData(0xf63e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pie_chart = IconData(0xf642, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pie_chart_alt = IconData(0xf641, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pie_chart_alt_2 = IconData(0xf640, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_piggy_bank = IconData(0xf643, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pill = IconData(0xf646, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pill_bottle = IconData(0xf645, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pill_bottle_alt = IconData(0xf644, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pin = IconData(0xf649, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pin_alt = IconData(0xf647, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pin_slash_alt = IconData(0xf648, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pizza = IconData(0xf64b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pizza_alt = IconData(0xf64a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_plane = IconData(0xf64f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_plane_alt = IconData(0xf64c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_plane_land = IconData(0xf64d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_plane_take_off = IconData(0xf64e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_planet = IconData(0xf650, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_plant_pot = IconData(0xf651, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_play = IconData(0xf654, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_play_circle = IconData(0xf653, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_play_circle_alt = IconData(0xf652, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_plug_connect = IconData(0xf655, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_plus = IconData(0xf65b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_plus_big = IconData(0xf656, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_plus_circle = IconData(0xf657, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_plus_minus = IconData(0xf658, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_plus_shield = IconData(0xf659, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_plus_square = IconData(0xf65a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_podcast = IconData(0xf65c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_polar_chart = IconData(0xf65d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_poll = IconData(0xf65e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_polygon = IconData(0xf65f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_poop = IconData(0xf660, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_popcorn = IconData(0xf661, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_popsicle = IconData(0xf662, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pound = IconData(0xf663, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_power = IconData(0xf664, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_prawn = IconData(0xf665, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_price_tag = IconData(0xf667, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_price_tag_alt = IconData(0xf666, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_print_dollar = IconData(0xf668, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_printer = IconData(0xf669, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_proper_subset = IconData(0xf66a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_proper_superset = IconData(0xf66b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_psychology = IconData(0xf66c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_puck = IconData(0xf66d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pulse = IconData(0xf66e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_puzzle = IconData(0xf66f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_pyramid = IconData(0xf670, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_qr = IconData(0xf672, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_qr_scan = IconData(0xf671, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_queue = IconData(0xf673, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_quote_left = IconData(0xf675, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_quote_left_alt = IconData(0xf674, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_quote_right = IconData(0xf677, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_quote_right_alt = IconData(0xf676, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_quote_single_left = IconData(0xf678, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_quote_single_right = IconData(0xf679, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_radar = IconData(0xf67a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_radiation = IconData(0xf67b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_radio = IconData(0xf67e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_radio_circle = IconData(0xf67d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_radio_circle_marked = IconData(0xf67c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rainbow = IconData(0xf680, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rainbow_half = IconData(0xf67f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_reading = IconData(0xf682, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_reading_glass = IconData(0xf681, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_receipt = IconData(0xf683, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rectangle = IconData(0xf686, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rectangle_vertical = IconData(0xf684, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rectangle_wide = IconData(0xf685, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_recycle = IconData(0xf687, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_redo = IconData(0xf68b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_redo_alt = IconData(0xf688, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_redo_stroke = IconData(0xf68a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_redo_stroke_alt = IconData(0xf689, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_reflect_horizontal = IconData(0xf68d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_reflect_horizontal_alt = IconData(0xf68c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_reflect_vertical = IconData(0xf68f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_reflect_vertical_alt = IconData(0xf68e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_refresh_ccw = IconData(0xf693, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_refresh_ccw_alt = IconData(0xf691, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_refresh_ccw_alt_dot = IconData(0xf690, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_refresh_ccw_dot = IconData(0xf692, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_refresh_cw = IconData(0xf697, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_refresh_cw_alt = IconData(0xf695, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_refresh_cw_alt_dot = IconData(0xf694, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_refresh_cw_dot = IconData(0xf696, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_registered = IconData(0xf698, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rename = IconData(0xf699, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_repeat = IconData(0xf69c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_repeat_alt = IconData(0xf69b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_repeat_alt_2 = IconData(0xf69a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_reply = IconData(0xf69f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_reply_big = IconData(0xf69d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_reply_stroke = IconData(0xf69e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_report = IconData(0xf6a0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rewind = IconData(0xf6a2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rewind_circle = IconData(0xf6a1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rfid = IconData(0xf6a3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rgb = IconData(0xf6a4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_right_angle_triangle = IconData(0xf6a6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_right_angle_triangle_half = IconData(0xf6a5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_right_indent = IconData(0xf6a7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_road = IconData(0xf6a8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_robot = IconData(0xf6a9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rocket = IconData(0xf6ab, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rocket_alt = IconData(0xf6aa, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rotate_ccw = IconData(0xf6b0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rotate_ccw_10 = IconData(0xf6ac, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rotate_ccw_30 = IconData(0xf6ad, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rotate_ccw_5 = IconData(0xf6ae, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rotate_ccw_dot = IconData(0xf6af, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rotate_cw = IconData(0xf6b5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rotate_cw_10 = IconData(0xf6b1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rotate_cw_30 = IconData(0xf6b2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rotate_cw_5 = IconData(0xf6b3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rotate_cw_dot = IconData(0xf6b4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rotate_square_ccw = IconData(0xf6b6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rotate_square_cw = IconData(0xf6b7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_route = IconData(0xf6b8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_row_resize = IconData(0xf6b9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rows = IconData(0xf6bc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rows_3 = IconData(0xf6ba, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rows_4 = IconData(0xf6bb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rss = IconData(0xf6bd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ruble = IconData(0xf6be, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rugby_ball = IconData(0xf6bf, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ruler = IconData(0xf6c0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_running = IconData(0xf6c1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_rupee = IconData(0xf6c2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sad = IconData(0xf6c3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_safe = IconData(0xf6c4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sail = IconData(0xf6c5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sandwich = IconData(0xf6c6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sapling = IconData(0xf6c7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_satellite_dish = IconData(0xf6c9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_satellite_dish_alt = IconData(0xf6c8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_save = IconData(0xf6ca, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_scale = IconData(0xf6cb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_scan = IconData(0xf6d1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_scan_ar = IconData(0xf6cc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_scan_barcode = IconData(0xf6cd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_scan_detail = IconData(0xf6ce, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_scan_face = IconData(0xf6cf, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_scan_search = IconData(0xf6d0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_school = IconData(0xf6d3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_school_bus = IconData(0xf6d2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_science = IconData(0xf6d4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_scooter = IconData(0xf6d6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_scooter_delivery = IconData(0xf6d5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_screen_light = IconData(0xf6d7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_screenshot = IconData(0xf6d8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_scribble = IconData(0xf6d9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_scroll = IconData(0xf6da, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sd_card = IconData(0xf6db, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sea_view = IconData(0xf6dc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_seal = IconData(0xf6de, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_seal_check = IconData(0xf6dd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_search = IconData(0xf6e9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_search_alt = IconData(0xf6df, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_search_big = IconData(0xf6e4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_search_big_code = IconData(0xf6e0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_search_big_minus = IconData(0xf6e1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_search_big_plus = IconData(0xf6e2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_search_big_x = IconData(0xf6e3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_search_code = IconData(0xf6e5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_search_minus = IconData(0xf6e6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_search_plus = IconData(0xf6e7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_search_x = IconData(0xf6e8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_select = IconData(0xf6ed, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_select_all = IconData(0xf6ea, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_select_many = IconData(0xf6eb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_select_none = IconData(0xf6ec, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_self_care = IconData(0xf6ee, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_send = IconData(0xf6f1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_send_alt = IconData(0xf6f0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_send_alt_2 = IconData(0xf6ef, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_server = IconData(0xf6f2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_set_intersection = IconData(0xf6f3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_set_union = IconData(0xf6f4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shadows = IconData(0xf6f5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shape_exclude = IconData(0xf6f7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shape_exclude_alt = IconData(0xf6f6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shape_intersect = IconData(0xf6f9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shape_intersect_alt = IconData(0xf6f8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shape_outline = IconData(0xf6fb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shape_outline_alt = IconData(0xf6fa, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shape_rotate_ccw = IconData(0xf6fc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shape_rotate_cw = IconData(0xf6fd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shape_subtract = IconData(0xf6ff, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shape_subtract_alt = IconData(0xf6fe, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shape_trim = IconData(0xf701, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shape_trim_alt = IconData(0xf700, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shape_unite = IconData(0xf703, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shape_unite_alt = IconData(0xf702, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shapes = IconData(0xf706, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shapes_alt = IconData(0xf705, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shapes_alt_2 = IconData(0xf704, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_share = IconData(0xf707, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shekel = IconData(0xf708, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shield = IconData(0xf70e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shield_alt = IconData(0xf70a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shield_alt_2 = IconData(0xf709, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shield_circle = IconData(0xf70b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shield_half = IconData(0xf70c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shield_quarter = IconData(0xf70d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shinto = IconData(0xf70f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ship = IconData(0xf710, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shocked = IconData(0xf711, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shopping_bag = IconData(0xf713, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shopping_bag_alt = IconData(0xf712, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shower = IconData(0xf714, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shrink_left = IconData(0xf715, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shrink_right = IconData(0xf716, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shuffle = IconData(0xf717, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shutter = IconData(0xf719, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shutter_alt = IconData(0xf718, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_shuttlecock = IconData(0xf71a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sidebar = IconData(0xf71c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sidebar_right = IconData(0xf71b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sigma = IconData(0xf71d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_signal_1 = IconData(0xf71e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_signal_2 = IconData(0xf71f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_signal_3 = IconData(0xf720, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_signal_4 = IconData(0xf721, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_signal_5 = IconData(0xf722, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_signal_slash = IconData(0xf723, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_signature = IconData(0xf724, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sikhism = IconData(0xf725, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sine_wave = IconData(0xf726, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_siren = IconData(0xf728, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_siren_alt = IconData(0xf727, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sitemap = IconData(0xf729, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_size_distort = IconData(0xf72a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_size_freeform = IconData(0xf72b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_size_uniform = IconData(0xf72c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_size_warp = IconData(0xf72d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_skateboard = IconData(0xf72e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_skip_next = IconData(0xf730, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_skip_next_circle = IconData(0xf72f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_skip_previous = IconData(0xf732, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_skip_previous_circle = IconData(0xf731, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_skirt = IconData(0xf733, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_skull = IconData(0xf734, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sleepy = IconData(0xf735, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_slice = IconData(0xf736, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_slider = IconData(0xf73a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_slider_alt = IconData(0xf737, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_slider_vertical = IconData(0xf739, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_slider_vertical_alt = IconData(0xf738, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_slideshow = IconData(0xf73b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_smile = IconData(0xf73c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_smoke_alarm = IconData(0xf73f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_smoke_alarm_alt = IconData(0xf73e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_smoke_alarm_alt_2 = IconData(0xf73d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sneaker = IconData(0xf740, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_snowflake = IconData(0xf741, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sock = IconData(0xf742, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_solar_panel = IconData(0xf743, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_spa = IconData(0xf744, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_spacebar = IconData(0xf745, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_spade = IconData(0xf746, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_spanner = IconData(0xf747, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sparkle = IconData(0xf74a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sparkle_circle = IconData(0xf748, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sparkle_square = IconData(0xf749, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sparkles = IconData(0xf74c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sparkles_alt = IconData(0xf74b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_speaker = IconData(0xf74d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sphere = IconData(0xf74e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_split = IconData(0xf74f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_spoon = IconData(0xf750, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_spray_can = IconData(0xf751, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_square = IconData(0xf757, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_square_dashed = IconData(0xf753, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_square_dashed_half = IconData(0xf752, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_square_root = IconData(0xf754, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_square_rounded = IconData(0xf755, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_square_small = IconData(0xf756, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_squircle = IconData(0xf758, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_stadium = IconData(0xf759, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_stamp = IconData(0xf75a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_star = IconData(0xf75e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_star_circle = IconData(0xf75b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_star_half = IconData(0xf75c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_star_square = IconData(0xf75d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_station = IconData(0xf75f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_steering_wheel = IconData(0xf760, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_steps_down = IconData(0xf761, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_steps_up = IconData(0xf762, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sticker = IconData(0xf763, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_stop = IconData(0xf765, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_stop_circle = IconData(0xf764, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_stopwatch = IconData(0xf766, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_store = IconData(0xf769, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_store_alt = IconData(0xf768, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_store_alt_2 = IconData(0xf767, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_strategy = IconData(0xf76a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_street_view = IconData(0xf76b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_strikethrough = IconData(0xf76c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_stroke_drawing = IconData(0xf76d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_stroke_freehand = IconData(0xf76e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_stroke_ink = IconData(0xf76f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_stroke_pen = IconData(0xf770, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_subscript = IconData(0xf771, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_subset = IconData(0xf772, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_subway = IconData(0xf773, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sun = IconData(0xf77d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sun_bright = IconData(0xf774, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sun_dim = IconData(0xf775, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sun_drizzle = IconData(0xf776, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sun_fog = IconData(0xf777, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sun_rain = IconData(0xf779, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sun_rain_wind = IconData(0xf778, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sun_rise = IconData(0xf77a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sun_set = IconData(0xf77b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sun_snow = IconData(0xf77c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_superscript = IconData(0xf77e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_superset = IconData(0xf77f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_surfboard = IconData(0xf780, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sushi = IconData(0xf781, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_swap_diagonal = IconData(0xf782, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_swap_horizontal = IconData(0xf783, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_swap_vertical = IconData(0xf784, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_swatch = IconData(0xf785, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_swimming = IconData(0xf787, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_swimming_pool = IconData(0xf786, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sword = IconData(0xf789, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_sword_alt = IconData(0xf788, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_syringe = IconData(0xf78a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_t_shirt = IconData(0xf78b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tab = IconData(0xf78c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_table = IconData(0xf798, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_table_cells = IconData(0xf78e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_table_cells_large = IconData(0xf78d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_table_columns = IconData(0xf791, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_table_columns_merge = IconData(0xf78f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_table_columns_split = IconData(0xf790, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_table_layout = IconData(0xf792, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_table_list = IconData(0xf793, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_table_rows = IconData(0xf796, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_table_rows_merge = IconData(0xf794, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_table_rows_split = IconData(0xf795, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_table_tennis = IconData(0xf797, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tablet = IconData(0xf799, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tabs = IconData(0xf79a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tachometer = IconData(0xf79c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tachometer_alt = IconData(0xf79b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_taco = IconData(0xf79d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tag = IconData(0xf7a0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tag_alt = IconData(0xf79e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tag_x = IconData(0xf79f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_takeaway = IconData(0xf7a1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tape = IconData(0xf7a2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_target = IconData(0xf7a3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_task = IconData(0xf7a4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_taxi = IconData(0xf7a5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_temple = IconData(0xf7a6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tennis = IconData(0xf7a9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tennis_ball = IconData(0xf7a8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tennis_ball_alt = IconData(0xf7a7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tent = IconData(0xf7aa, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_terminal = IconData(0xf7ab, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_test_tube = IconData(0xf7ac, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_text_height = IconData(0xf7ad, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_text_underline = IconData(0xf7ae, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_text_width = IconData(0xf7af, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_texture = IconData(0xf7b0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_thermometer = IconData(0xf7b1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_thought_bubble = IconData(0xf7b2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_thread_roll = IconData(0xf7b3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_thumb_down = IconData(0xf7b4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_thumb_up = IconData(0xf7b5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_thunder = IconData(0xf7b6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ticket = IconData(0xf7b8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ticket_star = IconData(0xf7b7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tickets = IconData(0xf7b9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_timeline = IconData(0xf7ba, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_timer = IconData(0xf7bb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tiny_home = IconData(0xf7bc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tired = IconData(0xf7bd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_toggle_big_left = IconData(0xf7be, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_toggle_big_right = IconData(0xf7bf, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_toggle_left = IconData(0xf7c0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_toggle_right = IconData(0xf7c1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_toggles = IconData(0xf7c2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_toilet_roll = IconData(0xf7c3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tooth = IconData(0xf7c4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_torch = IconData(0xf7c5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tornado = IconData(0xf7c6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_torus = IconData(0xf7c7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_towel = IconData(0xf7c8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_toy_car = IconData(0xf7c9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_traffic_barrier = IconData(0xf7ca, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_traffic_cone = IconData(0xf7cb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_train = IconData(0xf7cc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tram = IconData(0xf7cd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_transgender = IconData(0xf7ce, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_translate = IconData(0xf7cf, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_transparency = IconData(0xf7d0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_trash = IconData(0xf7d3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_trash_alt = IconData(0xf7d1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_trash_x = IconData(0xf7d2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_treasure_chest = IconData(0xf7d4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tree = IconData(0xf7d6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tree_alt = IconData(0xf7d5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_trees = IconData(0xf7d7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_trending_down = IconData(0xf7d8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_trending_up = IconData(0xf7d9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_triangle = IconData(0xf7db, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_triangle_half = IconData(0xf7da, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_trip = IconData(0xf7dc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_trophy = IconData(0xf7de, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_trophy_star = IconData(0xf7dd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_truck = IconData(0xf7df, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_turkey_meat = IconData(0xf7e0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_turn_down = IconData(0xf7e1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_turn_left = IconData(0xf7e2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_turn_right = IconData(0xf7e3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_turn_up = IconData(0xf7e4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tv = IconData(0xf7e6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_tv_alt = IconData(0xf7e5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_ufo = IconData(0xf7e7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_umbrella = IconData(0xf7e9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_umbrella_alt = IconData(0xf7e8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_underline = IconData(0xf7ed, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_underline_dashed = IconData(0xf7ea, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_underline_dotted = IconData(0xf7eb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_underline_wavy = IconData(0xf7ec, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_undershirt = IconData(0xf7ee, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_undo = IconData(0xf7f2, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_undo_alt = IconData(0xf7ef, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_undo_stroke = IconData(0xf7f1, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_undo_stroke_alt = IconData(0xf7f0, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_universal_access = IconData(0xf7f3, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_unlink = IconData(0xf7f5, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_unlink_alt = IconData(0xf7f4, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_uppercase = IconData(0xf7f6, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_upside_down = IconData(0xf7f7, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_usb = IconData(0xf7f8, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_user = IconData(0xf803, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_user_check = IconData(0xf7f9, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_user_circle = IconData(0xf7fa, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_user_hexagon = IconData(0xf7fb, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_user_id_card = IconData(0xf7fc, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_user_minus = IconData(0xf7fd, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_user_plus = IconData(0xf7fe, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_user_search = IconData(0xf7ff, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_user_square = IconData(0xf800, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_user_voice = IconData(0xf801, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_user_x = IconData(0xf802, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_van = IconData(0xf804, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_variable = IconData(0xf805, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vector = IconData(0xf808, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vector_square = IconData(0xf806, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vector_triangle = IconData(0xf807, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vertical_align_bottom = IconData(0xf809, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vertical_align_center = IconData(0xf80a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vertical_align_top = IconData(0xf80b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vertical_bottom = IconData(0xf80c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vertical_center = IconData(0xf80d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vertical_distribute_bottom = IconData(0xf80e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vertical_distribute_center = IconData(0xf80f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vertical_distribute_top = IconData(0xf810, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vertical_spacing = IconData(0xf811, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vertical_top = IconData(0xf812, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vial = IconData(0xf814, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vial_alt = IconData(0xf813, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_video = IconData(0xf818, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_video_cinema = IconData(0xf815, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_video_plus = IconData(0xf816, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_video_slash = IconData(0xf817, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vignette = IconData(0xf819, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_virus = IconData(0xf81b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_virus_slash = IconData(0xf81a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_voicemail = IconData(0xf81c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_volleyball = IconData(0xf81d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_volume = IconData(0xf821, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_volume_full = IconData(0xf81e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_volume_low = IconData(0xf81f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_volume_mute = IconData(0xf820, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vr_goggles = IconData(0xf822, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_vr_headset = IconData(0xf823, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_waffle = IconData(0xf824, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_walking = IconData(0xf825, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wall = IconData(0xf826, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wallet = IconData(0xf82a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wallet_alt = IconData(0xf827, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wallet_cards = IconData(0xf828, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wallet_note = IconData(0xf829, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_warehouse = IconData(0xf82b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_washer = IconData(0xf82c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_water = IconData(0xf831, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_water_drop = IconData(0xf82f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_water_drop_alt = IconData(0xf82d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_water_drop_half = IconData(0xf82e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_water_spray = IconData(0xf830, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_watermelon = IconData(0xf832, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_waveform = IconData(0xf833, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_webcam = IconData(0xf834, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_webhook = IconData(0xf835, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_whiteboard = IconData(0xf837, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_whiteboard_alt = IconData(0xf836, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_widget = IconData(0xf83b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_widget_horizontal = IconData(0xf838, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_widget_small = IconData(0xf839, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_widget_vertical = IconData(0xf83a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wifi = IconData(0xf840, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wifi_0 = IconData(0xf83c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wifi_1 = IconData(0xf83d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wifi_2 = IconData(0xf83e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wifi_slash = IconData(0xf83f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wind = IconData(0xf843, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wind_alt = IconData(0xf841, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wind_storm = IconData(0xf842, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_window = IconData(0xf848, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_window_arrow_in = IconData(0xf844, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_window_arrow_out = IconData(0xf845, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_window_mac = IconData(0xf847, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_window_mac_alt = IconData(0xf846, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_windows = IconData(0xf849, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wine = IconData(0xf84b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wine_alt = IconData(0xf84a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wink_smile = IconData(0xf84c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wink_tongue = IconData(0xf84d, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_woman = IconData(0xf84e, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_won = IconData(0xf84f, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_workflow = IconData(0xf851, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_workflow_alt = IconData(0xf850, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wrist_watch = IconData(0xf855, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wrist_watch_alt = IconData(0xf852, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wrist_watch_round = IconData(0xf854, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_wrist_watch_round_alt = IconData(0xf853, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_x = IconData(0xf859, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_x_circle = IconData(0xf856, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_x_shield = IconData(0xf857, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_x_square = IconData(0xf858, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_yarn_ball = IconData(0xf85a, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_yen = IconData(0xf85b, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+  static const IconData bx_yin_yang = IconData(0xf85c, fontFamily: "Boxicons", fontPackage: "flutter_boxicons");
+
+  // Brand icons
+  static const IconData bxl_500px = IconData(0xf101, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_99designs = IconData(0xf102, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_adobe = IconData(0xf103, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_airbnb = IconData(0xf104, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_algolia = IconData(0xf105, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_amazon = IconData(0xf106, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_amex = IconData(0xf107, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_android = IconData(0xf108, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_angular = IconData(0xf109, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_anthropic = IconData(0xf10a, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_apple = IconData(0xf10c, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_apple_music = IconData(0xf10b, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_arc_browser = IconData(0xf10d, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_artstation = IconData(0xf10e, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_asana = IconData(0xf10f, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_atlassian = IconData(0xf110, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_atom_editor = IconData(0xf111, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_audible = IconData(0xf112, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_auth0 = IconData(0xf113, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_autodesk = IconData(0xf114, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_aws = IconData(0xf115, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_baidu = IconData(0xf116, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_bash = IconData(0xf117, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_behance = IconData(0xf118, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_better_auth = IconData(0xf119, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_bing = IconData(0xf11a, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_bitcoin_logo = IconData(0xf11b, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_blender = IconData(0xf11c, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_blogger = IconData(0xf11d, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_bluesky = IconData(0xf11e, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_bolt_b = IconData(0xf11f, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_bootstrap = IconData(0xf120, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_boxicons = IconData(0xf121, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_brave_browser = IconData(0xf122, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_bun = IconData(0xf123, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_buy_me_a_coffee = IconData(0xf124, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_c = IconData(0xf127, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_c_plus_plus = IconData(0xf125, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_c_sharp = IconData(0xf126, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_canva = IconData(0xf128, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_chess_com = IconData(0xf129, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_chrome = IconData(0xf12a, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_claude_ai = IconData(0xf12b, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_clerk = IconData(0xf12c, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_cloudflare = IconData(0xf12d, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_codepen = IconData(0xf12e, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_convex = IconData(0xf12f, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_creative_commons = IconData(0xf130, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_crunchyroll = IconData(0xf131, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_css3 = IconData(0xf132, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_cursor_ai = IconData(0xf133, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_dailymotion = IconData(0xf134, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_deepmind = IconData(0xf135, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_deepseek = IconData(0xf136, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_deezer = IconData(0xf137, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_deno = IconData(0xf138, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_dev_to = IconData(0xf139, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_deviantart = IconData(0xf13a, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_devpost = IconData(0xf13b, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_digg = IconData(0xf13c, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_digitalocean = IconData(0xf13d, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_discord = IconData(0xf13f, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_discord_alt = IconData(0xf13e, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_discourse = IconData(0xf140, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_discover = IconData(0xf141, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_django = IconData(0xf142, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_docker = IconData(0xf143, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_dot_env = IconData(0xf144, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_dribbble = IconData(0xf145, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_drizzle_orm = IconData(0xf146, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_dropbox = IconData(0xf147, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_ebay = IconData(0xf148, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_edge = IconData(0xf149, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_ember_js = IconData(0xf14a, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_etsy = IconData(0xf14b, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_expo = IconData(0xf14c, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_express_js = IconData(0xf14d, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_facebook = IconData(0xf150, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_facebook_circle = IconData(0xf14e, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_facebook_square = IconData(0xf14f, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_fastapi = IconData(0xf151, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_fastify = IconData(0xf152, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_figma = IconData(0xf154, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_figma_alt = IconData(0xf153, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_firebase = IconData(0xf155, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_firefox = IconData(0xf156, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_fiverr = IconData(0xf157, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_flask = IconData(0xf159, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_flask_old = IconData(0xf158, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_flickr = IconData(0xf15b, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_flickr_square = IconData(0xf15a, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_flutter = IconData(0xf15c, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_foursquare = IconData(0xf15d, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_framer = IconData(0xf15e, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_gatsby_js = IconData(0xf15f, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_gemini = IconData(0xf160, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_git = IconData(0xf161, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_github = IconData(0xf163, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_github_copilot = IconData(0xf162, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_gitlab = IconData(0xf164, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_gmail = IconData(0xf165, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_go_lang = IconData(0xf166, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_google = IconData(0xf16a, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_google_antigravity = IconData(0xf167, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_google_cloud = IconData(0xf168, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_google_pay = IconData(0xf169, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_graphql = IconData(0xf16b, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_grok = IconData(0xf16c, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_groq_ai = IconData(0xf16d, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_gsap = IconData(0xf16e, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_gumroad = IconData(0xf16f, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_hashnode = IconData(0xf170, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_hcaptcha = IconData(0xf171, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_heroku = IconData(0xf172, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_hono_js = IconData(0xf173, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_html5 = IconData(0xf174, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_hugo = IconData(0xf175, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_ibm = IconData(0xf176, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_imdb = IconData(0xf177, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_instagram = IconData(0xf179, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_instagram_alt = IconData(0xf178, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_intercom = IconData(0xf17a, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_internet_explorer = IconData(0xf17b, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_invision = IconData(0xf17c, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_java = IconData(0xf17d, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_javascript = IconData(0xf17e, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_joomla = IconData(0xf17f, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_jquery = IconData(0xf180, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_jsfiddle = IconData(0xf181, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_jwt = IconData(0xf182, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_kick = IconData(0xf183, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_kickstarter = IconData(0xf184, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_kotlin = IconData(0xf185, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_kubernetes = IconData(0xf186, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_laravel = IconData(0xf187, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_leetcode = IconData(0xf188, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_lemon_squeezy = IconData(0xf189, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_less = IconData(0xf18a, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_letterboxd = IconData(0xf18b, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_lichess = IconData(0xf18c, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_line_chat = IconData(0xf18d, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_linear_app = IconData(0xf18e, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_linkedin = IconData(0xf190, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_linkedin_square = IconData(0xf18f, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_linktree = IconData(0xf191, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_loom = IconData(0xf192, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_lottie_files = IconData(0xf193, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_lottie_lab = IconData(0xf194, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_lovable = IconData(0xf195, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_lyft = IconData(0xf196, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_magento = IconData(0xf197, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_mailchimp = IconData(0xf198, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_markdown = IconData(0xf199, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_mastercard = IconData(0xf19a, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_mastodon = IconData(0xf19b, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_mcp = IconData(0xf19c, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_medium = IconData(0xf19f, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_medium_old = IconData(0xf19d, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_medium_square = IconData(0xf19e, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_messenger = IconData(0xf1a0, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_meta = IconData(0xf1a1, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_microsoft = IconData(0xf1a4, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_microsoft_teams = IconData(0xf1a2, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_microsoft_windows = IconData(0xf1a3, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_midjourney = IconData(0xf1a5, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_mongodb = IconData(0xf1a6, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_motion_js = IconData(0xf1a7, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_mozilla = IconData(0xf1a8, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_my_sql = IconData(0xf1a9, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_neon_tech = IconData(0xf1aa, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_neovim = IconData(0xf1ab, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_nest_js = IconData(0xf1ac, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_netlify = IconData(0xf1ad, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_next_js = IconData(0xf1ae, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_nodejs = IconData(0xf1af, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_notion = IconData(0xf1b0, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_npm = IconData(0xf1b1, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_nuxt_js = IconData(0xf1b2, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_ok_ru = IconData(0xf1b3, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_ollama = IconData(0xf1b4, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_openai = IconData(0xf1b5, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_opensea = IconData(0xf1b6, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_opera = IconData(0xf1b7, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_paddle_p = IconData(0xf1b8, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_paper_design = IconData(0xf1b9, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_patreon = IconData(0xf1ba, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_payload_cms = IconData(0xf1bb, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_paypal = IconData(0xf1bc, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_periscope = IconData(0xf1bd, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_perplexity_ai = IconData(0xf1be, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_php = IconData(0xf1bf, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_pinterest = IconData(0xf1c1, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_pinterest_alt = IconData(0xf1c0, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_planetscale = IconData(0xf1c2, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_play_store = IconData(0xf1c3, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_playstation = IconData(0xf1c4, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_pocket = IconData(0xf1c5, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_polar = IconData(0xf1c6, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_postgresql = IconData(0xf1c7, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_prisma_orm = IconData(0xf1c8, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_product_hunt = IconData(0xf1c9, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_python = IconData(0xf1ca, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_qdrant = IconData(0xf1cb, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_qq = IconData(0xf1cc, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_quora = IconData(0xf1cd, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_radix_ui = IconData(0xf1ce, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_railway = IconData(0xf1cf, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_rasberry_pi = IconData(0xf1d0, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_react = IconData(0xf1d3, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_react_query = IconData(0xf1d1, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_react_router = IconData(0xf1d2, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_redbubble = IconData(0xf1d4, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_reddit = IconData(0xf1d5, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_redux = IconData(0xf1d6, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_remix_js = IconData(0xf1d7, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_replit = IconData(0xf1d8, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_resend = IconData(0xf1d9, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_roblox = IconData(0xf1da, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_sanity = IconData(0xf1db, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_sass = IconData(0xf1dc, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_sentry = IconData(0xf1dd, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_shadcn_ui = IconData(0xf1de, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_shopify = IconData(0xf1df, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_sketch = IconData(0xf1e0, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_skype = IconData(0xf1e1, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_slack = IconData(0xf1e3, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_slack_old = IconData(0xf1e2, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_snapchat = IconData(0xf1e4, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_socket_io = IconData(0xf1e5, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_soundcloud = IconData(0xf1e6, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_spotify = IconData(0xf1e7, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_spring_boot = IconData(0xf1e8, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_squarespace = IconData(0xf1e9, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_sst = IconData(0xf1ea, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_stack_overflow = IconData(0xf1eb, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_stackblitz = IconData(0xf1ec, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_steam = IconData(0xf1ed, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_stripe = IconData(0xf1ee, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_supabase = IconData(0xf1ef, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_svelte = IconData(0xf1f0, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_tailwind_css = IconData(0xf1f1, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_telegram = IconData(0xf1f2, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_terraform = IconData(0xf1f3, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_threads = IconData(0xf1f4, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_three_js = IconData(0xf1f5, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_tiktok = IconData(0xf1f6, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_trello = IconData(0xf1f7, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_trip_advisor = IconData(0xf1f8, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_trpc = IconData(0xf1f9, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_trustpilot = IconData(0xf1fa, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_tumblr = IconData(0xf1fb, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_tux = IconData(0xf1fc, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_twitch = IconData(0xf1fd, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_twitter = IconData(0xf1ff, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_twitter_x = IconData(0xf1fe, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_typescript = IconData(0xf200, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_uber = IconData(0xf201, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_ubuntu = IconData(0xf202, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_udacity = IconData(0xf203, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_union_pay = IconData(0xf204, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_unity = IconData(0xf205, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_unsplash = IconData(0xf206, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_upi = IconData(0xf207, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_upwork = IconData(0xf208, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_v0 = IconData(0xf209, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_venmo = IconData(0xf20a, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_vercel = IconData(0xf20b, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_vimeo = IconData(0xf20c, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_visa = IconData(0xf20d, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_visual_studio = IconData(0xf20e, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_vite_js = IconData(0xf20f, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_vk = IconData(0xf210, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_vuejs = IconData(0xf211, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_waze = IconData(0xf212, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_web_components = IconData(0xf213, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_webflow = IconData(0xf214, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_wechat = IconData(0xf215, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_weibo = IconData(0xf216, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_whatsapp = IconData(0xf218, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_whatsapp_square = IconData(0xf217, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_wikipedia = IconData(0xf219, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_windsurf = IconData(0xf21a, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_wix = IconData(0xf21b, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_wordpress = IconData(0xf21c, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_work_os = IconData(0xf21d, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_xai = IconData(0xf21e, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_xbox = IconData(0xf21f, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_xing = IconData(0xf220, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_yahoo = IconData(0xf221, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_yarn = IconData(0xf222, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_yelp = IconData(0xf223, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_youtube = IconData(0xf225, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_youtube_music = IconData(0xf224, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_zen_browser = IconData(0xf226, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+  static const IconData bxl_zoom_workplace = IconData(0xf227, fontFamily: "BoxiconsBrands", fontPackage: "flutter_boxicons");
+
+  // Filled icons
+  static const IconData bxf_8_ball = IconData(0xf101, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_a_arrow_down = IconData(0xf102, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_a_arrow_up = IconData(0xf103, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_accessibility = IconData(0xf104, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_acorn = IconData(0xf105, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_address_book = IconData(0xf106, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_air = IconData(0xf108, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_air_conditioner = IconData(0xf107, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_airplay = IconData(0xf109, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_alarm = IconData(0xf111, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_alarm_alt = IconData(0xf10a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_alarm_check = IconData(0xf10b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_alarm_exclamation = IconData(0xf10c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_alarm_minus = IconData(0xf10d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_alarm_plus = IconData(0xf10e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_alarm_slash = IconData(0xf10f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_alarm_z = IconData(0xf110, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_album_covers = IconData(0xf112, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_alert_circle = IconData(0xf113, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_alert_octagon = IconData(0xf114, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_alert_shield = IconData(0xf115, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_alert_square = IconData(0xf116, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_alert_triangle = IconData(0xf117, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_alien = IconData(0xf118, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_align_center = IconData(0xf119, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_align_horizontal_justify_center = IconData(0xf11a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_align_horizontal_justify_end = IconData(0xf11b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_align_horizontal_justify_start = IconData(0xf11c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_align_horizontal_space_between = IconData(0xf11d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_align_justify = IconData(0xf11e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_align_left = IconData(0xf11f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_align_right = IconData(0xf120, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_align_vertical_justify_center = IconData(0xf121, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_align_vertical_justify_end = IconData(0xf122, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_align_vertical_justify_start = IconData(0xf123, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_align_vertical_space_between = IconData(0xf124, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ambulance = IconData(0xf125, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ampersand = IconData(0xf126, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_analyze = IconData(0xf127, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_anchor = IconData(0xf128, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_angle = IconData(0xf129, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_angry = IconData(0xf12a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_animation_bounce = IconData(0xf12b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_announcement = IconData(0xf12c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_apartment = IconData(0xf12d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_apple_full = IconData(0xf12e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_approximate = IconData(0xf12f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_apps = IconData(0xf131, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_apps_alt = IconData(0xf130, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arch = IconData(0xf132, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_archive = IconData(0xf136, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_archive_alt = IconData(0xf133, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_archive_arrow_down = IconData(0xf134, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_archive_arrow_up = IconData(0xf135, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_area = IconData(0xf137, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_big_down = IconData(0xf139, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_big_down_line = IconData(0xf138, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_big_left = IconData(0xf13b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_big_left_line = IconData(0xf13a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_big_right = IconData(0xf13d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_big_right_line = IconData(0xf13c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_big_up = IconData(0xf13f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_big_up_line = IconData(0xf13e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_cross = IconData(0xf140, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down = IconData(0xf156, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_a_z = IconData(0xf141, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_circle = IconData(0xf142, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_left = IconData(0xf148, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_left_circle = IconData(0xf143, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_left_square = IconData(0xf144, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_left_stroke = IconData(0xf147, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_left_stroke_circle = IconData(0xf145, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_left_stroke_square = IconData(0xf146, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_narrow_wide = IconData(0xf149, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_right = IconData(0xf14f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_right_circle = IconData(0xf14a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_right_square = IconData(0xf14b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_right_stroke = IconData(0xf14e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_right_stroke_circle = IconData(0xf14c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_right_stroke_square = IconData(0xf14d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_square = IconData(0xf150, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_stroke = IconData(0xf153, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_stroke_circle = IconData(0xf151, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_stroke_square = IconData(0xf152, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_up = IconData(0xf154, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_down_wide_narrow = IconData(0xf155, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_from_bottom = IconData(0xf158, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_from_bottom_stroke = IconData(0xf157, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_from_left = IconData(0xf15a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_from_left_stroke = IconData(0xf159, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_from_right = IconData(0xf15c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_from_right_stroke = IconData(0xf15b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_from_top = IconData(0xf15e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_from_top_stroke = IconData(0xf15d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_down_circle_half = IconData(0xf15f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_down_left_circle = IconData(0xf160, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_down_left_square = IconData(0xf161, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_down_left_stroke_circle = IconData(0xf162, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_down_left_stroke_square = IconData(0xf163, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_down_right_circle = IconData(0xf164, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_down_right_square = IconData(0xf165, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_down_right_stroke_circle = IconData(0xf166, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_down_right_stroke_square = IconData(0xf167, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_down_square_half = IconData(0xf168, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_down_stroke_circle_half = IconData(0xf169, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_left_circle_half = IconData(0xf16a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_left_square_half = IconData(0xf16b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_left_stroke_circle_half = IconData(0xf16c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_right_circle_half = IconData(0xf16d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_right_square_half = IconData(0xf16e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_right_stroke_circle_half = IconData(0xf16f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_up_circle_half = IconData(0xf170, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_up_left_circle = IconData(0xf171, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_up_left_square = IconData(0xf172, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_up_left_stroke_circle = IconData(0xf173, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_up_left_stroke_square = IconData(0xf174, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_up_right_circle = IconData(0xf175, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_up_right_square = IconData(0xf176, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_up_right_stroke_circle = IconData(0xf177, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_up_right_stroke_square = IconData(0xf178, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_up_square_half = IconData(0xf179, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_in_up_stroke_circle_half = IconData(0xf17a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_left = IconData(0xf181, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_left_circle = IconData(0xf17b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_left_right = IconData(0xf17c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_left_square = IconData(0xf17d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_left_stroke = IconData(0xf180, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_left_stroke_circle = IconData(0xf17e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_left_stroke_square = IconData(0xf17f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_down_circle_half = IconData(0xf182, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_down_left_circle = IconData(0xf183, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_down_left_square = IconData(0xf184, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_down_left_stroke_circle = IconData(0xf185, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_down_left_stroke_square = IconData(0xf186, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_down_right_circle = IconData(0xf187, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_down_right_square = IconData(0xf188, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_down_right_stroke_circle = IconData(0xf189, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_down_right_stroke_square = IconData(0xf18a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_down_square_half = IconData(0xf18b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_down_stroke_circle_half = IconData(0xf18c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_left_circle_half = IconData(0xf18d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_left_square_half = IconData(0xf18e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_left_stroke_circle_half = IconData(0xf18f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_right_circle_half = IconData(0xf190, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_right_square_half = IconData(0xf191, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_right_stroke_circle_half = IconData(0xf192, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_up_circle_half = IconData(0xf193, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_up_left_circle = IconData(0xf194, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_up_left_square = IconData(0xf195, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_up_left_stroke_circle = IconData(0xf196, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_up_left_stroke_square = IconData(0xf197, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_up_right_circle = IconData(0xf198, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_up_right_square = IconData(0xf199, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_up_right_stroke_circle = IconData(0xf19a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_up_right_stroke_square = IconData(0xf19b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_up_square_half = IconData(0xf19c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_out_up_stroke_circle_half = IconData(0xf19d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_right = IconData(0xf1a4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_right_circle = IconData(0xf19e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_right_left = IconData(0xf19f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_right_square = IconData(0xf1a0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_right_stroke = IconData(0xf1a3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_right_stroke_circle = IconData(0xf1a1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_right_stroke_square = IconData(0xf1a2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_s_down = IconData(0xf1a5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_s_left = IconData(0xf1a6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_s_right = IconData(0xf1a7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_s_up = IconData(0xf1a8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_to_bottom = IconData(0xf1aa, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_to_bottom_stroke = IconData(0xf1a9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_to_left = IconData(0xf1ac, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_to_left_stroke = IconData(0xf1ab, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_to_right = IconData(0xf1ae, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_to_right_stroke = IconData(0xf1ad, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_to_top = IconData(0xf1b0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_to_top_stroke = IconData(0xf1af, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up = IconData(0xf1c6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_a_z = IconData(0xf1b1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_circle = IconData(0xf1b2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_down = IconData(0xf1b3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_left = IconData(0xf1b9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_left_circle = IconData(0xf1b4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_left_square = IconData(0xf1b5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_left_stroke = IconData(0xf1b8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_left_stroke_circle = IconData(0xf1b6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_left_stroke_square = IconData(0xf1b7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_narrow_wide = IconData(0xf1ba, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_right = IconData(0xf1c0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_right_circle = IconData(0xf1bb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_right_square = IconData(0xf1bc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_right_stroke = IconData(0xf1bf, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_right_stroke_circle = IconData(0xf1bd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_right_stroke_square = IconData(0xf1be, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_square = IconData(0xf1c1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_stroke = IconData(0xf1c4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_stroke_circle = IconData(0xf1c2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_stroke_square = IconData(0xf1c3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_arrow_up_wide_narrow = IconData(0xf1c5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_article = IconData(0xf1c7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_asterisk = IconData(0xf1c8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_at = IconData(0xf1c9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_atom = IconData(0xf1ca, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_avocado = IconData(0xf1cb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_axe = IconData(0xf1cc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_background = IconData(0xf1ce, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_background_color_fill = IconData(0xf1cd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_backpack = IconData(0xf1d0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_backpack_star = IconData(0xf1cf, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_backspace = IconData(0xf1d1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_backward_slash = IconData(0xf1d2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bacon = IconData(0xf1d3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bacteria = IconData(0xf1d4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_badge = IconData(0xf1d8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_badge_check = IconData(0xf1d5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_badge_exclamation = IconData(0xf1d6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_badge_info = IconData(0xf1d7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_baguette = IconData(0xf1d9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bahai = IconData(0xf1da, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_balcony = IconData(0xf1db, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ball_throw = IconData(0xf1dc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_balloon = IconData(0xf1dd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_band_aid = IconData(0xf1de, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bank = IconData(0xf1df, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bar_chart = IconData(0xf1e2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bar_chart_big = IconData(0xf1e0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bar_chart_square = IconData(0xf1e1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_barcode = IconData(0xf1e4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_barcode_square = IconData(0xf1e3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_barn = IconData(0xf1e5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_baseball = IconData(0xf1e6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_basket = IconData(0xf1e7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_basketball = IconData(0xf1e8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bath = IconData(0xf1e9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_battery = IconData(0xf1ef, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_battery_1 = IconData(0xf1ea, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_battery_2 = IconData(0xf1eb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_battery_3 = IconData(0xf1ec, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_battery_full = IconData(0xf1ed, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_battery_low = IconData(0xf1ee, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_beach = IconData(0xf1f1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_beach_ball = IconData(0xf1f0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_beaker = IconData(0xf1f2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_beanie = IconData(0xf1f3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bear = IconData(0xf1f4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bed = IconData(0xf1f6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bed_alt = IconData(0xf1f5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_beer = IconData(0xf1f7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bell = IconData(0xf1fd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bell_check = IconData(0xf1f8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bell_minus = IconData(0xf1f9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bell_plus = IconData(0xf1fa, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bell_ring = IconData(0xf1fb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bell_slash = IconData(0xf1fc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bench = IconData(0xf1fe, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_between_horizontal_end = IconData(0xf1ff, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_between_horizontal_start = IconData(0xf200, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_between_vertical_end = IconData(0xf201, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_between_vertical_start = IconData(0xf202, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bible = IconData(0xf203, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_biceps = IconData(0xf204, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_binocular = IconData(0xf205, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bird = IconData(0xf207, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bird_alt = IconData(0xf206, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_birthday_cake = IconData(0xf208, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bitcoin = IconData(0xf209, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_blanket = IconData(0xf20a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_blob = IconData(0xf20b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_block = IconData(0xf20c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_blockquote = IconData(0xf20d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_blocks = IconData(0xf20e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bluetooth = IconData(0xf20f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_blur = IconData(0xf211, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_blur_alt = IconData(0xf210, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_body = IconData(0xf212, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bold = IconData(0xf213, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bolt = IconData(0xf217, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bolt_alt = IconData(0xf214, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bolt_circle = IconData(0xf215, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bolt_square = IconData(0xf216, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bomb = IconData(0xf218, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bone = IconData(0xf219, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bong = IconData(0xf21a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_book = IconData(0xf222, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_book_add = IconData(0xf21b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_book_alt = IconData(0xf21c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_book_bookmark = IconData(0xf21d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_book_content = IconData(0xf21e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_book_heart = IconData(0xf21f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_book_library = IconData(0xf220, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_book_open = IconData(0xf221, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bookmark = IconData(0xf22b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bookmark_alt = IconData(0xf223, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bookmark_heart = IconData(0xf224, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bookmark_minus = IconData(0xf226, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bookmark_minus_alt = IconData(0xf225, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bookmark_plus = IconData(0xf228, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bookmark_plus_alt = IconData(0xf227, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bookmark_star = IconData(0xf229, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bookmark_x = IconData(0xf22a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bookmarks = IconData(0xf22c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_boombox = IconData(0xf22d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_boot = IconData(0xf22e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_border_all = IconData(0xf22f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_border_bottom = IconData(0xf230, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_border_inner = IconData(0xf231, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_border_left = IconData(0xf232, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_border_none = IconData(0xf233, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_border_outer = IconData(0xf234, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_border_radius = IconData(0xf235, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_border_right = IconData(0xf236, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_border_top = IconData(0xf237, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bow = IconData(0xf238, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bowl_balls = IconData(0xf239, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bowl_bubbles = IconData(0xf23a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bowl_hot = IconData(0xf23b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bowl_noodles = IconData(0xf23d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bowl_noodles_alt = IconData(0xf23c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bowl_rice = IconData(0xf23e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bowling_ball = IconData(0xf23f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_box = IconData(0xf241, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_box_alt = IconData(0xf240, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bracket = IconData(0xf244, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bracket_curly = IconData(0xf242, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bracket_round = IconData(0xf243, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_braille = IconData(0xf245, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_brain = IconData(0xf247, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_brain_circuit = IconData(0xf246, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bread = IconData(0xf248, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_brick = IconData(0xf249, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bridge = IconData(0xf24a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_briefcase = IconData(0xf24d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_briefcase_alt = IconData(0xf24c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_briefcase_alt_2 = IconData(0xf24b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_brightness = IconData(0xf24f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_brightness_half = IconData(0xf24e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_broadcast = IconData(0xf250, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_broccoli = IconData(0xf251, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_broom = IconData(0xf252, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_browser_activity = IconData(0xf253, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_brush = IconData(0xf255, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_brush_sparkles = IconData(0xf254, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bucket = IconData(0xf256, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_buddhism = IconData(0xf257, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bug = IconData(0xf259, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bug_alt = IconData(0xf258, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_building = IconData(0xf25d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_building_hospital = IconData(0xf25a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_building_house = IconData(0xf25b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_building_small = IconData(0xf25c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_buildings = IconData(0xf25e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bullseye = IconData(0xf25f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_buoy = IconData(0xf260, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_burger = IconData(0xf262, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_burger_alt = IconData(0xf261, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_bus = IconData(0xf263, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_business = IconData(0xf264, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_butterfly = IconData(0xf265, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_button = IconData(0xf267, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_button_rounded = IconData(0xf266, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cabinet = IconData(0xf268, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cable_car = IconData(0xf269, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cake_slice = IconData(0xf26a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calculator = IconData(0xf26b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calendar = IconData(0xf27b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calendar_alt = IconData(0xf26d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calendar_alt_2 = IconData(0xf26c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calendar_check = IconData(0xf26e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calendar_cog = IconData(0xf26f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calendar_detail = IconData(0xf270, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calendar_down_arrow = IconData(0xf271, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calendar_event = IconData(0xf272, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calendar_heart = IconData(0xf273, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calendar_minus = IconData(0xf274, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calendar_plus = IconData(0xf275, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calendar_search = IconData(0xf276, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calendar_star = IconData(0xf277, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calendar_up_arrow = IconData(0xf278, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calendar_week = IconData(0xf279, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_calendar_x = IconData(0xf27a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_camcoder = IconData(0xf27c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_camera = IconData(0xf285, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_camera_alt = IconData(0xf27d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_camera_flip = IconData(0xf27e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_camera_home = IconData(0xf27f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_camera_monochrome = IconData(0xf280, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_camera_plus = IconData(0xf281, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_camera_portrait = IconData(0xf282, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_camera_slash = IconData(0xf283, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_camera_switch = IconData(0xf284, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_campfire = IconData(0xf286, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_camping = IconData(0xf287, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_candlestick = IconData(0xf288, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cannabis = IconData(0xf289, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cap = IconData(0xf28a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_capitalize = IconData(0xf28b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_capsule = IconData(0xf28c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_captions = IconData(0xf28e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_captions_cc = IconData(0xf28d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_capture = IconData(0xf28f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_car = IconData(0xf294, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_car_battery = IconData(0xf290, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_car_bolt = IconData(0xf291, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_car_key = IconData(0xf292, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_car_sparkles = IconData(0xf293, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_card_view = IconData(0xf299, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_card_view_large = IconData(0xf295, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_card_view_no_title = IconData(0xf296, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_card_view_small = IconData(0xf297, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_card_view_tiles = IconData(0xf298, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_caret_big_down = IconData(0xf29a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_caret_big_left = IconData(0xf29b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_caret_big_right = IconData(0xf29c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_caret_big_up = IconData(0xf29d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_caret_down = IconData(0xf2a0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_caret_down_circle = IconData(0xf29e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_caret_down_square = IconData(0xf29f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_caret_left = IconData(0xf2a3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_caret_left_circle = IconData(0xf2a1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_caret_left_square = IconData(0xf2a2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_caret_right = IconData(0xf2a6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_caret_right_circle = IconData(0xf2a4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_caret_right_square = IconData(0xf2a5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_caret_up = IconData(0xf2a9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_caret_up_circle = IconData(0xf2a7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_caret_up_square = IconData(0xf2a8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_carets_down_up = IconData(0xf2aa, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_carets_left_right = IconData(0xf2ab, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_carets_right_left = IconData(0xf2ac, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_carets_up_down = IconData(0xf2ad, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_carrot = IconData(0xf2ae, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cart = IconData(0xf2b5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cart_alt = IconData(0xf2b0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cart_alt_2 = IconData(0xf2af, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cart_check = IconData(0xf2b1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cart_minus = IconData(0xf2b2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cart_plus = IconData(0xf2b3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cart_x = IconData(0xf2b4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cast = IconData(0xf2b6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_castle = IconData(0xf2b7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cat = IconData(0xf2b9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cat_body = IconData(0xf2b8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_categories = IconData(0xf2ba, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cctv = IconData(0xf2bb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_certification = IconData(0xf2bc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chair = IconData(0xf2bd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_champagne = IconData(0xf2be, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chart_area = IconData(0xf2bf, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chart_bar_big_columns = IconData(0xf2c0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chart_bar_big_rows = IconData(0xf2c1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chart_bar_columns = IconData(0xf2c2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chart_bar_rows = IconData(0xf2c3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chart_bubble = IconData(0xf2c4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chart_gantt = IconData(0xf2c5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chart_line = IconData(0xf2c6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chart_network = IconData(0xf2c7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chart_scatter = IconData(0xf2c8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chart_sine = IconData(0xf2c9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chart_spline = IconData(0xf2ca, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chart_stacked_columns = IconData(0xf2cb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chart_stacked_rows = IconData(0xf2cc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chart_trend = IconData(0xf2cd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chart_waterfall = IconData(0xf2ce, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_check = IconData(0xf2d2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_check_circle = IconData(0xf2cf, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_check_shield = IconData(0xf2d0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_check_square = IconData(0xf2d1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_checkbox = IconData(0xf2d5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_checkbox_checked = IconData(0xf2d3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_checkbox_square = IconData(0xf2d4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_checklist = IconData(0xf2d6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_checks = IconData(0xf2d7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cheese = IconData(0xf2d8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chef_hat = IconData(0xf2d9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cherry = IconData(0xf2da, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chess = IconData(0xf2e1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chess_bishop = IconData(0xf2db, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chess_king = IconData(0xf2dc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chess_knight = IconData(0xf2dd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chess_pawn = IconData(0xf2de, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chess_queen = IconData(0xf2df, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chess_rook = IconData(0xf2e0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevron_down = IconData(0xf2e4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevron_down_circle = IconData(0xf2e2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevron_down_square = IconData(0xf2e3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevron_left = IconData(0xf2e7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevron_left_circle = IconData(0xf2e5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevron_left_square = IconData(0xf2e6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevron_right = IconData(0xf2ea, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevron_right_circle = IconData(0xf2e8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevron_right_square = IconData(0xf2e9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevron_up = IconData(0xf2ed, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevron_up_circle = IconData(0xf2eb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevron_up_square = IconData(0xf2ec, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevrons_down = IconData(0xf2ef, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevrons_down_up = IconData(0xf2ee, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevrons_left = IconData(0xf2f1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevrons_left_right = IconData(0xf2f0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevrons_right = IconData(0xf2f3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevrons_right_left = IconData(0xf2f2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevrons_up = IconData(0xf2f5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chevrons_up_down = IconData(0xf2f4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_child = IconData(0xf2f6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_chip = IconData(0xf2f7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_christianity = IconData(0xf2f8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_church = IconData(0xf2f9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cigarette = IconData(0xf2fa, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_circle = IconData(0xf305, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_circle_dashed = IconData(0xf2fc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_circle_dashed_half = IconData(0xf2fb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_circle_half = IconData(0xf2fe, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_circle_half_alt = IconData(0xf2fd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_circle_hexagon = IconData(0xf2ff, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_circle_outer_dashed_circle = IconData(0xf300, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_circle_quarter = IconData(0xf302, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_circle_quarter_alt = IconData(0xf301, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_circle_three_quarter = IconData(0xf304, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_circle_three_quarter_alt = IconData(0xf303, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_circles = IconData(0xf308, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_circles_9 = IconData(0xf306, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_circles_alt = IconData(0xf307, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_circuit_board = IconData(0xf309, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_city = IconData(0xf30a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clipboard = IconData(0xf311, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clipboard_check = IconData(0xf30b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clipboard_code = IconData(0xf30c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clipboard_detail = IconData(0xf30d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clipboard_minus = IconData(0xf30e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clipboard_plus = IconData(0xf30f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clipboard_x = IconData(0xf310, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clock = IconData(0xf31f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clock_1 = IconData(0xf312, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clock_10 = IconData(0xf313, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clock_11 = IconData(0xf314, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clock_12 = IconData(0xf315, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clock_2 = IconData(0xf316, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clock_3 = IconData(0xf317, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clock_4 = IconData(0xf318, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clock_5 = IconData(0xf319, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clock_6 = IconData(0xf31a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clock_7 = IconData(0xf31b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clock_8 = IconData(0xf31c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clock_9 = IconData(0xf31d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clock_dashed_half = IconData(0xf31e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cloud = IconData(0xf32b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cloud_alt = IconData(0xf321, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cloud_alt_2 = IconData(0xf320, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cloud_drizzle = IconData(0xf322, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cloud_fog = IconData(0xf323, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cloud_lightning = IconData(0xf324, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cloud_moon = IconData(0xf325, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cloud_rain = IconData(0xf328, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cloud_rain_wind = IconData(0xf327, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cloud_rain_wind_alt = IconData(0xf326, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cloud_snow = IconData(0xf329, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cloud_sun = IconData(0xf32a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_clover = IconData(0xf32c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_club = IconData(0xf32d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cocktail = IconData(0xf32e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_code = IconData(0xf330, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_code_alt = IconData(0xf32f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_coffee = IconData(0xf333, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_coffee_beans = IconData(0xf331, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_coffee_cup = IconData(0xf332, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cog = IconData(0xf334, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cognition = IconData(0xf335, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_coin = IconData(0xf336, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_coins = IconData(0xf337, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_col_resize = IconData(0xf338, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_color_fill = IconData(0xf339, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_color_wheel = IconData(0xf33a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_columns = IconData(0xf33d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_columns_3 = IconData(0xf33b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_columns_4 = IconData(0xf33c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_comic_bubble = IconData(0xf33e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_command = IconData(0xf33f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_community = IconData(0xf340, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_compare = IconData(0xf342, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_compare_alt = IconData(0xf341, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_compass = IconData(0xf344, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_compass_tool = IconData(0xf343, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_component = IconData(0xf345, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_computer = IconData(0xf347, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_computer_retro = IconData(0xf346, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_confused = IconData(0xf348, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_connector = IconData(0xf349, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_contact_book = IconData(0xf34a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_container = IconData(0xf34b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_contrast = IconData(0xf34c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cookie = IconData(0xf34d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cool = IconData(0xf34e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_copy = IconData(0xf354, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_copy_check = IconData(0xf34f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_copy_list = IconData(0xf350, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_copy_minus = IconData(0xf351, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_copy_plus = IconData(0xf352, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_copy_x = IconData(0xf353, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_copyright = IconData(0xf355, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_core = IconData(0xf356, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_couch = IconData(0xf357, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_credit_card = IconData(0xf35b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_credit_card_alt = IconData(0xf358, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_credit_card_front = IconData(0xf359, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_credit_card_insert = IconData(0xf35a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cricket_ball = IconData(0xf35c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_crop = IconData(0xf35d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cross_circle = IconData(0xf35e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_crosshair = IconData(0xf35f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_crown = IconData(0xf360, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_crypto = IconData(0xf362, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_crypto_coin = IconData(0xf361, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cube = IconData(0xf365, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cube_alt = IconData(0xf363, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cube_inside = IconData(0xf364, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cuboid = IconData(0xf366, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cup = IconData(0xf36a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cup_hot = IconData(0xf367, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cup_saucer = IconData(0xf368, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cup_tea = IconData(0xf369, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cupboard = IconData(0xf36c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cupboard_alt = IconData(0xf36b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cupcake = IconData(0xf36d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_currency_note = IconData(0xf36e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_currency_notes = IconData(0xf36f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cursor = IconData(0xf377, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cursor_add = IconData(0xf370, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cursor_cell = IconData(0xf371, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cursor_click = IconData(0xf372, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cursor_crosshair = IconData(0xf374, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cursor_crosshair_dot = IconData(0xf373, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cursor_pen = IconData(0xf375, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cursor_pointer = IconData(0xf376, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cut = IconData(0xf378, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cycling = IconData(0xf379, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_cylinder = IconData(0xf37a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dashboard = IconData(0xf37c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dashboard_alt = IconData(0xf37b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_database = IconData(0xf37e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_database_alt = IconData(0xf37d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_decrease_indent = IconData(0xf37f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_delta = IconData(0xf380, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_department_store = IconData(0xf381, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_desert = IconData(0xf382, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_desk = IconData(0xf383, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_desktop = IconData(0xf385, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_desktop_alt = IconData(0xf384, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_devices = IconData(0xf386, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dialpad = IconData(0xf387, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_diameter = IconData(0xf388, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_diamond = IconData(0xf38a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_diamond_alt = IconData(0xf389, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_diamonds = IconData(0xf38b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dice_1 = IconData(0xf38c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dice_2 = IconData(0xf38d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dice_3 = IconData(0xf38e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dice_4 = IconData(0xf38f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dice_5 = IconData(0xf390, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dice_6 = IconData(0xf391, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dice_roll = IconData(0xf392, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dino = IconData(0xf393, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_directions = IconData(0xf394, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_disc = IconData(0xf395, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_discount = IconData(0xf396, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_discussion = IconData(0xf397, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dish = IconData(0xf398, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dishwasher = IconData(0xf399, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dislike = IconData(0xf39a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_division = IconData(0xf39b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dizzy = IconData(0xf39c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dna = IconData(0xf39d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_bottom = IconData(0xf3a4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_bottom_alt = IconData(0xf39e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_bottom_arrow = IconData(0xf39f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_bottom_left = IconData(0xf3a1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_bottom_left_alt = IconData(0xf3a0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_bottom_right = IconData(0xf3a3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_bottom_right_alt = IconData(0xf3a2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_left = IconData(0xf3a7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_left_alt = IconData(0xf3a5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_left_arrow = IconData(0xf3a6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_right = IconData(0xf3aa, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_right_alt = IconData(0xf3a8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_right_arrow = IconData(0xf3a9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_top = IconData(0xf3b1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_top_alt = IconData(0xf3ab, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_top_arrow = IconData(0xf3ac, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_top_left = IconData(0xf3ae, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_top_left_alt = IconData(0xf3ad, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_top_right = IconData(0xf3b0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dock_top_right_alt = IconData(0xf3af, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dog = IconData(0xf3b4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dog_alt = IconData(0xf3b2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dog_body = IconData(0xf3b3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dollar = IconData(0xf3b7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dollar_circle = IconData(0xf3b6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dollar_circle_stars = IconData(0xf3b5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_donate_blood = IconData(0xf3b8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_donate_heart = IconData(0xf3b9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_donut = IconData(0xf3ba, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_door = IconData(0xf3bd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_door_open = IconData(0xf3bc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_door_open_alt = IconData(0xf3bb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dots_horizontal = IconData(0xf3c0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dots_horizontal_rounded = IconData(0xf3bf, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dots_horizontal_rounded_circle = IconData(0xf3be, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dots_vertical = IconData(0xf3c3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dots_vertical_rounded = IconData(0xf3c2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dots_vertical_rounded_circle = IconData(0xf3c1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_doughnut_chart = IconData(0xf3c4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_draw_ahead = IconData(0xf3c5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_draw_behind = IconData(0xf3c6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_draw_inside = IconData(0xf3c7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dress = IconData(0xf3c8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dribbling = IconData(0xf3c9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dropdown = IconData(0xf3ca, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dryer = IconData(0xf3cb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_duck = IconData(0xf3cc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dumbbell = IconData(0xf3ce, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_dumbbell_alt = IconData(0xf3cd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ear = IconData(0xf3d1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ear_alt = IconData(0xf3cf, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ear_slash = IconData(0xf3d0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_earbuds = IconData(0xf3d2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_earth = IconData(0xf3d3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ease_in = IconData(0xf3d5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ease_in_out = IconData(0xf3d4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ease_out = IconData(0xf3d6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_edit = IconData(0xf3d8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_edit_alt = IconData(0xf3d7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_education = IconData(0xf3d9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_egg = IconData(0xf3dc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_egg_fried = IconData(0xf3da, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_egg_yolk = IconData(0xf3db, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_eject = IconData(0xf3dd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_element_of = IconData(0xf3de, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_empty_set = IconData(0xf3df, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_enter = IconData(0xf3e0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_enterprise = IconData(0xf3e1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_envelope = IconData(0xf3e4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_envelope_alt = IconData(0xf3e2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_envelope_open = IconData(0xf3e3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_equal = IconData(0xf3e7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_equal_circle = IconData(0xf3e5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_equal_square = IconData(0xf3e6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_equalizer = IconData(0xf3e8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_eraser = IconData(0xf3e9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ethernet = IconData(0xf3ea, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_euro = IconData(0xf3eb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ev_station = IconData(0xf3ec, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_expand_left = IconData(0xf3ed, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_expand_right = IconData(0xf3ee, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_explosion = IconData(0xf3ef, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_exposure = IconData(0xf3f0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_extension = IconData(0xf3f1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_eye = IconData(0xf3f6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_eye_alt = IconData(0xf3f2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_eye_big = IconData(0xf3f3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_eye_closed = IconData(0xf3f4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_eye_slash = IconData(0xf3f5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_eyedropper = IconData(0xf3f7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_face = IconData(0xf3fe, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_face_alt = IconData(0xf3fb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_face_alt_2 = IconData(0xf3f8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_face_alt_3 = IconData(0xf3f9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_face_alt_4 = IconData(0xf3fa, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_face_child = IconData(0xf3fc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_face_mask = IconData(0xf3fd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_factory = IconData(0xf3ff, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_fan = IconData(0xf400, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_fast_forward = IconData(0xf402, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_fast_forward_circle = IconData(0xf401, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_feather = IconData(0xf406, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_feather_alt = IconData(0xf403, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_feather_minus = IconData(0xf404, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_feather_plus = IconData(0xf405, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_female = IconData(0xf407, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_file = IconData(0xf413, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_file_code = IconData(0xf408, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_file_cog = IconData(0xf409, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_file_detail = IconData(0xf40a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_file_heart = IconData(0xf40b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_file_minus = IconData(0xf40c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_file_plus = IconData(0xf40d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_file_report = IconData(0xf40e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_file_search = IconData(0xf40f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_file_star = IconData(0xf410, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_file_x = IconData(0xf411, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_file_zip = IconData(0xf412, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_film = IconData(0xf416, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_film_roll = IconData(0xf415, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_film_roll_alt = IconData(0xf414, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_filter = IconData(0xf417, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_finger_down = IconData(0xf418, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_finger_left = IconData(0xf419, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_finger_right = IconData(0xf41a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_finger_swipe_down = IconData(0xf41b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_finger_swipe_left = IconData(0xf41c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_finger_swipe_right = IconData(0xf41d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_finger_swipe_up = IconData(0xf41e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_finger_touch = IconData(0xf41f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_finger_up = IconData(0xf420, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_fingerprint = IconData(0xf421, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_fire = IconData(0xf424, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_fire_alt = IconData(0xf422, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_fire_extinguisher = IconData(0xf423, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_first = IconData(0xf425, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_fish = IconData(0xf427, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_fish_alt = IconData(0xf426, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_flag = IconData(0xf42c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_flag_alt = IconData(0xf42a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_flag_alt_2 = IconData(0xf428, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_flag_alt_3 = IconData(0xf429, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_flag_chequered = IconData(0xf42b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_flame = IconData(0xf42d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_flask_round = IconData(0xf42e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_florist = IconData(0xf42f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_flower = IconData(0xf432, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_flower_alt = IconData(0xf431, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_flower_alt_2 = IconData(0xf430, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_folder = IconData(0xf440, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_folder_check = IconData(0xf433, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_folder_code = IconData(0xf434, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_folder_cog = IconData(0xf435, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_folder_down_arrow = IconData(0xf436, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_folder_heart = IconData(0xf437, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_folder_minus = IconData(0xf438, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_folder_open = IconData(0xf439, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_folder_plus = IconData(0xf43a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_folder_search = IconData(0xf43b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_folder_star = IconData(0xf43c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_folder_up_arrow = IconData(0xf43d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_folder_x = IconData(0xf43e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_folder_zip = IconData(0xf43f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_font_color = IconData(0xf441, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_font_family = IconData(0xf442, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_food_menu = IconData(0xf443, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_food_tag = IconData(0xf444, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_football = IconData(0xf447, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_football_kick = IconData(0xf445, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_football_pitch = IconData(0xf446, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_footsteps = IconData(0xf448, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_foreground = IconData(0xf449, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_fork = IconData(0xf44c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_fork_knife = IconData(0xf44a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_fork_spoon = IconData(0xf44b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_form = IconData(0xf44d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_forward = IconData(0xf453, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_forward_big = IconData(0xf44e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_forward_slash = IconData(0xf451, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_forward_slash_circle = IconData(0xf44f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_forward_slash_square = IconData(0xf450, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_forward_stroke = IconData(0xf452, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_frame = IconData(0xf454, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_fridge = IconData(0xf455, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_fullscreen = IconData(0xf457, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_fullscreen_exit = IconData(0xf456, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_function = IconData(0xf458, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_functions = IconData(0xf459, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_future = IconData(0xf45a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_gallery_horizontal = IconData(0xf45c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_gallery_horizontal_end = IconData(0xf45b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_gallery_thumbnails = IconData(0xf45d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_gallery_vertical = IconData(0xf45f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_gallery_vertical_end = IconData(0xf45e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_gaming = IconData(0xf460, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_garage = IconData(0xf461, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_gavel = IconData(0xf462, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_gear = IconData(0xf463, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_gem = IconData(0xf465, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_gem_alt = IconData(0xf464, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_gestures = IconData(0xf466, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ghost = IconData(0xf467, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_gift = IconData(0xf468, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_git_branch = IconData(0xf469, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_git_commit = IconData(0xf46a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_git_compare = IconData(0xf46b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_git_merge = IconData(0xf46d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_git_merge_queue = IconData(0xf46c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_git_pull_request = IconData(0xf470, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_git_pull_request_closed = IconData(0xf46e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_git_pull_request_draft = IconData(0xf46f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_git_repo_forked = IconData(0xf471, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_glasses = IconData(0xf473, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_glasses_alt = IconData(0xf472, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_globe = IconData(0xf47e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_globe_africa = IconData(0xf474, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_globe_alt = IconData(0xf477, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_globe_alt_2 = IconData(0xf475, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_globe_alt_3 = IconData(0xf476, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_globe_americas = IconData(0xf478, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_globe_antartica = IconData(0xf479, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_globe_asia = IconData(0xf47a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_globe_europe = IconData(0xf47b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_globe_oceania = IconData(0xf47c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_globe_stand = IconData(0xf47d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_golf_ball = IconData(0xf47f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_gradient = IconData(0xf480, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_greater_than = IconData(0xf482, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_greater_than_equal = IconData(0xf481, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_grid = IconData(0xf490, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_grid_9 = IconData(0xf483, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_grid_circle = IconData(0xf487, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_grid_circle_diagonal_left = IconData(0xf484, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_grid_circle_diagonal_right = IconData(0xf485, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_grid_circle_plus = IconData(0xf486, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_grid_column_left = IconData(0xf488, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_grid_column_right = IconData(0xf489, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_grid_lines = IconData(0xf48b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_grid_lines_3 = IconData(0xf48a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_grid_plus = IconData(0xf48c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_grid_row_bottom = IconData(0xf48d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_grid_row_top = IconData(0xf48e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_grid_search = IconData(0xf48f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_groceries = IconData(0xf491, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_group = IconData(0xf493, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_group_alt = IconData(0xf492, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_guitar_amp = IconData(0xf494, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_hail = IconData(0xf495, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_hand = IconData(0xf497, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_hand_rock = IconData(0xf496, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_handheld = IconData(0xf49a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_handheld_alt = IconData(0xf499, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_handheld_alt_2 = IconData(0xf498, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_handshake = IconData(0xf49b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_hanger = IconData(0xf49c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_happy = IconData(0xf4a0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_happy_alt = IconData(0xf49d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_happy_beaming = IconData(0xf49e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_happy_heart_eyes = IconData(0xf49f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_hard_drive = IconData(0xf4a1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_hard_hat = IconData(0xf4a2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_hashtag = IconData(0xf4a3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_hdmi = IconData(0xf4a4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_head = IconData(0xf4a5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_heading = IconData(0xf4a9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_heading_1 = IconData(0xf4a6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_heading_2 = IconData(0xf4a7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_heading_3 = IconData(0xf4a8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_headphone = IconData(0xf4ad, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_headphone_alt = IconData(0xf4ab, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_headphone_alt_2 = IconData(0xf4aa, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_headphone_mic = IconData(0xf4ac, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_heart = IconData(0xf4b3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_heart_break = IconData(0xf4ae, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_heart_circle = IconData(0xf4af, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_heart_half = IconData(0xf4b0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_heart_plus = IconData(0xf4b1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_heart_square = IconData(0xf4b2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_heat_wave = IconData(0xf4b4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_helmet = IconData(0xf4b5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_help_circle = IconData(0xf4b6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_help_octagon = IconData(0xf4b7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_hexagon = IconData(0xf4b8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_high_speed_train = IconData(0xf4b9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_highlight = IconData(0xf4ba, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_highlights = IconData(0xf4bb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_hinduism = IconData(0xf4bc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_history = IconData(0xf4bd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_home = IconData(0xf4c4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_home_add = IconData(0xf4be, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_home_alt = IconData(0xf4c1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_home_alt_2 = IconData(0xf4bf, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_home_alt_3 = IconData(0xf4c0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_home_circle = IconData(0xf4c2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_home_heart = IconData(0xf4c3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_honey = IconData(0xf4c5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_horizon_sea = IconData(0xf4c6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_horizontal_align_center = IconData(0xf4c7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_horizontal_align_left = IconData(0xf4c8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_horizontal_align_right = IconData(0xf4c9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_horizontal_center = IconData(0xf4ca, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_horizontal_distribute_center = IconData(0xf4cb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_horizontal_distribute_left = IconData(0xf4cc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_horizontal_distribute_right = IconData(0xf4cd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_horizontal_left = IconData(0xf4ce, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_horizontal_right = IconData(0xf4cf, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_horizontal_spacing = IconData(0xf4d0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_hospital = IconData(0xf4d1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_hot = IconData(0xf4d4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_hot_tub = IconData(0xf4d3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_hot_tub_water = IconData(0xf4d2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_hourglass = IconData(0xf4d5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_hurricane = IconData(0xf4d6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_icecream = IconData(0xf4d7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_iframe = IconData(0xf4d8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_image = IconData(0xf4e0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_image_alt = IconData(0xf4d9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_image_circle = IconData(0xf4da, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_image_landscape = IconData(0xf4db, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_image_no_background = IconData(0xf4dc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_image_plus = IconData(0xf4dd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_image_portrait = IconData(0xf4de, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_image_sparkle = IconData(0xf4df, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_images = IconData(0xf4e1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_inbox = IconData(0xf4e2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_incognito = IconData(0xf4e3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_infinite = IconData(0xf4e4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_info_circle = IconData(0xf4e5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_info_octagon = IconData(0xf4e6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_info_shield = IconData(0xf4e7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_info_square = IconData(0xf4e8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_inner_shadow = IconData(0xf4e9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_institution = IconData(0xf4ea, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_integral = IconData(0xf4eb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_intellect = IconData(0xf4ec, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_invert = IconData(0xf4ee, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_invert_adjust = IconData(0xf4ed, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_islam = IconData(0xf4ef, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_island = IconData(0xf4f0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_italic = IconData(0xf4f1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_joystick = IconData(0xf4f6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_joystick_alt = IconData(0xf4f3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_joystick_alt_2 = IconData(0xf4f2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_joystick_button = IconData(0xf4f5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_joystick_button_alt = IconData(0xf4f4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_judaism = IconData(0xf4f7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_key = IconData(0xf4f9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_key_alt = IconData(0xf4f8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_keyboard = IconData(0xf4fa, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_keyframe = IconData(0xf502, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_keyframe_ease_in = IconData(0xf4fb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_keyframe_ease_out = IconData(0xf4fc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_keyframe_easy_ease = IconData(0xf4fd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_keyframe_hold_ease_in = IconData(0xf4fe, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_keyframe_hold_ease_out = IconData(0xf4ff, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_keyframe_hold_linear_in = IconData(0xf500, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_keyframe_hold_linear_out = IconData(0xf501, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_knife = IconData(0xf503, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_lambda = IconData(0xf504, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_landmark = IconData(0xf505, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_laptop = IconData(0xf507, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_laptop_alt = IconData(0xf506, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_lasso = IconData(0xf508, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_last = IconData(0xf509, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_laugh = IconData(0xf50a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_laurel_wreath = IconData(0xf50d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_laurel_wreath_left = IconData(0xf50b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_laurel_wreath_right = IconData(0xf50c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_law = IconData(0xf50e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_layers = IconData(0xf514, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_layers_alt = IconData(0xf50f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_layers_down_left = IconData(0xf510, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_layers_down_right = IconData(0xf511, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_layers_minus_alt = IconData(0xf512, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_layers_plus_alt = IconData(0xf513, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_layout = IconData(0xf519, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_layout_check = IconData(0xf515, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_layout_minus = IconData(0xf516, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_layout_plus = IconData(0xf517, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_layout_search = IconData(0xf518, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_leaf = IconData(0xf51b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_leaf_alt = IconData(0xf51a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_left_indent = IconData(0xf51c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_lemon = IconData(0xf51d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_less_than = IconData(0xf51f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_less_than_equal = IconData(0xf51e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_letter_spacing = IconData(0xf521, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_letter_spacing_alt = IconData(0xf520, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_light_bulb = IconData(0xf525, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_light_bulb_alt = IconData(0xf523, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_light_bulb_alt_2 = IconData(0xf522, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_light_bulb_on = IconData(0xf524, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_like = IconData(0xf526, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_line_chart_square = IconData(0xf527, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_line_spacing = IconData(0xf529, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_line_spacing_alt = IconData(0xf528, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_link = IconData(0xf52c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_link_alt = IconData(0xf52a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_link_break = IconData(0xf52b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_lira = IconData(0xf52d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_list = IconData(0xf537, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_list_minus = IconData(0xf52e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_list_music = IconData(0xf52f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_list_ol = IconData(0xf530, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_list_play = IconData(0xf531, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_list_plus = IconData(0xf532, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_list_square = IconData(0xf533, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_list_ul = IconData(0xf535, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_list_ul_square = IconData(0xf534, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_list_x = IconData(0xf536, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_loader_dots = IconData(0xf538, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_loader_lines = IconData(0xf53a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_loader_lines_alt = IconData(0xf539, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_location = IconData(0xf542, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_location_alt = IconData(0xf53c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_location_alt_2 = IconData(0xf53b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_location_blank = IconData(0xf53d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_location_check = IconData(0xf53e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_location_pin = IconData(0xf53f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_location_plus = IconData(0xf540, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_location_x = IconData(0xf541, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_lock = IconData(0xf548, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_lock_keyhole = IconData(0xf545, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_lock_keyhole_open = IconData(0xf544, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_lock_keyhole_open_alt = IconData(0xf543, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_lock_open = IconData(0xf547, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_lock_open_alt = IconData(0xf546, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_lotion = IconData(0xf549, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_low_vision = IconData(0xf54a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_lowercase = IconData(0xf54b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_luggage = IconData(0xf54c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_lungs = IconData(0xf54d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_magic_wand = IconData(0xf54e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_magnet = IconData(0xf54f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_mail_open = IconData(0xf550, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_male = IconData(0xf551, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_man = IconData(0xf553, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_man_woman = IconData(0xf552, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_map = IconData(0xf554, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_margin_bottom = IconData(0xf555, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_margin_left = IconData(0xf556, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_margin_right = IconData(0xf557, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_margin_top = IconData(0xf558, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_martini = IconData(0xf559, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_mask = IconData(0xf55a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_math = IconData(0xf55c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_math_alt = IconData(0xf55b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_maximize = IconData(0xf55d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_meat = IconData(0xf55e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_medal = IconData(0xf564, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_medal_alt = IconData(0xf560, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_medal_alt_2 = IconData(0xf55f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_medal_star = IconData(0xf563, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_medal_star_alt = IconData(0xf562, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_medal_star_alt_2 = IconData(0xf561, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_medical_flask = IconData(0xf565, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_medical_kit = IconData(0xf566, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_megaphone = IconData(0xf568, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_megaphone_alt = IconData(0xf567, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_meh = IconData(0xf56b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_meh_alt = IconData(0xf569, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_meh_blank = IconData(0xf56a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_menorah = IconData(0xf56c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_menu = IconData(0xf577, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_menu_close = IconData(0xf56d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_menu_closer = IconData(0xf56e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_menu_filter = IconData(0xf56f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_menu_left = IconData(0xf570, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_menu_notification = IconData(0xf571, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_menu_right = IconData(0xf572, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_menu_search = IconData(0xf573, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_menu_select = IconData(0xf574, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_menu_wide = IconData(0xf575, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_menu_wider = IconData(0xf576, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_merge = IconData(0xf578, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_mesh = IconData(0xf579, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message = IconData(0xf5af, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble = IconData(0xf58b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_captions = IconData(0xf57a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_check = IconData(0xf57b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_code = IconData(0xf57c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_detail = IconData(0xf57d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_dots = IconData(0xf57f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_dots_2 = IconData(0xf57e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_edit = IconData(0xf580, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_exclamation = IconData(0xf581, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_heart = IconData(0xf582, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_image = IconData(0xf583, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_minus = IconData(0xf584, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_notification = IconData(0xf585, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_plus = IconData(0xf586, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_question_mark = IconData(0xf587, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_reply = IconData(0xf588, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_star = IconData(0xf589, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_bubble_x = IconData(0xf58a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_captions = IconData(0xf58c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_check = IconData(0xf58d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle = IconData(0xf59f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_captions = IconData(0xf58e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_check = IconData(0xf58f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_code = IconData(0xf590, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_detail = IconData(0xf591, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_dots = IconData(0xf593, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_dots_2 = IconData(0xf592, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_edit = IconData(0xf594, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_exclamation = IconData(0xf595, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_heart = IconData(0xf596, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_image = IconData(0xf597, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_minus = IconData(0xf598, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_notification = IconData(0xf599, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_plus = IconData(0xf59a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_question_mark = IconData(0xf59b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_reply = IconData(0xf59c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_star = IconData(0xf59d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_circle_x = IconData(0xf59e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_code = IconData(0xf5a0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_detail = IconData(0xf5a1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_dots = IconData(0xf5a3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_dots_2 = IconData(0xf5a2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_edit = IconData(0xf5a4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_exclamation = IconData(0xf5a5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_heart = IconData(0xf5a6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_image = IconData(0xf5a7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_minus = IconData(0xf5a8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_notification = IconData(0xf5a9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_plus = IconData(0xf5aa, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_question_mark = IconData(0xf5ab, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_reply = IconData(0xf5ac, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_star = IconData(0xf5ad, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_message_x = IconData(0xf5ae, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_meteor = IconData(0xf5b0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_microchip = IconData(0xf5b1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_microphone = IconData(0xf5b7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_microphone_alt = IconData(0xf5b3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_microphone_alt_2 = IconData(0xf5b2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_microphone_big = IconData(0xf5b5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_microphone_big_alt = IconData(0xf5b4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_microphone_slash = IconData(0xf5b6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_microscope = IconData(0xf5b8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_microwave_oven = IconData(0xf5b9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_milk_bottle = IconData(0xf5ba, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_minimize = IconData(0xf5bb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_minus = IconData(0xf5c0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_minus_circle = IconData(0xf5bc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_minus_plus = IconData(0xf5bd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_minus_shield = IconData(0xf5be, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_minus_square = IconData(0xf5bf, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_mobile = IconData(0xf5c7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_mobile_alt = IconData(0xf5c2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_mobile_alt_2 = IconData(0xf5c1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_mobile_back = IconData(0xf5c5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_mobile_back_alt = IconData(0xf5c4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_mobile_back_alt_2 = IconData(0xf5c3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_mobile_ring = IconData(0xf5c6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_monitor = IconData(0xf5ca, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_monitor_wallpaper = IconData(0xf5c8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_monitor_wide = IconData(0xf5c9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_moon = IconData(0xf5d5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_moon_crater = IconData(0xf5cb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_moon_phase_0 = IconData(0xf5cc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_moon_phase_1 = IconData(0xf5cd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_moon_phase_2 = IconData(0xf5ce, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_moon_phase_3 = IconData(0xf5cf, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_moon_phase_4 = IconData(0xf5d0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_moon_phase_5 = IconData(0xf5d1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_moon_phase_6 = IconData(0xf5d2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_moon_star = IconData(0xf5d3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_moon_stars = IconData(0xf5d4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_mosque = IconData(0xf5d6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_motion = IconData(0xf5d8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_motion_alt = IconData(0xf5d7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_motorcycle = IconData(0xf5d9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_mountain = IconData(0xf5dc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_mountain_peak = IconData(0xf5da, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_mountain_view = IconData(0xf5db, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_mouse = IconData(0xf5de, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_mouse_alt = IconData(0xf5dd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_moustache = IconData(0xf5df, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_move = IconData(0xf5e4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_move_diagonal_left = IconData(0xf5e0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_move_diagonal_right = IconData(0xf5e1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_move_horizontal = IconData(0xf5e2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_move_vertical = IconData(0xf5e3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_movie = IconData(0xf5e6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_movie_play = IconData(0xf5e5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_music = IconData(0xf5ea, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_music_alt = IconData(0xf5e8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_music_alt_2 = IconData(0xf5e7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_music_library = IconData(0xf5e9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_navigation_north = IconData(0xf5eb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_network_chart = IconData(0xf5ec, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_network_device = IconData(0xf5ed, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_news = IconData(0xf5ee, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_newspaper = IconData(0xf5ef, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_night_light = IconData(0xf5f0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_no_entry = IconData(0xf5f1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_noise = IconData(0xf5f2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_not_element_of = IconData(0xf5f3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_not_equal = IconData(0xf5f4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_not_subset = IconData(0xf5f5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_not_superset = IconData(0xf5f6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_note = IconData(0xf5f8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_note_book = IconData(0xf5f7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_notification = IconData(0xf5fa, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_notification_slash = IconData(0xf5f9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_nut = IconData(0xf5fb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_octopus = IconData(0xf5fc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_omega = IconData(0xf5fd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_option = IconData(0xf5fe, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_outdoor_dining = IconData(0xf5ff, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_outer_shadow = IconData(0xf600, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_oval = IconData(0xf602, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_oval_vertical = IconData(0xf601, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_oven = IconData(0xf603, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_owl = IconData(0xf604, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pacifism = IconData(0xf605, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_package = IconData(0xf606, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pacman = IconData(0xf607, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_paint = IconData(0xf60a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_paint_alt = IconData(0xf608, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_paint_roll = IconData(0xf609, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_palette = IconData(0xf60b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pant = IconData(0xf60c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_paper_plane = IconData(0xf60d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_paperclip = IconData(0xf60e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_paragraph = IconData(0xf610, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_paragraph_spacing = IconData(0xf60f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_parallel = IconData(0xf611, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_parent_child = IconData(0xf612, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_party = IconData(0xf613, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_paste = IconData(0xf614, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_path = IconData(0xf615, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pause = IconData(0xf617, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pause_circle = IconData(0xf616, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_paw_print = IconData(0xf618, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pear = IconData(0xf619, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pen = IconData(0xf620, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pen_alt = IconData(0xf61a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pen_draw = IconData(0xf61b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pen_edit_circle = IconData(0xf61d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pen_edit_circle_alt = IconData(0xf61c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pen_minus = IconData(0xf61e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pen_plus = IconData(0xf61f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pencil = IconData(0xf626, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pencil_circle = IconData(0xf621, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pencil_draw = IconData(0xf622, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pencil_edit_circle = IconData(0xf623, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pencil_sparkles = IconData(0xf624, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pencil_square = IconData(0xf625, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pentagon = IconData(0xf627, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_people_diversity = IconData(0xf628, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_people_handshake = IconData(0xf629, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_people_heart = IconData(0xf62a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_percentage = IconData(0xf62b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_perpendicular = IconData(0xf62c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_perspective = IconData(0xf62d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_petrol_pump = IconData(0xf62e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pharmacy = IconData(0xf62f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_phone = IconData(0xf637, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_phone_book = IconData(0xf630, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_phone_forwarding = IconData(0xf631, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_phone_incoming = IconData(0xf632, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_phone_outgoing = IconData(0xf633, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_phone_plus = IconData(0xf634, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_phone_ring = IconData(0xf635, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_phone_x = IconData(0xf636, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_photo_album = IconData(0xf638, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pi = IconData(0xf639, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_piano = IconData(0xf63c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_piano_alt = IconData(0xf63a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_piano_grand = IconData(0xf63b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pickup_truck = IconData(0xf63d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_picture_in_picture = IconData(0xf63f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_picture_in_picture_close = IconData(0xf63e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pie_chart = IconData(0xf642, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pie_chart_alt = IconData(0xf641, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pie_chart_alt_2 = IconData(0xf640, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_piggy_bank = IconData(0xf643, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pill = IconData(0xf646, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pill_bottle = IconData(0xf645, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pill_bottle_alt = IconData(0xf644, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pin = IconData(0xf649, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pin_alt = IconData(0xf647, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pin_slash_alt = IconData(0xf648, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pizza = IconData(0xf64b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pizza_alt = IconData(0xf64a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_plane = IconData(0xf64f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_plane_alt = IconData(0xf64c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_plane_land = IconData(0xf64d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_plane_take_off = IconData(0xf64e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_planet = IconData(0xf650, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_plant_pot = IconData(0xf651, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_play = IconData(0xf654, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_play_circle = IconData(0xf653, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_play_circle_alt = IconData(0xf652, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_plug_connect = IconData(0xf655, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_plus = IconData(0xf65b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_plus_big = IconData(0xf656, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_plus_circle = IconData(0xf657, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_plus_minus = IconData(0xf658, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_plus_shield = IconData(0xf659, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_plus_square = IconData(0xf65a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_podcast = IconData(0xf65c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_polar_chart = IconData(0xf65d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_poll = IconData(0xf65e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_polygon = IconData(0xf65f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_poop = IconData(0xf660, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_popcorn = IconData(0xf661, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_popsicle = IconData(0xf662, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pound = IconData(0xf663, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_power = IconData(0xf664, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_prawn = IconData(0xf665, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_price_tag = IconData(0xf667, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_price_tag_alt = IconData(0xf666, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_print_dollar = IconData(0xf668, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_printer = IconData(0xf669, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_proper_subset = IconData(0xf66a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_proper_superset = IconData(0xf66b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_psychology = IconData(0xf66c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_puck = IconData(0xf66d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pulse = IconData(0xf66e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_puzzle = IconData(0xf66f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_pyramid = IconData(0xf670, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_qr = IconData(0xf672, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_qr_scan = IconData(0xf671, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_queue = IconData(0xf673, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_quote_left = IconData(0xf675, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_quote_left_alt = IconData(0xf674, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_quote_right = IconData(0xf677, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_quote_right_alt = IconData(0xf676, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_quote_single_left = IconData(0xf678, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_quote_single_right = IconData(0xf679, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_radar = IconData(0xf67a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_radiation = IconData(0xf67b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_radio = IconData(0xf67e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_radio_circle = IconData(0xf67d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_radio_circle_marked = IconData(0xf67c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rainbow = IconData(0xf680, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rainbow_half = IconData(0xf67f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_reading = IconData(0xf682, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_reading_glass = IconData(0xf681, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_receipt = IconData(0xf683, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rectangle = IconData(0xf686, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rectangle_vertical = IconData(0xf684, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rectangle_wide = IconData(0xf685, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_recycle = IconData(0xf687, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_redo = IconData(0xf68b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_redo_alt = IconData(0xf688, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_redo_stroke = IconData(0xf68a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_redo_stroke_alt = IconData(0xf689, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_reflect_horizontal = IconData(0xf68d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_reflect_horizontal_alt = IconData(0xf68c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_reflect_vertical = IconData(0xf68f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_reflect_vertical_alt = IconData(0xf68e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_refresh_ccw = IconData(0xf693, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_refresh_ccw_alt = IconData(0xf691, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_refresh_ccw_alt_dot = IconData(0xf690, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_refresh_ccw_dot = IconData(0xf692, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_refresh_cw = IconData(0xf697, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_refresh_cw_alt = IconData(0xf695, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_refresh_cw_alt_dot = IconData(0xf694, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_refresh_cw_dot = IconData(0xf696, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_registered = IconData(0xf698, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rename = IconData(0xf699, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_repeat = IconData(0xf69c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_repeat_alt = IconData(0xf69b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_repeat_alt_2 = IconData(0xf69a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_reply = IconData(0xf69f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_reply_big = IconData(0xf69d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_reply_stroke = IconData(0xf69e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_report = IconData(0xf6a0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rewind = IconData(0xf6a2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rewind_circle = IconData(0xf6a1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rfid = IconData(0xf6a3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rgb = IconData(0xf6a4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_right_angle_triangle = IconData(0xf6a6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_right_angle_triangle_half = IconData(0xf6a5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_right_indent = IconData(0xf6a7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_road = IconData(0xf6a8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_robot = IconData(0xf6a9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rocket = IconData(0xf6ab, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rocket_alt = IconData(0xf6aa, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rotate_ccw = IconData(0xf6b0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rotate_ccw_10 = IconData(0xf6ac, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rotate_ccw_30 = IconData(0xf6ad, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rotate_ccw_5 = IconData(0xf6ae, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rotate_ccw_dot = IconData(0xf6af, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rotate_cw = IconData(0xf6b5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rotate_cw_10 = IconData(0xf6b1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rotate_cw_30 = IconData(0xf6b2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rotate_cw_5 = IconData(0xf6b3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rotate_cw_dot = IconData(0xf6b4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rotate_square_ccw = IconData(0xf6b6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rotate_square_cw = IconData(0xf6b7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_route = IconData(0xf6b8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_row_resize = IconData(0xf6b9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rows = IconData(0xf6bc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rows_3 = IconData(0xf6ba, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rows_4 = IconData(0xf6bb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rss = IconData(0xf6bd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ruble = IconData(0xf6be, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rugby_ball = IconData(0xf6bf, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ruler = IconData(0xf6c0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_running = IconData(0xf6c1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_rupee = IconData(0xf6c2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sad = IconData(0xf6c3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_safe = IconData(0xf6c4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sail = IconData(0xf6c5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sandwich = IconData(0xf6c6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sapling = IconData(0xf6c7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_satellite_dish = IconData(0xf6c9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_satellite_dish_alt = IconData(0xf6c8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_save = IconData(0xf6ca, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_scale = IconData(0xf6cb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_scan = IconData(0xf6d1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_scan_ar = IconData(0xf6cc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_scan_barcode = IconData(0xf6cd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_scan_detail = IconData(0xf6ce, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_scan_face = IconData(0xf6cf, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_scan_search = IconData(0xf6d0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_school = IconData(0xf6d3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_school_bus = IconData(0xf6d2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_science = IconData(0xf6d4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_scooter = IconData(0xf6d6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_scooter_delivery = IconData(0xf6d5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_screen_light = IconData(0xf6d7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_screenshot = IconData(0xf6d8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_scribble = IconData(0xf6d9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_scroll = IconData(0xf6da, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sd_card = IconData(0xf6db, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sea_view = IconData(0xf6dc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_seal = IconData(0xf6de, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_seal_check = IconData(0xf6dd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_search = IconData(0xf6e9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_search_alt = IconData(0xf6df, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_search_big = IconData(0xf6e4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_search_big_code = IconData(0xf6e0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_search_big_minus = IconData(0xf6e1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_search_big_plus = IconData(0xf6e2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_search_big_x = IconData(0xf6e3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_search_code = IconData(0xf6e5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_search_minus = IconData(0xf6e6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_search_plus = IconData(0xf6e7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_search_x = IconData(0xf6e8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_select = IconData(0xf6ed, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_select_all = IconData(0xf6ea, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_select_many = IconData(0xf6eb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_select_none = IconData(0xf6ec, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_self_care = IconData(0xf6ee, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_send = IconData(0xf6f1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_send_alt = IconData(0xf6f0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_send_alt_2 = IconData(0xf6ef, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_server = IconData(0xf6f2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_set_intersection = IconData(0xf6f3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_set_union = IconData(0xf6f4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shadows = IconData(0xf6f5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shape_exclude = IconData(0xf6f7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shape_exclude_alt = IconData(0xf6f6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shape_intersect = IconData(0xf6f9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shape_intersect_alt = IconData(0xf6f8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shape_outline = IconData(0xf6fb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shape_outline_alt = IconData(0xf6fa, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shape_rotate_ccw = IconData(0xf6fc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shape_rotate_cw = IconData(0xf6fd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shape_subtract = IconData(0xf6ff, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shape_subtract_alt = IconData(0xf6fe, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shape_trim = IconData(0xf701, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shape_trim_alt = IconData(0xf700, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shape_unite = IconData(0xf703, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shape_unite_alt = IconData(0xf702, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shapes = IconData(0xf706, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shapes_alt = IconData(0xf705, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shapes_alt_2 = IconData(0xf704, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_share = IconData(0xf707, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shekel = IconData(0xf708, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shield = IconData(0xf70e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shield_alt = IconData(0xf70a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shield_alt_2 = IconData(0xf709, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shield_circle = IconData(0xf70b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shield_half = IconData(0xf70c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shield_quarter = IconData(0xf70d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shinto = IconData(0xf70f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ship = IconData(0xf710, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shocked = IconData(0xf711, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shopping_bag = IconData(0xf713, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shopping_bag_alt = IconData(0xf712, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shower = IconData(0xf714, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shrink_left = IconData(0xf715, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shrink_right = IconData(0xf716, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shuffle = IconData(0xf717, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shutter = IconData(0xf719, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shutter_alt = IconData(0xf718, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_shuttlecock = IconData(0xf71a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sidebar = IconData(0xf71c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sidebar_right = IconData(0xf71b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sigma = IconData(0xf71d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_signal_1 = IconData(0xf71e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_signal_2 = IconData(0xf71f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_signal_3 = IconData(0xf720, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_signal_4 = IconData(0xf721, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_signal_5 = IconData(0xf722, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_signal_slash = IconData(0xf723, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_signature = IconData(0xf724, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sikhism = IconData(0xf725, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sine_wave = IconData(0xf726, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_siren = IconData(0xf728, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_siren_alt = IconData(0xf727, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sitemap = IconData(0xf729, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_size_distort = IconData(0xf72a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_size_freeform = IconData(0xf72b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_size_uniform = IconData(0xf72c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_size_warp = IconData(0xf72d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_skateboard = IconData(0xf72e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_skip_next = IconData(0xf730, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_skip_next_circle = IconData(0xf72f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_skip_previous = IconData(0xf732, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_skip_previous_circle = IconData(0xf731, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_skirt = IconData(0xf733, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_skull = IconData(0xf734, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sleepy = IconData(0xf735, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_slice = IconData(0xf736, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_slider = IconData(0xf73a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_slider_alt = IconData(0xf737, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_slider_vertical = IconData(0xf739, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_slider_vertical_alt = IconData(0xf738, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_slideshow = IconData(0xf73b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_smile = IconData(0xf73c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_smoke_alarm = IconData(0xf73f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_smoke_alarm_alt = IconData(0xf73e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_smoke_alarm_alt_2 = IconData(0xf73d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sneaker = IconData(0xf740, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_snowflake = IconData(0xf741, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sock = IconData(0xf742, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_solar_panel = IconData(0xf743, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_spa = IconData(0xf744, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_spacebar = IconData(0xf745, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_spade = IconData(0xf746, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_spanner = IconData(0xf747, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sparkle = IconData(0xf74a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sparkle_circle = IconData(0xf748, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sparkle_square = IconData(0xf749, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sparkles = IconData(0xf74c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sparkles_alt = IconData(0xf74b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_speaker = IconData(0xf74d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sphere = IconData(0xf74e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_split = IconData(0xf74f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_spoon = IconData(0xf750, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_spray_can = IconData(0xf751, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_square = IconData(0xf757, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_square_dashed = IconData(0xf753, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_square_dashed_half = IconData(0xf752, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_square_root = IconData(0xf754, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_square_rounded = IconData(0xf755, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_square_small = IconData(0xf756, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_squircle = IconData(0xf758, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_stadium = IconData(0xf759, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_stamp = IconData(0xf75a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_star = IconData(0xf75e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_star_circle = IconData(0xf75b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_star_half = IconData(0xf75c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_star_square = IconData(0xf75d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_station = IconData(0xf75f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_steering_wheel = IconData(0xf760, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_steps_down = IconData(0xf761, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_steps_up = IconData(0xf762, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sticker = IconData(0xf763, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_stop = IconData(0xf765, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_stop_circle = IconData(0xf764, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_stopwatch = IconData(0xf766, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_store = IconData(0xf769, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_store_alt = IconData(0xf768, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_store_alt_2 = IconData(0xf767, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_strategy = IconData(0xf76a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_street_view = IconData(0xf76b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_strikethrough = IconData(0xf76c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_stroke_drawing = IconData(0xf76d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_stroke_freehand = IconData(0xf76e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_stroke_ink = IconData(0xf76f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_stroke_pen = IconData(0xf770, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_subscript = IconData(0xf771, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_subset = IconData(0xf772, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_subway = IconData(0xf773, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sun = IconData(0xf77d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sun_bright = IconData(0xf774, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sun_dim = IconData(0xf775, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sun_drizzle = IconData(0xf776, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sun_fog = IconData(0xf777, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sun_rain = IconData(0xf779, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sun_rain_wind = IconData(0xf778, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sun_rise = IconData(0xf77a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sun_set = IconData(0xf77b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sun_snow = IconData(0xf77c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_superscript = IconData(0xf77e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_superset = IconData(0xf77f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_surfboard = IconData(0xf780, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sushi = IconData(0xf781, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_swap_diagonal = IconData(0xf782, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_swap_horizontal = IconData(0xf783, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_swap_vertical = IconData(0xf784, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_swatch = IconData(0xf785, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_swimming = IconData(0xf787, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_swimming_pool = IconData(0xf786, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sword = IconData(0xf789, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_sword_alt = IconData(0xf788, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_syringe = IconData(0xf78a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_t_shirt = IconData(0xf78b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tab = IconData(0xf78c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_table = IconData(0xf798, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_table_cells = IconData(0xf78e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_table_cells_large = IconData(0xf78d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_table_columns = IconData(0xf791, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_table_columns_merge = IconData(0xf78f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_table_columns_split = IconData(0xf790, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_table_layout = IconData(0xf792, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_table_list = IconData(0xf793, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_table_rows = IconData(0xf796, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_table_rows_merge = IconData(0xf794, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_table_rows_split = IconData(0xf795, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_table_tennis = IconData(0xf797, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tablet = IconData(0xf799, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tabs = IconData(0xf79a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tachometer = IconData(0xf79c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tachometer_alt = IconData(0xf79b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_taco = IconData(0xf79d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tag = IconData(0xf7a0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tag_alt = IconData(0xf79e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tag_x = IconData(0xf79f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_takeaway = IconData(0xf7a1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tape = IconData(0xf7a2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_target = IconData(0xf7a3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_task = IconData(0xf7a4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_taxi = IconData(0xf7a5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_temple = IconData(0xf7a6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tennis = IconData(0xf7a9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tennis_ball = IconData(0xf7a8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tennis_ball_alt = IconData(0xf7a7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tent = IconData(0xf7aa, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_terminal = IconData(0xf7ab, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_test_tube = IconData(0xf7ac, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_text_height = IconData(0xf7ad, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_text_underline = IconData(0xf7ae, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_text_width = IconData(0xf7af, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_texture = IconData(0xf7b0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_thermometer = IconData(0xf7b1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_thought_bubble = IconData(0xf7b2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_thread_roll = IconData(0xf7b3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_thumb_down = IconData(0xf7b4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_thumb_up = IconData(0xf7b5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_thunder = IconData(0xf7b6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ticket = IconData(0xf7b8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ticket_star = IconData(0xf7b7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tickets = IconData(0xf7b9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_timeline = IconData(0xf7ba, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_timer = IconData(0xf7bb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tiny_home = IconData(0xf7bc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tired = IconData(0xf7bd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_toggle_big_left = IconData(0xf7be, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_toggle_big_right = IconData(0xf7bf, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_toggle_left = IconData(0xf7c0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_toggle_right = IconData(0xf7c1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_toggles = IconData(0xf7c2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_toilet_roll = IconData(0xf7c3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tooth = IconData(0xf7c4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_torch = IconData(0xf7c5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tornado = IconData(0xf7c6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_torus = IconData(0xf7c7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_towel = IconData(0xf7c8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_toy_car = IconData(0xf7c9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_traffic_barrier = IconData(0xf7ca, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_traffic_cone = IconData(0xf7cb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_train = IconData(0xf7cc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tram = IconData(0xf7cd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_transgender = IconData(0xf7ce, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_translate = IconData(0xf7cf, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_transparency = IconData(0xf7d0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_trash = IconData(0xf7d3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_trash_alt = IconData(0xf7d1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_trash_x = IconData(0xf7d2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_treasure_chest = IconData(0xf7d4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tree = IconData(0xf7d6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tree_alt = IconData(0xf7d5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_trees = IconData(0xf7d7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_trending_down = IconData(0xf7d8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_trending_up = IconData(0xf7d9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_triangle = IconData(0xf7db, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_triangle_half = IconData(0xf7da, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_trip = IconData(0xf7dc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_trophy = IconData(0xf7de, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_trophy_star = IconData(0xf7dd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_truck = IconData(0xf7df, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_turkey_meat = IconData(0xf7e0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_turn_down = IconData(0xf7e1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_turn_left = IconData(0xf7e2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_turn_right = IconData(0xf7e3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_turn_up = IconData(0xf7e4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tv = IconData(0xf7e6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_tv_alt = IconData(0xf7e5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_ufo = IconData(0xf7e7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_umbrella = IconData(0xf7e9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_umbrella_alt = IconData(0xf7e8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_underline = IconData(0xf7ed, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_underline_dashed = IconData(0xf7ea, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_underline_dotted = IconData(0xf7eb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_underline_wavy = IconData(0xf7ec, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_undershirt = IconData(0xf7ee, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_undo = IconData(0xf7f2, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_undo_alt = IconData(0xf7ef, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_undo_stroke = IconData(0xf7f1, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_undo_stroke_alt = IconData(0xf7f0, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_universal_access = IconData(0xf7f3, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_unlink = IconData(0xf7f5, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_unlink_alt = IconData(0xf7f4, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_uppercase = IconData(0xf7f6, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_upside_down = IconData(0xf7f7, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_usb = IconData(0xf7f8, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_user = IconData(0xf803, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_user_check = IconData(0xf7f9, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_user_circle = IconData(0xf7fa, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_user_hexagon = IconData(0xf7fb, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_user_id_card = IconData(0xf7fc, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_user_minus = IconData(0xf7fd, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_user_plus = IconData(0xf7fe, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_user_search = IconData(0xf7ff, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_user_square = IconData(0xf800, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_user_voice = IconData(0xf801, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_user_x = IconData(0xf802, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_van = IconData(0xf804, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_variable = IconData(0xf805, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vector = IconData(0xf808, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vector_square = IconData(0xf806, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vector_triangle = IconData(0xf807, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vertical_align_bottom = IconData(0xf809, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vertical_align_center = IconData(0xf80a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vertical_align_top = IconData(0xf80b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vertical_bottom = IconData(0xf80c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vertical_center = IconData(0xf80d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vertical_distribute_bottom = IconData(0xf80e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vertical_distribute_center = IconData(0xf80f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vertical_distribute_top = IconData(0xf810, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vertical_spacing = IconData(0xf811, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vertical_top = IconData(0xf812, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vial = IconData(0xf814, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vial_alt = IconData(0xf813, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_video = IconData(0xf818, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_video_cinema = IconData(0xf815, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_video_plus = IconData(0xf816, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_video_slash = IconData(0xf817, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vignette = IconData(0xf819, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_virus = IconData(0xf81b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_virus_slash = IconData(0xf81a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_voicemail = IconData(0xf81c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_volleyball = IconData(0xf81d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_volume = IconData(0xf821, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_volume_full = IconData(0xf81e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_volume_low = IconData(0xf81f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_volume_mute = IconData(0xf820, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vr_goggles = IconData(0xf822, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_vr_headset = IconData(0xf823, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_waffle = IconData(0xf824, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_walking = IconData(0xf825, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wall = IconData(0xf826, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wallet = IconData(0xf82a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wallet_alt = IconData(0xf827, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wallet_cards = IconData(0xf828, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wallet_note = IconData(0xf829, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_warehouse = IconData(0xf82b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_washer = IconData(0xf82c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_water = IconData(0xf831, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_water_drop = IconData(0xf82f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_water_drop_alt = IconData(0xf82d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_water_drop_half = IconData(0xf82e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_water_spray = IconData(0xf830, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_watermelon = IconData(0xf832, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_waveform = IconData(0xf833, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_webcam = IconData(0xf834, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_webhook = IconData(0xf835, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_whiteboard = IconData(0xf837, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_whiteboard_alt = IconData(0xf836, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_widget = IconData(0xf83b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_widget_horizontal = IconData(0xf838, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_widget_small = IconData(0xf839, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_widget_vertical = IconData(0xf83a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wifi = IconData(0xf840, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wifi_0 = IconData(0xf83c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wifi_1 = IconData(0xf83d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wifi_2 = IconData(0xf83e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wifi_slash = IconData(0xf83f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wind = IconData(0xf843, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wind_alt = IconData(0xf841, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wind_storm = IconData(0xf842, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_window = IconData(0xf848, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_window_arrow_in = IconData(0xf844, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_window_arrow_out = IconData(0xf845, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_window_mac = IconData(0xf847, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_window_mac_alt = IconData(0xf846, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_windows = IconData(0xf849, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wine = IconData(0xf84b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wine_alt = IconData(0xf84a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wink_smile = IconData(0xf84c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wink_tongue = IconData(0xf84d, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_woman = IconData(0xf84e, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_won = IconData(0xf84f, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_workflow = IconData(0xf851, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_workflow_alt = IconData(0xf850, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wrist_watch = IconData(0xf855, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wrist_watch_alt = IconData(0xf852, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wrist_watch_round = IconData(0xf854, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_wrist_watch_round_alt = IconData(0xf853, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_x = IconData(0xf859, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_x_circle = IconData(0xf856, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_x_shield = IconData(0xf857, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_x_square = IconData(0xf858, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_yarn_ball = IconData(0xf85a, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_yen = IconData(0xf85b, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+  static const IconData bxf_yin_yang = IconData(0xf85c, fontFamily: "BoxiconsFilled", fontPackage: "flutter_boxicons");
+
+}

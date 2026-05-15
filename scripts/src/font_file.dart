@@ -4,7 +4,7 @@ import 'package:http/http.dart';
 
 Future<List<int>> downloadFontFile() async {
   const uri =
-      "https://github.com/atisawd/boxicons/blob/master/fonts/boxicons.ttf?raw=true";
+      "https://github.com/box-icons/boxicons-core/tree/main/fonts/basic/boxicons.ttf?raw=true";
   final response = await get(Uri.parse(uri));
   if (response.statusCode != 200) {
     print('Failed to download font file: ${response.statusCode}');

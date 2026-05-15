@@ -1,5 +1,5 @@
-import 'src/css_file.dart';
-import 'src/font_file.dart';
+import 'dart:io';
+
 import 'src/icons_file.dart';
 
 /*
@@ -8,9 +8,12 @@ import 'src/icons_file.dart';
 * Usage: dart scripts/generate_files.dart
 */
 Future<void> main() async {
-  final fontBytes = await downloadFontFile();
-  await storeFontFile(fontBytes);
-
-  final css = await downloadCssFile();
-  await generateIconsFile(css);
+  final regularCss =
+      await File('scripts/css/basic/boxicons.css').readAsString();
+  final brandsCss =
+      await File('scripts/css/brands/boxicons-brands.css').readAsString();
+  final filledCss =
+      await File('scripts/css/filled/boxicons-filled.css').readAsString();
+  final allCss = '$regularCss\n$brandsCss\n$filledCss';
+  await generateIconsFile(allCss, 'lib/flutter_boxicons.dart');
 }
