@@ -1,9 +1,9 @@
 name: flutter_boxicons
 description: Boxicons (https://boxicons.com) customization for Flutter. You can use 2K+ more Boxicons.
-version: 3.2.0
-homepage: https://shasmatic.site
-repository: https://github.com/arifai/flutter_boxicons
-issue_tracker: https://github.com/arifai/flutter_boxicons/issues
+version: 1.0.0
+homepage: https://boxicons.com/
+repository: https://github.com/Biswajit-Paul-2021/flutter_boxicons.git
+issue_tracker: https://github.com/Biswajit-Paul-2021/flutter_boxicons.git
 topics:
   - assets
   - icons

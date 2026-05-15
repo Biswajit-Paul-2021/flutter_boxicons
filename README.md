@@ -1,7 +1,5 @@
 # Flutter Boxicons
 
-![Pub Version](https://img.shields.io/pub/v/flutter_boxicons)
-
 [Boxicons](https://boxicons.com) customization for Flutter. You can use 2K+ more Boxicons.
 
 ## Installation
@@ -10,8 +8,9 @@ In the `dependencies:` section of your `pubspec.yaml`, add the following line:
 
 ```yaml
 flutter_boxicons:
-  git: https://github.com/Biswajit-Paul-2021/flutter_boxicons.git
-  ref: master
+  git:
+    main: https://github.com/Biswajit-Paul-2021/flutter_boxicons.git
+    ref: master
 ```
 
 ## Usage
@@ -38,7 +37,7 @@ class MyApp extends StatelessWidget {
 
 ## Info
 
-Boxicons version: 2.0.7
+Boxicons version: 3.0.8
 
 Thank you very much [Boxicons](https://boxicons.com)
 
